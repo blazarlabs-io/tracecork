@@ -46,9 +46,18 @@ export function createFirebaseAdminApp(params: FirebaseAdminAppParams) {
 
 export async function initAdmin() {
   const params = {
-    projectId: NEXT_PUBLIC_FIREBASE_PROJECT_ID,
-    clientEmail: FIREBASE_CLIENT_EMAIL,
-    storageBucket: NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+    projectId:
+      process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID !== undefined
+        ? NEXT_PUBLIC_FIREBASE_PROJECT_ID
+        : undefined,
+    clientEmail:
+      process.env.NEXT_PUBLIC_FIREBASE_CLIENT_EMAIL !== undefined
+        ? process.env.NEXT_PUBLIC_FIREBASE_CLIENT_EMAIL
+        : undefined,
+    storageBucket:
+      process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET !== undefined
+        ? NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET
+        : undefined,
     privateKey:
       process.env.NEXT_PUBLIC_FIREBASE_PRIVATE_KEY !== undefined
         ? process.env.NEXT_PUBLIC_FIREBASE_PRIVATE_KEY?.replace(/\\n/g, "\n")
