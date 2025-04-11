@@ -49,12 +49,12 @@ export async function initAdmin() {
     projectId: NEXT_PUBLIC_FIREBASE_PROJECT_ID,
     clientEmail: FIREBASE_CLIENT_EMAIL,
     storageBucket: NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
-    privateKey: FIREBASE_PRIVATE_KEY
-      ? Buffer.from(FIREBASE_PRIVATE_KEY).toString()
-      : "",
+    privateKey: process.env.NEXT_PUBLIC_FIREBASE_PRIVATE_KEY
+      ? process.env.NEXT_PUBLIC_FIREBASE_PRIVATE_KEY?.replace(/\\n/g, "\n")
+      : undefined,
   };
 
-  return createFirebaseAdminApp(params);
+  return createFirebaseAdminApp(params as FirebaseAdminAppParams);
 }
 
 await initAdmin();

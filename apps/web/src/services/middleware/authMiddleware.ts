@@ -1,4 +1,5 @@
 import { CheckIdTokenResp } from "@/types/authTypes";
+import { initAdmin } from "~/src/lib/firebase/admin";
 
 export const checkIdToken = async (idToken: string, requestUrls: string) => {
   try {
