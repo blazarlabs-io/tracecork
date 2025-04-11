@@ -1,9 +1,12 @@
+import { initAdmin } from "@/lib/firebase/admin";
+import admin from "firebase-admin";
 import { NextResponse } from "next/server";
-import { adminAuth, initAdmin } from "@/lib/firebase/admin";
 
 export async function POST(request: Request) {
   try {
     await initAdmin();
+    const adminAuth = admin.auth();
+
     const authHeader = request.headers.get("Authorization");
 
     if (!authHeader || !authHeader.startsWith("Bearer ")) {

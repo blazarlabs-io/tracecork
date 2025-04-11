@@ -1,15 +1,17 @@
-import * as sgMail from "@sendgrid/mail";
+import { initAdmin } from "@/lib/firebase/admin";
 import { emailTemplates } from "@/utils/email-templates";
-import { ActionCodeSettings } from "firebase-admin/auth";
 import {
   NEXT_PUBLIC_APP_URL,
   NEXT_PUBLIC_SENDGRID_API_KEY,
   NEXT_PUBLIC_TRACECORK_EMAIL,
 } from "@/utils/envConstants";
-import { adminAuth, initAdmin } from "@/lib/firebase/admin";
+import * as sgMail from "@sendgrid/mail";
+import admin from "firebase-admin";
+import { ActionCodeSettings } from "firebase-admin/auth";
 
 export async function POST(request: Request) {
   await initAdmin();
+  const adminAuth = admin.auth();
 
   sgMail.setApiKey(NEXT_PUBLIC_SENDGRID_API_KEY);
 
