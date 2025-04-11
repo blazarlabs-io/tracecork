@@ -22,6 +22,14 @@ function formatPrivateKey(key: string) {
 export function createFirebaseAdminApp(params: FirebaseAdminAppParams) {
   const privateKey = formatPrivateKey(params.privateKey);
 
+  // console.log("\n\n===============================");
+  // console.log("admin", admin);
+  // console.log("projectId", params.projectId);
+  // console.log("clientEmail", params.clientEmail);
+  // console.log("storageBucket", params.storageBucket);
+  // console.log("privateKey", privateKey);
+  // console.log("===============================\n\n");
+
   if (admin.apps.length > 0) {
     return admin.app();
   }
@@ -50,7 +58,7 @@ export async function initAdmin() {
   return createFirebaseAdminApp(params);
 }
 
-initAdmin();
+await initAdmin();
 
 export const adminAuth = admin.auth();
 export const adminFirestore = admin.firestore();

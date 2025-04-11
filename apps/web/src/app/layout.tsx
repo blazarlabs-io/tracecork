@@ -4,6 +4,7 @@ import "@repo/ui/globals.css";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
 import { Suspense } from "react";
+import { initAdmin } from "@/lib/firebase/admin";
 
 export const metadata: Metadata = {
   title: "Tracecork by Blazar Labs",
