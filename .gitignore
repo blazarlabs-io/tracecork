@@ -35,6 +35,8 @@ apps/cms/.env.development
 apps/cms/.env.production
 apps/admin/.env.development
 apps/admin/.env.production
+apps/web/src/lib/firebase/migration/google-services/production.json
+apps/web/src/lib/firebase/migration/google-services/development.json
 
 # turbo
 .turbo

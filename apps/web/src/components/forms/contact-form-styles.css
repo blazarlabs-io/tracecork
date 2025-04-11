@@ -1,0 +1,8 @@
+.copyright-container {
+  a {
+    color: hsl(var(--primary));
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    font-weight: 500;
+  }
+}

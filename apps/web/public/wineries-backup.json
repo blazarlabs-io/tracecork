@@ -1,0 +1,6224 @@
+[
+  {
+    "docId": "0A2O2HiCHAf6NAi8HI3V3br5D5L2",
+    "docData": {
+      "id": "0A2O2HiCHAf6NAi8HI3V3br5D5L2",
+      "info": {
+        "certifications": [],
+        "name": "Minis Terrios",
+        "avatar": "/images/avatar.svg",
+        "bottlesProduced": "34800",
+        "foundedIn": "2013",
+        "vineyardsSurface": "9.89",
+        "wineCollections": "7",
+        "grapeVarieties": "6",
+        "representative": {
+          "name": "Prisacaru Dan",
+          "email": "prisacaru.dan@gmai.com",
+          "phone": ""
+        },
+        "headquarters": {
+          "lng": 28.87400707310713,
+          "lat": 47.007526579912536
+        }
+      },
+      "settings": {
+        "autosave": true,
+        "language": "en",
+        "theme": "light"
+      },
+      "isVerified": true,
+      "billing": {
+        "level": "silver",
+        "plan": "silver"
+      }
+    },
+    "collections": [
+      "qrcodes",
+      "wines"
+    ],
+    "collectionData": [
+      {
+        "collection": "qrcodes",
+        "docsData": [
+          {
+            "docId": "R2Ogc-1730378259570",
+            "docData": {
+              "uid": "0A2O2HiCHAf6NAi8HI3V3br5D5L2",
+              "wineId": "R2Ogc-1730378259570",
+              "imageUrl": "https://firebasestorage.googleapis.com/v0/b/wine-app-8c2f9.appspot.com/o/images%2F0A2O2HiCHAf6NAi8HI3V3br5D5L2%2FR2Ogc-1730378259570.png?alt=media&token=7298bafd-808d-4c30-9f58-3457a25a98fb",
+              "staticUrl": "http://localhost:3001/dynamic/R2Ogc-1730378259570",
+              "redirectUrl": "http://localhost:3000/explore/wine/R2Ogc-1730378259570",
+              "createdAt": {
+                "_seconds": 1733428205,
+                "_nanoseconds": 174000000
+              },
+              "lastUpdated": {
+                "_seconds": 1733428205,
+                "_nanoseconds": 174000000
+              }
+            },
+            "collections": [],
+            "collectionData": []
+          },
+          {
+            "docId": "S2xT2-1715072449620",
+            "docData": {
+              "uid": "0A2O2HiCHAf6NAi8HI3V3br5D5L2",
+              "wineId": "S2xT2-1715072449620",
+              "imageUrl": "https://firebasestorage.googleapis.com/v0/b/wine-app-8c2f9.appspot.com/o/images%2F0A2O2HiCHAf6NAi8HI3V3br5D5L2%2Fb17945a4-f905-4771-a9ec-a8e29928f969.jpeg?alt=media&token=0d0b4957-049f-4d7a-bc80-6026e416069b",
+              "staticUrl": "http://localhost:3001/dynamic/S2xT2-1715072449620",
+              "redirectUrl": "http://localhost:3000/explore/wine/S2xT2-1715072449620",
+              "createdAt": {
+                "_seconds": 1733428205,
+                "_nanoseconds": 33000000
+              },
+              "lastUpdated": {
+                "_seconds": 1733428205,
+                "_nanoseconds": 33000000
+              }
+            },
+            "collections": [],
+            "collectionData": []
+          },
+          {
+            "docId": "oEzBS-1730371145872",
+            "docData": {
+              "uid": "0A2O2HiCHAf6NAi8HI3V3br5D5L2",
+              "wineId": "oEzBS-1730371145872",
+              "imageUrl": "https://firebasestorage.googleapis.com/v0/b/wine-app-8c2f9.appspot.com/o/images%2F0A2O2HiCHAf6NAi8HI3V3br5D5L2%2FoEzBS-1730371145872.png?alt=media&token=c43adffa-1f31-49fc-a30e-efc5b27aedce",
+              "staticUrl": "http://localhost:3001/dynamic/oEzBS-1730371145872",
+              "redirectUrl": "http://localhost:3000/explore/wine/oEzBS-1730371145872",
+              "createdAt": {
+                "_seconds": 1733428205,
+                "_nanoseconds": 172000000
+              },
+              "lastUpdated": {
+                "_seconds": 1733428205,
+                "_nanoseconds": 172000000
+              }
+            },
+            "collections": [],
+            "collectionData": []
+          }
+        ]
+      },
+      {
+        "collection": "wines",
+        "docsData": [
+          {
+            "docId": "R2Ogc-1730378259570",
+            "docData": {
+              "uid": "0A2O2HiCHAf6NAi8HI3V3br5D5L2",
+              "id": "R2Ogc-1730378259570",
+              "qrCode": "https://firebasestorage.googleapis.com/v0/b/wine-app-8c2f9.appspot.com/o/images%2F0A2O2HiCHAf6NAi8HI3V3br5D5L2%2FR2Ogc-1730378259570.png?alt=media&token=7298bafd-808d-4c30-9f58-3457a25a98fb",
+              "publicUrl": "/explore/wine/R2Ogc-1730378259570",
+              "status": "published",
+              "isReadyToPublish": false,
+              "createdAt": {
+                "seconds": 1733428186,
+                "nanoseconds": 174000000
+              },
+              "lastUpdated": {
+                "seconds": 1733428186,
+                "nanoseconds": 174000000
+              },
+              "nutritionalInfo": {
+                "energy": "",
+                "fat": "0",
+                "carbohydrates": "0.5",
+                "protein": "0",
+                "salt": "0"
+              },
+              "makingTechnique": {
+                "fermentationType": [],
+                "yeastType": [],
+                "vegan": null,
+                "organic": null,
+                "bioDynamic": null,
+                "natural": null,
+                "ageingPotential": ""
+              },
+              "terroir": {
+                "soilType": [],
+                "irrigationPractices": [],
+                "vineyardLocation": [],
+                "vineyardName": "",
+                "cdo": "",
+                "sunExposure": "",
+                "elevation": "",
+                "ageOfVines": "",
+                "grapesHarvesing": {
+                  "method": "",
+                  "yieldPerHa": ""
+                }
+              },
+              "likes": 0,
+              "generalInfo": {
+                "image": "https://firebasestorage.googleapis.com/v0/b/wine-app-8c2f9.appspot.com/o/images%2F0A2O2HiCHAf6NAi8HI3V3br5D5L2%2Fwines%2FR2Ogc-1730378259570.png?alt=media&token=d77593df-cc60-4d11-bf8c-30b2ee89560a",
+                "wineryName": "Minis Terrios",
+                "collectionName": "Minis Terrios Rosu Imparat",
+                "volume": "750ml",
+                "grapeVarieties": [
+                  {
+                    "name": "Feteasca Neagra",
+                    "percentage": "50",
+                    "vintage": "2021"
+                  },
+                  {
+                    "name": "Merlot",
+                    "percentage": "25",
+                    "vintage": "2021"
+                  },
+                  {
+                    "name": "Cabernet Sauvignon",
+                    "percentage": "25",
+                    "vintage": "2021"
+                  }
+                ],
+                "country": "Moldova (the Republic of)",
+                "cdo": "Valul lui Traian",
+                "collectionSize": "",
+                "type": "Red Wine"
+              },
+              "profile": {
+                "aromaProfile": [],
+                "flavorProfile": [],
+                "barrelFermented": [],
+                "awards": [],
+                "color": "",
+                "perceivedAlcohol": "",
+                "acidityLevel": "",
+                "taningLevel": "",
+                "sweetness": "Dry"
+              },
+              "ingredients": {
+                "acidityRegulators": [],
+                "stabilizers": [],
+                "finingAgents": [],
+                "antioxidants": [],
+                "alcoholByVolume": "15",
+                "sugar": "0.5",
+                "rawMaterial": "Grapes"
+              }
+            },
+            "collections": [],
+            "collectionData": []
+          },
+          {
+            "docId": "S2xT2-1715072449620",
+            "docData": {
+              "uid": "0A2O2HiCHAf6NAi8HI3V3br5D5L2",
+              "id": "S2xT2-1715072449620",
+              "qrCode": "https://firebasestorage.googleapis.com/v0/b/wine-app-8c2f9.appspot.com/o/images%2F0A2O2HiCHAf6NAi8HI3V3br5D5L2%2Fb17945a4-f905-4771-a9ec-a8e29928f969.jpeg?alt=media&token=0d0b4957-049f-4d7a-bc80-6026e416069b",
+              "publicUrl": "/explore/wine/S2xT2-1715072449620",
+              "status": "published",
+              "isReadyToPublish": false,
+              "createdAt": {
+                "seconds": 1733428186,
+                "nanoseconds": 174000000
+              },
+              "lastUpdated": {
+                "seconds": 1733428186,
+                "nanoseconds": 174000000
+              },
+              "nutritionalInfo": {
+                "energy": "",
+                "fat": "0",
+                "carbohydrates": "",
+                "protein": "0",
+                "salt": "0"
+              },
+              "makingTechnique": {
+                "fermentationType": [],
+                "yeastType": [],
+                "vegan": null,
+                "organic": null,
+                "bioDynamic": null,
+                "natural": null,
+                "ageingPotential": ""
+              },
+              "terroir": {
+                "soilType": [],
+                "irrigationPractices": [],
+                "vineyardLocation": [],
+                "vineyardName": "",
+                "cdo": "",
+                "sunExposure": "",
+                "elevation": "",
+                "ageOfVines": "",
+                "grapesHarvesing": {
+                  "method": "",
+                  "yieldPerHa": ""
+                }
+              },
+              "likes": 0,
+              "generalInfo": {
+                "grapeVarieties": [],
+                "image": "https://firebasestorage.googleapis.com/v0/b/wine-app-8c2f9.appspot.com/o/images%2F0A2O2HiCHAf6NAi8HI3V3br5D5L2%2Fwines%2FS2xT2-1715072449620.png?alt=media&token=380d765e-f935-4d94-9e4f-8a783097cc35",
+                "wineryName": "Minis Terrios",
+                "collectionName": "Alba Imparateasa",
+                "volume": "750ml",
+                "country": "Moldova (the Republic of)",
+                "cdo": "N/A",
+                "collectionSize": "",
+                "type": "White Wine"
+              },
+              "ingredients": {
+                "acidityRegulators": [],
+                "stabilizers": [],
+                "alcoholByVolume": "12",
+                "sugar": "",
+                "finingAgents": [
+                  {
+                    "name": "Bentonite"
+                  }
+                ],
+                "antioxidants": [
+                  {
+                    "name": "Sulphites"
+                  }
+                ],
+                "rawMaterial": "Grapes"
+              },
+              "profile": {
+                "aromaProfile": [],
+                "flavorProfile": [],
+                "barrelFermented": [],
+                "awards": [],
+                "color": "",
+                "perceivedAlcohol": "",
+                "acidityLevel": "",
+                "taningLevel": "",
+                "sweetness": "Dry"
+              }
+            },
+            "collections": [],
+            "collectionData": []
+          },
+          {
+            "docId": "oEzBS-1730371145872",
+            "docData": {
+              "uid": "0A2O2HiCHAf6NAi8HI3V3br5D5L2",
+              "id": "oEzBS-1730371145872",
+              "qrCode": "https://firebasestorage.googleapis.com/v0/b/wine-app-8c2f9.appspot.com/o/images%2F0A2O2HiCHAf6NAi8HI3V3br5D5L2%2FoEzBS-1730371145872.png?alt=media&token=c43adffa-1f31-49fc-a30e-efc5b27aedce",
+              "publicUrl": "/explore/wine/oEzBS-1730371145872",
+              "status": "published",
+              "isReadyToPublish": false,
+              "createdAt": {
+                "seconds": 1733428186,
+                "nanoseconds": 174000000
+              },
+              "lastUpdated": {
+                "seconds": 1733428186,
+                "nanoseconds": 174000000
+              },
+              "nutritionalInfo": {
+                "energy": "",
+                "fat": "0",
+                "carbohydrates": "0.5",
+                "protein": "0",
+                "salt": "0"
+              },
+              "makingTechnique": {
+                "fermentationType": [],
+                "yeastType": [],
+                "vegan": null,
+                "organic": null,
+                "bioDynamic": null,
+                "natural": null,
+                "ageingPotential": ""
+              },
+              "terroir": {
+                "soilType": [],
+                "irrigationPractices": [],
+                "vineyardLocation": [],
+                "vineyardName": "",
+                "cdo": "",
+                "sunExposure": "",
+                "elevation": "",
+                "ageOfVines": "",
+                "grapesHarvesing": {
+                  "method": "",
+                  "yieldPerHa": ""
+                }
+              },
+              "likes": 0,
+              "generalInfo": {
+                "image": "https://firebasestorage.googleapis.com/v0/b/wine-app-8c2f9.appspot.com/o/images%2F0A2O2HiCHAf6NAi8HI3V3br5D5L2%2Fwines%2FoEzBS-1730371145872.jpeg?alt=media&token=1877a4ad-64b3-4d8e-9a2a-0bca89398eac",
+                "wineryName": "Minis Terrios",
+                "collectionName": "Minis Terrios Negru Imparat",
+                "volume": "750ml",
+                "grapeVarieties": [
+                  {
+                    "name": "Merlot",
+                    "percentage": "50",
+                    "vintage": "2020"
+                  },
+                  {
+                    "name": "Cabernet Sauvignon ",
+                    "percentage": "50",
+                    "vintage": "2020"
+                  }
+                ],
+                "country": "Moldova (the Republic of)",
+                "cdo": "Valul lui Traian",
+                "collectionSize": "",
+                "type": "Red Wine"
+              },
+              "ingredients": {
+                "acidityRegulators": [],
+                "stabilizers": [],
+                "finingAgents": [],
+                "antioxidants": [],
+                "alcoholByVolume": "14.5",
+                "sugar": "0.5",
+                "rawMaterial": "Grapes"
+              },
+              "profile": {
+                "aromaProfile": [],
+                "flavorProfile": [],
+                "barrelFermented": [],
+                "awards": [],
+                "color": "",
+                "perceivedAlcohol": "",
+                "acidityLevel": "",
+                "taningLevel": "",
+                "sweetness": "Dry"
+              }
+            },
+            "collections": [],
+            "collectionData": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "docId": "1gbkgDweJ2broHCeDz3KMW8L8Yb2",
+    "docData": {
+      "id": "1gbkgDweJ2broHCeDz3KMW8L8Yb2",
+      "info": {
+        "certifications": [],
+        "name": "",
+        "avatar": "/images/avatar.svg",
+        "foundedIn": "",
+        "createdAt": {
+          "_seconds": 1738963094,
+          "_nanoseconds": 527000000
+        },
+        "lastUpdated": {
+          "_seconds": 1738963094,
+          "_nanoseconds": 528000000
+        },
+        "wineCollections": "",
+        "bottlesProduced": "",
+        "vineyardsSurface": "",
+        "grapeVarieties": "",
+        "headquarters": {
+          "lat": "47.01107733788858",
+          "lng": "28.85817396285048"
+        },
+        "representative": {
+          "name": "",
+          "phone": "",
+          "email": ""
+        }
+      },
+      "settings": {
+        "theme": "light",
+        "language": "en",
+        "autosave": true
+      },
+      "billing": {
+        "level": "bronze"
+      },
+      "isVerified": false
+    },
+    "collections": [],
+    "collectionData": []
+  },
+  {
+    "docId": "2gDZNeQwO5TDPCDgel9LivJMXyn2",
+    "docData": {
+      "id": "2gDZNeQwO5TDPCDgel9LivJMXyn2",
+      "info": {
+        "certifications": [],
+        "name": "",
+        "avatar": "/images/avatar.svg",
+        "foundedIn": "",
+        "createdAt": {
+          "_seconds": 1738963094,
+          "_nanoseconds": 527000000
+        },
+        "lastUpdated": {
+          "_seconds": 1738963094,
+          "_nanoseconds": 528000000
+        },
+        "wineCollections": "",
+        "bottlesProduced": "",
+        "vineyardsSurface": "",
+        "grapeVarieties": "",
+        "headquarters": {
+          "lat": "47.01107733788858",
+          "lng": "28.85817396285048"
+        },
+        "representative": {
+          "name": "",
+          "phone": "",
+          "email": ""
+        }
+      },
+      "settings": {
+        "theme": "light",
+        "language": "en",
+        "autosave": true
+      },
+      "billing": {
+        "level": "bronze"
+      },
+      "isVerified": false
+    },
+    "collections": [],
+    "collectionData": []
+  },
+  {
+    "docId": "3ABS7fc8Xng8JeLlTWQv2fH0Q3d2",
+    "docData": {
+      "id": "3ABS7fc8Xng8JeLlTWQv2fH0Q3d2",
+      "settings": {
+        "autosave": true,
+        "language": "en",
+        "theme": "light"
+      },
+      "isVerified": true,
+      "info": {
+        "name": "Blazar Wines",
+        "foundedIn": "2020",
+        "wineCollections": "32",
+        "bottlesProduced": "5000",
+        "vineyardsSurface": "200",
+        "grapeVarieties": "8",
+        "headquarters": {
+          "lng": 0.07907148143205145,
+          "lat": 51.353484585556345
+        },
+        "representative": {
+          "email": "fitosegrera@gmail.com",
+          "phone": "",
+          "name": "Fito Segrera"
+        },
+        "certifications": [
+          {
+            "name": "Cert 1"
+          },
+          {
+            "name": "cert 2"
+          }
+        ],
+        "avatar": "https://firebasestorage.googleapis.com/v0/b/qrcode-wine-app-dev.firebasestorage.app/o/wineries%2F3ABS7fc8Xng8JeLlTWQv2fH0Q3d2%2Favatar%2Favatar.png?alt=media&token=58f09f06-ed71-4dca-bb8e-8ae13495fe21"
+      },
+      "billing": {
+        "level": "silver"
+      }
+    },
+    "collections": [
+      "qrcodes",
+      "wines"
+    ],
+    "collectionData": [
+      {
+        "collection": "qrcodes",
+        "docsData": [
+          {
+            "docId": "2M0J2BeWHGhq84yJ",
+            "docData": {
+              "uid": "3ABS7fc8Xng8JeLlTWQv2fH0Q3d2",
+              "wineId": "2M0J2BeWHGhq84yJ",
+              "imageUrl": "https://firebasestorage.googleapis.com/v0/b/qrcode-wine-app-dev.firebasestorage.app/o/wineries%2F3ABS7fc8Xng8JeLlTWQv2fH0Q3d2%2Fwines%2F2M0J2BeWHGhq84yJ%2Fqr-code.png?alt=media&token=15e10eec-cf40-4382-9069-f5e0a3dc599b",
+              "staticUrl": "https://staging-qrcodes.tracecork.com/explore/wine/2M0J2BeWHGhq84yJ",
+              "redirectUrl": "https://staging.tracecork.com/explore/wine/2M0J2BeWHGhq84yJ",
+              "createdAt": {
+                "_seconds": 1739839419,
+                "_nanoseconds": 373000000
+              },
+              "lastUpdated": {
+                "_seconds": 1739839419,
+                "_nanoseconds": 373000000
+              }
+            },
+            "collections": [],
+            "collectionData": []
+          },
+          {
+            "docId": "IgILo-1733416848898",
+            "docData": {
+              "uid": "3ABS7fc8Xng8JeLlTWQv2fH0Q3d2",
+              "wineId": "IgILo-1733416848898",
+              "imageUrl": "https://firebasestorage.googleapis.com/v0/b/wine-app-8c2f9.appspot.com/o/images%2F3ABS7fc8Xng8JeLlTWQv2fH0Q3d2%2FIgILo-1733416848898.pngqr-code.png?alt=media&token=0f6cba32-feb3-4f23-a905-cb4ca8b60a41",
+              "staticUrl": "http://localhost:3001/dynamic/IgILo-1733416848898",
+              "redirectUrl": "http://localhost:3000/explore/wine/IgILo-1733416848898",
+              "createdAt": {
+                "_seconds": 1733428192,
+                "_nanoseconds": 502000000
+              },
+              "lastUpdated": {
+                "_seconds": 1733428192,
+                "_nanoseconds": 502000000
+              }
+            },
+            "collections": [],
+            "collectionData": []
+          },
+          {
+            "docId": "fTdkT-1733417013970",
+            "docData": {
+              "uid": "3ABS7fc8Xng8JeLlTWQv2fH0Q3d2",
+              "wineId": "fTdkT-1733417013970",
+              "imageUrl": "https://firebasestorage.googleapis.com/v0/b/wine-app-8c2f9.appspot.com/o/images%2F3ABS7fc8Xng8JeLlTWQv2fH0Q3d2%2FfTdkT-1733417013970.pngqr-code.png?alt=media&token=46c65a88-0ebd-47c7-b8d3-b590f5336b64",
+              "staticUrl": "http://localhost:3001/dynamic/fTdkT-1733417013970",
+              "redirectUrl": "http://localhost:3000/explore/wine/fTdkT-1733417013970",
+              "createdAt": {
+                "_seconds": 1733428192,
+                "_nanoseconds": 503000000
+              },
+              "lastUpdated": {
+                "_seconds": 1733428192,
+                "_nanoseconds": 503000000
+              }
+            },
+            "collections": [],
+            "collectionData": []
+          },
+          {
+            "docId": "xSYKY-1733414058794",
+            "docData": {
+              "uid": "3ABS7fc8Xng8JeLlTWQv2fH0Q3d2",
+              "wineId": "xSYKY-1733414058794",
+              "imageUrl": "https://firebasestorage.googleapis.com/v0/b/wine-app-8c2f9.appspot.com/o/images%2F3ABS7fc8Xng8JeLlTWQv2fH0Q3d2%2FxSYKY-1733414058794.pngqr-code.png?alt=media&token=a55eb8df-db7c-4bed-9fc6-f3482cec4f8a",
+              "staticUrl": "http://localhost:3001/dynamic/xSYKY-1733414058794",
+              "redirectUrl": "http://localhost:3000/explore/wine/xSYKY-1733414058794",
+              "createdAt": {
+                "_seconds": 1733428192,
+                "_nanoseconds": 351000000
+              },
+              "lastUpdated": {
+                "_seconds": 1733428192,
+                "_nanoseconds": 351000000
+              }
+            },
+            "collections": [],
+            "collectionData": []
+          }
+        ]
+      },
+      {
+        "collection": "wines",
+        "docsData": [
+          {
+            "docId": "2M0J2BeWHGhq84yJ",
+            "docData": {
+              "uid": "3ABS7fc8Xng8JeLlTWQv2fH0Q3d2",
+              "id": "2M0J2BeWHGhq84yJ",
+              "createdAt": {
+                "_seconds": 1738587700,
+                "_nanoseconds": 849000000
+              },
+              "makingTechnique": {
+                "fermentationType": [],
+                "yeastType": [],
+                "vegan": null,
+                "organic": null,
+                "bioDynamic": null,
+                "natural": null,
+                "ageingPotential": ""
+              },
+              "terroir": {
+                "soilType": [],
+                "irrigationPractices": [],
+                "vineyardLocation": [],
+                "vineyardName": "",
+                "cdo": "",
+                "sunExposure": "",
+                "elevation": "",
+                "ageOfVines": "",
+                "grapesHarvesing": {
+                  "method": "",
+                  "yieldPerHa": ""
+                }
+              },
+              "likes": 0,
+              "publicUrl": "/explore/wine/2M0J2BeWHGhq84yJ",
+              "profile": {
+                "barrelFermented": [],
+                "awards": [],
+                "aromaProfile": [],
+                "flavorProfile": [],
+                "color": "",
+                "acidityLevel": "",
+                "sweetness": "Off-Dry",
+                "taningLevel": "",
+                "perceivedAlcohol": ""
+              },
+              "generalInfo": {
+                "cdo": "",
+                "type": "Red Wine",
+                "grapeVarieties": [
+                  {
+                    "name": "Merlot",
+                    "percentage": "100",
+                    "vintage": "2018"
+                  }
+                ],
+                "collectionSize": "",
+                "country": "Argentina",
+                "collectionName": "Galactic Hole",
+                "volume": "1000ml",
+                "wineryName": "Blazar Wines",
+                "image": "/images/wine.jpg"
+              },
+              "ingredients": {
+                "stabilizers": [
+                  {
+                    "name": "Arabic Gum"
+                  }
+                ],
+                "acidityRegulators": [
+                  {
+                    "name": "Mallic Acid"
+                  }
+                ],
+                "rawMaterial": "Concentrated grape must",
+                "sugar": "4.5",
+                "finingAgents": [
+                  {
+                    "name": "Egg Whites"
+                  }
+                ],
+                "antioxidants": [
+                  {
+                    "name": "Oxitozin"
+                  }
+                ],
+                "alcoholByVolume": "12.3"
+              },
+              "lastUpdated": {
+                "_seconds": 1739889377,
+                "_nanoseconds": 596000000
+              },
+              "nutritionalInfo": {
+                "fat": "0",
+                "salt": "0",
+                "carbohydrates": "4.5",
+                "protein": "0",
+                "energy": "292"
+              },
+              "isReadyToPublish": true,
+              "status": "published",
+              "qrCode": "https://firebasestorage.googleapis.com/v0/b/qrcode-wine-app-dev.firebasestorage.app/o/wineries%2F3ABS7fc8Xng8JeLlTWQv2fH0Q3d2%2Fwines%2F2M0J2BeWHGhq84yJ%2Fqr-code.png?alt=media&token=15e10eec-cf40-4382-9069-f5e0a3dc599b"
+            },
+            "collections": [],
+            "collectionData": []
+          },
+          {
+            "docId": "IgILo-1733416848898",
+            "docData": {
+              "uid": "3ABS7fc8Xng8JeLlTWQv2fH0Q3d2",
+              "id": "IgILo-1733416848898",
+              "qrCode": "https://firebasestorage.googleapis.com/v0/b/wine-app-8c2f9.appspot.com/o/images%2F3ABS7fc8Xng8JeLlTWQv2fH0Q3d2%2FIgILo-1733416848898.pngqr-code.png?alt=media&token=0f6cba32-feb3-4f23-a905-cb4ca8b60a41",
+              "createdAt": {
+                "seconds": 1733428186,
+                "nanoseconds": 174000000
+              },
+              "profile": {
+                "aromaProfile": [],
+                "flavorProfile": [],
+                "barrelFermented": [],
+                "awards": [],
+                "color": "",
+                "perceivedAlcohol": "",
+                "sweetness": "",
+                "acidityLevel": "",
+                "taningLevel": ""
+              },
+              "makingTechnique": {
+                "fermentationType": [],
+                "yeastType": [],
+                "vegan": null,
+                "organic": null,
+                "bioDynamic": null,
+                "natural": null,
+                "ageingPotential": ""
+              },
+              "terroir": {
+                "soilType": [],
+                "irrigationPractices": [],
+                "vineyardLocation": [],
+                "vineyardName": "",
+                "cdo": "",
+                "sunExposure": "",
+                "elevation": "",
+                "ageOfVines": "",
+                "grapesHarvesing": {
+                  "method": "",
+                  "yieldPerHa": ""
+                }
+              },
+              "likes": 0,
+              "nutritionalInfo": {
+                "fat": "0",
+                "energy": "263",
+                "carbohydrates": "5.5",
+                "salt": "0",
+                "protein": "0"
+              },
+              "generalInfo": {
+                "cdo": "",
+                "collectionName": "Nebulosa Sparks",
+                "wineryName": "Blazar Wines",
+                "type": "Red Wine",
+                "image": "https://firebasestorage.googleapis.com/v0/b/wine-app-8c2f9.appspot.com/o/images%2F3ABS7fc8Xng8JeLlTWQv2fH0Q3d2%2Fwines%2FIgILo-1733416848898.jpeg?alt=media&token=05525c89-a521-4e9f-b721-c756f3d50bc3",
+                "collectionSize": "",
+                "grapeVarieties": [
+                  {
+                    "percentage": "100",
+                    "vintage": "2014",
+                    "name": "Feteasca Regala"
+                  }
+                ],
+                "country": "Argentina",
+                "volume": "750ml",
+                "sweetness": "Dry"
+              },
+              "ingredients": {
+                "rawMaterial": "Grapes",
+                "finingAgents": [
+                  {
+                    "name": "Potassium"
+                  }
+                ],
+                "stabilizers": [
+                  {
+                    "name": "Arabic Gum"
+                  }
+                ],
+                "antioxidants": [
+                  {
+                    "name": "Gallic Acid"
+                  }
+                ],
+                "sugar": "5.5",
+                "alcoholByVolume": "11",
+                "acidityRegulators": [
+                  {
+                    "name": "Mallic Acid"
+                  }
+                ]
+              },
+              "isReadyToPublish": true,
+              "lastUpdated": {
+                "_seconds": 1733430909,
+                "_nanoseconds": 377000000
+              },
+              "publicUrl": "",
+              "status": "archived"
+            },
+            "collections": [],
+            "collectionData": []
+          },
+          {
+            "docId": "UbgRljPoGbUjsmWf",
+            "docData": {
+              "uid": "3ABS7fc8Xng8JeLlTWQv2fH0Q3d2",
+              "id": "UbgRljPoGbUjsmWf",
+              "qrCode": "",
+              "publicUrl": "",
+              "status": "draft",
+              "isReadyToPublish": false,
+              "createdAt": {
+                "_seconds": 1739450210,
+                "_nanoseconds": 771000000
+              },
+              "lastUpdated": {
+                "_seconds": 1739450210,
+                "_nanoseconds": 771000000
+              },
+              "generalInfo": {
+                "grapeVarieties": [],
+                "image": "/images/wine.jpg",
+                "wineryName": "Blazar Wines",
+                "collectionName": "",
+                "volume": "",
+                "type": "",
+                "country": "",
+                "cdo": "",
+                "collectionSize": ""
+              },
+              "ingredients": {
+                "acidityRegulators": [],
+                "stabilizers": [],
+                "finingAgents": [],
+                "antioxidants": [],
+                "rawMaterial": "",
+                "alcoholByVolume": "",
+                "sugar": ""
+              },
+              "nutritionalInfo": {
+                "energy": "",
+                "fat": "",
+                "carbohydrates": "",
+                "protein": "",
+                "salt": ""
+              },
+              "profile": {
+                "aromaProfile": [],
+                "flavorProfile": [],
+                "barrelFermented": [],
+                "awards": [],
+                "color": "",
+                "perceivedAlcohol": "",
+                "sweetness": "",
+                "acidityLevel": "",
+                "taningLevel": ""
+              },
+              "makingTechnique": {
+                "fermentationType": [],
+                "yeastType": [],
+                "vegan": null,
+                "organic": null,
+                "bioDynamic": null,
+                "natural": null,
+                "ageingPotential": ""
+              },
+              "terroir": {
+                "soilType": [],
+                "irrigationPractices": [],
+                "vineyardLocation": [],
+                "vineyardName": "",
+                "cdo": "",
+                "sunExposure": "",
+                "elevation": "",
+                "ageOfVines": "",
+                "grapesHarvesing": {
+                  "method": "",
+                  "yieldPerHa": ""
+                }
+              },
+              "likes": 0
+            },
+            "collections": [],
+            "collectionData": []
+          },
+          {
+            "docId": "f35bL2gdoXb7WUbJ",
+            "docData": {
+              "uid": "3ABS7fc8Xng8JeLlTWQv2fH0Q3d2",
+              "id": "f35bL2gdoXb7WUbJ",
+              "qrCode": "",
+              "status": "draft",
+              "isReadyToPublish": false,
+              "createdAt": {
+                "_seconds": 1733854504,
+                "_nanoseconds": 914000000
+              },
+              "nutritionalInfo": {
+                "energy": "",
+                "fat": "",
+                "carbohydrates": "",
+                "protein": "",
+                "salt": ""
+              },
+              "profile": {
+                "aromaProfile": [],
+                "flavorProfile": [],
+                "barrelFermented": [],
+                "awards": [],
+                "color": "",
+                "perceivedAlcohol": "",
+                "sweetness": "",
+                "acidityLevel": "",
+                "taningLevel": ""
+              },
+              "makingTechnique": {
+                "fermentationType": [],
+                "yeastType": [],
+                "vegan": null,
+                "organic": null,
+                "bioDynamic": null,
+                "natural": null,
+                "ageingPotential": ""
+              },
+              "terroir": {
+                "soilType": [],
+                "irrigationPractices": [],
+                "vineyardLocation": [],
+                "vineyardName": "",
+                "cdo": "",
+                "sunExposure": "",
+                "elevation": "",
+                "ageOfVines": "",
+                "grapesHarvesing": {
+                  "method": "",
+                  "yieldPerHa": ""
+                }
+              },
+              "likes": 0,
+              "publicUrl": "/explore/wine/f35bL2gdoXb7WUbJ",
+              "ingredients": {
+                "antioxidants": [],
+                "stabilizers": [],
+                "finingAgents": [],
+                "sugar": "",
+                "acidityRegulators": [
+                  {
+                    "name": ""
+                  }
+                ],
+                "rawMaterial": "",
+                "alcoholByVolume": ""
+              },
+              "generalInfo": {
+                "country": "",
+                "grapeVarieties": [
+                  {
+                    "name": "",
+                    "percentage": "",
+                    "vintage": ""
+                  }
+                ],
+                "type": "",
+                "collectionName": "",
+                "wineryName": "Blazar Wines",
+                "volume": "",
+                "image": "https://firebasestorage.googleapis.com/v0/b/qrcode-wine-app-dev.firebasestorage.app/o/wineries%2F3ABS7fc8Xng8JeLlTWQv2fH0Q3d2%2Fwines%2Ff35bL2gdoXb7WUbJ%2Ftest.png?alt=media&token=3f8b96d3-dea8-41f9-b09e-031998544422",
+                "cdo": "",
+                "collectionSize": ""
+              },
+              "lastUpdated": {
+                "_seconds": 1738766341,
+                "_nanoseconds": 173000000
+              }
+            },
+            "collections": [],
+            "collectionData": []
+          },
+          {
+            "docId": "fTdkT-1733417013970",
+            "docData": {
+              "uid": "3ABS7fc8Xng8JeLlTWQv2fH0Q3d2",
+              "id": "fTdkT-1733417013970",
+              "qrCode": "https://firebasestorage.googleapis.com/v0/b/wine-app-8c2f9.appspot.com/o/images%2F3ABS7fc8Xng8JeLlTWQv2fH0Q3d2%2FfTdkT-1733417013970.pngqr-code.png?alt=media&token=46c65a88-0ebd-47c7-b8d3-b590f5336b64",
+              "createdAt": {
+                "seconds": 1733428186,
+                "nanoseconds": 174000000
+              },
+              "profile": {
+                "aromaProfile": [],
+                "flavorProfile": [],
+                "barrelFermented": [],
+                "awards": [],
+                "color": "",
+                "perceivedAlcohol": "",
+                "sweetness": "",
+                "acidityLevel": "",
+                "taningLevel": ""
+              },
+              "makingTechnique": {
+                "fermentationType": [],
+                "yeastType": [],
+                "vegan": null,
+                "organic": null,
+                "bioDynamic": null,
+                "natural": null,
+                "ageingPotential": ""
+              },
+              "terroir": {
+                "soilType": [],
+                "irrigationPractices": [],
+                "vineyardLocation": [],
+                "vineyardName": "",
+                "cdo": "",
+                "sunExposure": "",
+                "elevation": "",
+                "ageOfVines": "",
+                "grapesHarvesing": {
+                  "method": "",
+                  "yieldPerHa": ""
+                }
+              },
+              "likes": 0,
+              "nutritionalInfo": {
+                "energy": "198",
+                "salt": "0",
+                "carbohydrates": "14.5",
+                "protein": "0",
+                "fat": "0"
+              },
+              "ingredients": {
+                "acidityRegulators": [
+                  {
+                    "name": "Mallic Acid"
+                  }
+                ],
+                "antioxidants": [
+                  {
+                    "name": "Gallic Acid"
+                  }
+                ],
+                "finingAgents": [
+                  {
+                    "name": "Isinglass"
+                  },
+                  {
+                    "name": "Casein"
+                  }
+                ],
+                "stabilizers": [
+                  {
+                    "name": "Arabic Gum"
+                  }
+                ],
+                "sugar": "14.5",
+                "alcoholByVolume": "7.5",
+                "rawMaterial": "Grapes"
+              },
+              "isReadyToPublish": true,
+              "generalInfo": {
+                "cdo": "",
+                "grapeVarieties": [
+                  {
+                    "vintage": "2010",
+                    "name": "Merlot",
+                    "percentage": "100"
+                  }
+                ],
+                "type": "White Wine",
+                "sweetness": "Dry",
+                "wineryName": "Blazar Wines",
+                "country": "Chile",
+                "volume": "750ml",
+                "collectionName": "2006 Gutsverwaltung Niederhausen Schlossböckelheim Schloßböckelheimer Kupfergrube Riesling Trockenbeerenauslese",
+                "collectionSize": "",
+                "image": "https://firebasestorage.googleapis.com/v0/b/wine-app-8c2f9.appspot.com/o/images%2F3ABS7fc8Xng8JeLlTWQv2fH0Q3d2%2Fwines%2FfTdkT-1733417013970.png?alt=media&token=e8d1eb37-5aa6-4abd-a73b-6e0ab9b46867"
+              },
+              "lastUpdated": {
+                "_seconds": 1733440261,
+                "_nanoseconds": 358000000
+              },
+              "publicUrl": "",
+              "status": "archived"
+            },
+            "collections": [],
+            "collectionData": []
+          },
+          {
+            "docId": "xSYKY-1733414058794",
+            "docData": {
+              "uid": "3ABS7fc8Xng8JeLlTWQv2fH0Q3d2",
+              "id": "xSYKY-1733414058794",
+              "qrCode": "https://firebasestorage.googleapis.com/v0/b/wine-app-8c2f9.appspot.com/o/images%2F3ABS7fc8Xng8JeLlTWQv2fH0Q3d2%2FxSYKY-1733414058794.pngqr-code.png?alt=media&token=a55eb8df-db7c-4bed-9fc6-f3482cec4f8a",
+              "createdAt": {
+                "seconds": 1733428186,
+                "nanoseconds": 174000000
+              },
+              "makingTechnique": {
+                "fermentationType": [],
+                "yeastType": [],
+                "vegan": null,
+                "organic": null,
+                "bioDynamic": null,
+                "natural": null,
+                "ageingPotential": ""
+              },
+              "terroir": {
+                "soilType": [],
+                "irrigationPractices": [],
+                "vineyardLocation": [],
+                "vineyardName": "",
+                "cdo": "",
+                "sunExposure": "",
+                "elevation": "",
+                "ageOfVines": "",
+                "grapesHarvesing": {
+                  "method": "",
+                  "yieldPerHa": ""
+                }
+              },
+              "likes": 0,
+              "profile": {
+                "barrelFermented": [],
+                "awards": [],
+                "flavorProfile": [],
+                "aromaProfile": [],
+                "taningLevel": "",
+                "sweetness": "Sweet",
+                "color": "",
+                "acidityLevel": "",
+                "perceivedAlcohol": ""
+              },
+              "isReadyToPublish": true,
+              "publicUrl": "/explore/wine/xSYKY-1733414058794",
+              "ingredients": {
+                "alcoholByVolume": "0",
+                "rawMaterial": "Grape must",
+                "finingAgents": [
+                  {
+                    "name": "Potassium Sorbate"
+                  }
+                ],
+                "antioxidants": [
+                  {
+                    "name": "Gallic Acid"
+                  }
+                ],
+                "stabilizers": [
+                  {
+                    "name": "Arabic Gum"
+                  }
+                ],
+                "sugar": "6.5",
+                "acidityRegulators": [
+                  {
+                    "name": "Mallic Acid"
+                  }
+                ]
+              },
+              "nutritionalInfo": {
+                "salt": "0",
+                "carbohydrates": "6.5",
+                "fat": "0",
+                "protein": "0",
+                "energy": "11"
+              },
+              "generalInfo": {
+                "cdo": "",
+                "grapeVarieties": [
+                  {
+                    "percentage": "50",
+                    "name": "Carmenere",
+                    "vintage": "2016"
+                  },
+                  {
+                    "name": " Muscat",
+                    "vintage": "2020",
+                    "percentage": "40"
+                  },
+                  {
+                    "name": "Point Noir",
+                    "percentage": "10",
+                    "vintage": "2024"
+                  }
+                ],
+                "volume": "750ml",
+                "wineryName": "Blazar Wines",
+                "collectionSize": "0",
+                "image": "https://firebasestorage.googleapis.com/v0/b/qrcode-wine-app-dev.firebasestorage.app/o/wineries%2F3ABS7fc8Xng8JeLlTWQv2fH0Q3d2%2Fwines%2FxSYKY-1733414058794%2Ftest.png?alt=media&token=50996305-36de-4ca3-9d5b-23c2935ecc13",
+                "country": "Argentina",
+                "type": "Orange Wine",
+                "collectionName": "Galactic Blood"
+              },
+              "lastUpdated": {
+                "_seconds": 1733854491,
+                "_nanoseconds": 362000000
+              },
+              "status": "published"
+            },
+            "collections": [],
+            "collectionData": []
+          },
+          {
+            "docId": "y4cKLZcXKlUNWWYO",
+            "docData": {
+              "uid": "3ABS7fc8Xng8JeLlTWQv2fH0Q3d2",
+              "id": "y4cKLZcXKlUNWWYO",
+              "qrCode": "",
+              "publicUrl": "",
+              "status": "draft",
+              "isReadyToPublish": false,
+              "createdAt": {
+                "_seconds": 1738587677,
+                "_nanoseconds": 801000000
+              },
+              "lastUpdated": {
+                "_seconds": 1738587677,
+                "_nanoseconds": 801000000
+              },
+              "generalInfo": {
+                "grapeVarieties": [],
+                "image": "/images/wine.jpg",
+                "wineryName": "Blazar Wines",
+                "collectionName": "",
+                "volume": "",
+                "type": "",
+                "country": "",
+                "cdo": "",
+                "collectionSize": ""
+              },
+              "ingredients": {
+                "acidityRegulators": [],
+                "stabilizers": [],
+                "finingAgents": [],
+                "antioxidants": [],
+                "rawMaterial": "",
+                "alcoholByVolume": "",
+                "sugar": ""
+              },
+              "nutritionalInfo": {
+                "energy": "",
+                "fat": "",
+                "carbohydrates": "",
+                "protein": "",
+                "salt": ""
+              },
+              "profile": {
+                "aromaProfile": [],
+                "flavorProfile": [],
+                "barrelFermented": [],
+                "awards": [],
+                "color": "",
+                "perceivedAlcohol": "",
+                "sweetness": "",
+                "acidityLevel": "",
+                "taningLevel": ""
+              },
+              "makingTechnique": {
+                "fermentationType": [],
+                "yeastType": [],
+                "vegan": null,
+                "organic": null,
+                "bioDynamic": null,
+                "natural": null,
+                "ageingPotential": ""
+              },
+              "terroir": {
+                "soilType": [],
+                "irrigationPractices": [],
+                "vineyardLocation": [],
+                "vineyardName": "",
+                "cdo": "",
+                "sunExposure": "",
+                "elevation": "",
+                "ageOfVines": "",
+                "grapesHarvesing": {
+                  "method": "",
+                  "yieldPerHa": ""
+                }
+              },
+              "likes": 0
+            },
+            "collections": [],
+            "collectionData": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "docId": "3fZFM08FKSNSFr7us6j50YDT8N43",
+    "docData": {
+      "id": "3fZFM08FKSNSFr7us6j50YDT8N43",
+      "info": {
+        "certifications": [],
+        "grapeVarieties": [],
+        "name": "GOGU WINERY",
+        "avatar": "/images/avatar.svg",
+        "bottlesProduced": "40000",
+        "foundedIn": "2007",
+        "vineyardsSurface": "10",
+        "wineCollections": "",
+        "representative": {
+          "name": "Ilie Gogu",
+          "email": "ilie.gogu@yahoo.com",
+          "phone": ""
+        },
+        "headquarters": {
+          "lng": "29.403027",
+          "lat": "46.631145"
+        }
+      },
+      "settings": {
+        "autosave": true,
+        "language": "en",
+        "theme": "light"
+      },
+      "isVerified": true,
+      "billing": {
+        "level": "bronze",
+        "plan": "bronze"
+      }
+    },
+    "collections": [],
+    "collectionData": []
+  },
+  {
+    "docId": "3x7i3McznpWSJ0bvVxi9yWS3Rcy2",
+    "docData": {
+      "id": "3x7i3McznpWSJ0bvVxi9yWS3Rcy2",
+      "info": {
+        "certifications": [],
+        "name": "",
+        "avatar": "/images/avatar.svg",
+        "foundedIn": "",
+        "createdAt": {
+          "_seconds": 1739987801,
+          "_nanoseconds": 936000000
+        },
+        "lastUpdated": {
+          "_seconds": 1739987801,
+          "_nanoseconds": 936000000
+        },
+        "wineCollections": "",
+        "bottlesProduced": "",
+        "vineyardsSurface": "",
+        "grapeVarieties": "",
+        "headquarters": {
+          "lat": "47.01107733788858",
+          "lng": "28.85817396285048"
+        },
+        "representative": {
+          "name": "",
+          "phone": "",
+          "email": ""
+        }
+      },
+      "settings": {
+        "theme": "light",
+        "language": "en",
+        "autosave": true
+      },
+      "billing": {
+        "level": "bronze"
+      },
+      "isVerified": false
+    },
+    "collections": [],
+    "collectionData": []
+  },
+  {
+    "docId": "68zHoRdck9duNEUHuthOJE1BaZS2",
+    "docData": {
+      "id": "68zHoRdck9duNEUHuthOJE1BaZS2",
+      "info": {
+        "certifications": [],
+        "name": "",
+        "avatar": "/images/avatar.svg",
+        "foundedIn": "",
+        "createdAt": {
+          "_seconds": 1733868058,
+          "_nanoseconds": 954000000
+        },
+        "lastUpdated": {
+          "_seconds": 1733868058,
+          "_nanoseconds": 954000000
+        },
+        "wineCollections": "",
+        "bottlesProduced": "",
+        "vineyardsSurface": "",
+        "grapeVarieties": "",
+        "headquarters": {
+          "lat": "47.01107733788858",
+          "lng": "28.85817396285048"
+        },
+        "representative": {
+          "name": "",
+          "phone": "",
+          "email": ""
+        }
+      },
+      "settings": {
+        "theme": "light",
+        "language": "en",
+        "autosave": true
+      },
+      "isVerified": false,
+      "billing": {
+        "level": "bronze",
+        "plan": "bronze"
+      }
+    },
+    "collections": [],
+    "collectionData": []
+  },
+  {
+    "docId": "78QOoGFsmdN4kolriNQSy3Lnxhz1",
+    "docData": {
+      "id": "78QOoGFsmdN4kolriNQSy3Lnxhz1",
+      "info": {
+        "certifications": [],
+        "name": "",
+        "avatar": "/images/avatar.svg",
+        "foundedIn": "",
+        "createdAt": {
+          "_seconds": 1733870419,
+          "_nanoseconds": 923000000
+        },
+        "lastUpdated": {
+          "_seconds": 1733870419,
+          "_nanoseconds": 923000000
+        },
+        "wineCollections": "",
+        "bottlesProduced": "",
+        "vineyardsSurface": "",
+        "grapeVarieties": "",
+        "headquarters": {
+          "lat": "47.01107733788858",
+          "lng": "28.85817396285048"
+        },
+        "representative": {
+          "name": "",
+          "phone": "",
+          "email": ""
+        }
+      },
+      "settings": {
+        "theme": "light",
+        "language": "en",
+        "autosave": true
+      },
+      "isVerified": false,
+      "billing": {
+        "level": "bronze",
+        "plan": "bronze"
+      }
+    },
+    "collections": [],
+    "collectionData": []
+  },
+  {
+    "docId": "9GHaBAooWTTiEbyXUco0bh7Jnxi1",
+    "docData": {
+      "id": "9GHaBAooWTTiEbyXUco0bh7Jnxi1",
+      "info": {
+        "certifications": [],
+        "name": "",
+        "avatar": "/images/avatar.svg",
+        "foundedIn": "",
+        "createdAt": {
+          "_seconds": 1733866736,
+          "_nanoseconds": 161000000
+        },
+        "lastUpdated": {
+          "_seconds": 1733866736,
+          "_nanoseconds": 161000000
+        },
+        "wineCollections": "",
+        "bottlesProduced": "",
+        "vineyardsSurface": "",
+        "grapeVarieties": "",
+        "headquarters": {
+          "lat": "47.01107733788858",
+          "lng": "28.85817396285048"
+        },
+        "representative": {
+          "name": "",
+          "phone": "",
+          "email": ""
+        }
+      },
+      "settings": {
+        "theme": "light",
+        "language": "en",
+        "autosave": true
+      },
+      "isVerified": false,
+      "billing": {
+        "level": "bronze",
+        "plan": "bronze"
+      }
+    },
+    "collections": [],
+    "collectionData": []
+  },
+  {
+    "docId": "9nWQ8wxtDkcS7mxKDpz0Rj6qNar1",
+    "docData": {
+      "id": "9nWQ8wxtDkcS7mxKDpz0Rj6qNar1",
+      "settings": {
+        "theme": "light",
+        "language": "en",
+        "autosave": true
+      },
+      "billing": {
+        "level": "bronze"
+      },
+      "isVerified": false,
+      "info": {
+        "certifications": [],
+        "name": "",
+        "foundedIn": "2020",
+        "wineCollections": "9",
+        "bottlesProduced": "10",
+        "vineyardsSurface": "1100",
+        "grapeVarieties": "15",
+        "headquarters": {
+          "lat": "47.01107733788858",
+          "lng": "28.85817396285048"
+        },
+        "representative": {
+          "email": "",
+          "name": "",
+          "phone": ""
+        },
+        "avatar": "/images/avatar.svg"
+      }
+    },
+    "collections": [
+      "wines"
+    ],
+    "collectionData": [
+      {
+        "collection": "wines",
+        "docsData": [
+          {
+            "docId": "qL2Hrm3r4TOP1DBq",
+            "docData": {
+              "uid": "9nWQ8wxtDkcS7mxKDpz0Rj6qNar1",
+              "id": "qL2Hrm3r4TOP1DBq",
+              "qrCode": "",
+              "status": "draft",
+              "isReadyToPublish": false,
+              "createdAt": {
+                "_seconds": 1739366090,
+                "_nanoseconds": 395000000
+              },
+              "generalInfo": {
+                "grapeVarieties": [],
+                "image": "/images/wine.jpg",
+                "wineryName": "",
+                "collectionName": "",
+                "volume": "",
+                "type": "",
+                "country": "",
+                "cdo": "",
+                "collectionSize": ""
+              },
+              "ingredients": {
+                "acidityRegulators": [],
+                "stabilizers": [],
+                "finingAgents": [],
+                "antioxidants": [],
+                "rawMaterial": "",
+                "alcoholByVolume": "",
+                "sugar": ""
+              },
+              "nutritionalInfo": {
+                "energy": "",
+                "fat": "",
+                "carbohydrates": "",
+                "protein": "",
+                "salt": ""
+              },
+              "profile": {
+                "aromaProfile": [],
+                "flavorProfile": [],
+                "barrelFermented": [],
+                "awards": [],
+                "color": "",
+                "perceivedAlcohol": "",
+                "sweetness": "",
+                "acidityLevel": "",
+                "taningLevel": ""
+              },
+              "makingTechnique": {
+                "fermentationType": [],
+                "yeastType": [],
+                "vegan": null,
+                "organic": null,
+                "bioDynamic": null,
+                "natural": null,
+                "ageingPotential": ""
+              },
+              "terroir": {
+                "soilType": [],
+                "irrigationPractices": [],
+                "vineyardLocation": [],
+                "vineyardName": "",
+                "cdo": "",
+                "sunExposure": "",
+                "elevation": "",
+                "ageOfVines": "",
+                "grapesHarvesing": {
+                  "method": "",
+                  "yieldPerHa": ""
+                }
+              },
+              "likes": 0,
+              "publicUrl": "/explore/wine/qL2Hrm3r4TOP1DBq",
+              "lastUpdated": {
+                "_seconds": 1739367042,
+                "_nanoseconds": 245000000
+              }
+            },
+            "collections": [],
+            "collectionData": []
+          },
+          {
+            "docId": "rbRzY4WyClfjDVex",
+            "docData": {
+              "uid": "9nWQ8wxtDkcS7mxKDpz0Rj6qNar1",
+              "id": "rbRzY4WyClfjDVex",
+              "qrCode": "",
+              "publicUrl": "",
+              "status": "draft",
+              "isReadyToPublish": false,
+              "createdAt": {
+                "_seconds": 1739365922,
+                "_nanoseconds": 446000000
+              },
+              "generalInfo": {
+                "grapeVarieties": [],
+                "image": "/images/wine.jpg",
+                "wineryName": "",
+                "collectionName": "",
+                "volume": "",
+                "type": "",
+                "country": "",
+                "cdo": "",
+                "collectionSize": ""
+              },
+              "ingredients": {
+                "acidityRegulators": [],
+                "stabilizers": [],
+                "finingAgents": [],
+                "antioxidants": [],
+                "rawMaterial": "",
+                "alcoholByVolume": "",
+                "sugar": ""
+              },
+              "nutritionalInfo": {
+                "energy": "",
+                "fat": "",
+                "carbohydrates": "",
+                "protein": "",
+                "salt": ""
+              },
+              "profile": {
+                "aromaProfile": [],
+                "flavorProfile": [],
+                "barrelFermented": [],
+                "awards": [],
+                "color": "",
+                "perceivedAlcohol": "",
+                "sweetness": "",
+                "acidityLevel": "",
+                "taningLevel": ""
+              },
+              "makingTechnique": {
+                "fermentationType": [],
+                "yeastType": [],
+                "vegan": null,
+                "organic": null,
+                "bioDynamic": null,
+                "natural": null,
+                "ageingPotential": ""
+              },
+              "terroir": {
+                "soilType": [],
+                "irrigationPractices": [],
+                "vineyardLocation": [],
+                "vineyardName": "",
+                "cdo": "",
+                "sunExposure": "",
+                "elevation": "",
+                "ageOfVines": "",
+                "grapesHarvesing": {
+                  "method": "",
+                  "yieldPerHa": ""
+                }
+              },
+              "likes": 0,
+              "lastUpdated": {
+                "_seconds": 1739366065,
+                "_nanoseconds": 217000000
+              }
+            },
+            "collections": [],
+            "collectionData": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "docId": "A121v5DSglhZcVbbLsaXhiGY70s2",
+    "docData": {
+      "id": "A121v5DSglhZcVbbLsaXhiGY70s2",
+      "info": {
+        "certifications": [],
+        "name": "",
+        "avatar": "/images/avatar.svg",
+        "foundedIn": "",
+        "createdAt": {
+          "_seconds": 1733871245,
+          "_nanoseconds": 883000000
+        },
+        "lastUpdated": {
+          "_seconds": 1733871245,
+          "_nanoseconds": 883000000
+        },
+        "wineCollections": "",
+        "bottlesProduced": "",
+        "vineyardsSurface": "",
+        "grapeVarieties": "",
+        "headquarters": {
+          "lat": "47.01107733788858",
+          "lng": "28.85817396285048"
+        },
+        "representative": {
+          "name": "",
+          "phone": "",
+          "email": ""
+        }
+      },
+      "settings": {
+        "theme": "light",
+        "language": "en",
+        "autosave": true
+      },
+      "isVerified": false,
+      "billing": {
+        "level": "bronze",
+        "plan": "bronze"
+      }
+    },
+    "collections": [],
+    "collectionData": []
+  },
+  {
+    "docId": "BIsx8uF3ACSJD1HATrfkNLJlGkE2",
+    "docData": {
+      "id": "BIsx8uF3ACSJD1HATrfkNLJlGkE2",
+      "info": {
+        "certifications": [],
+        "name": "",
+        "avatar": "/images/avatar.svg",
+        "foundedIn": "",
+        "createdAt": {
+          "_seconds": 1733868243,
+          "_nanoseconds": 584000000
+        },
+        "lastUpdated": {
+          "_seconds": 1733868243,
+          "_nanoseconds": 584000000
+        },
+        "wineCollections": "",
+        "bottlesProduced": "",
+        "vineyardsSurface": "",
+        "grapeVarieties": "",
+        "headquarters": {
+          "lat": "47.01107733788858",
+          "lng": "28.85817396285048"
+        },
+        "representative": {
+          "name": "",
+          "phone": "",
+          "email": ""
+        }
+      },
+      "settings": {
+        "theme": "light",
+        "language": "en",
+        "autosave": true
+      },
+      "isVerified": false,
+      "billing": {
+        "level": "bronze",
+        "plan": "bronze"
+      }
+    },
+    "collections": [],
+    "collectionData": []
+  },
+  {
+    "docId": "EbLrM13g9TfbMz8AkiwQYM9Alzw2",
+    "docData": {
+      "id": "EbLrM13g9TfbMz8AkiwQYM9Alzw2",
+      "info": {
+        "certifications": [],
+        "name": "",
+        "avatar": "/images/avatar.svg",
+        "foundedIn": "",
+        "createdAt": {
+          "_seconds": 1733865968,
+          "_nanoseconds": 276000000
+        },
+        "lastUpdated": {
+          "_seconds": 1733865968,
+          "_nanoseconds": 276000000
+        },
+        "wineCollections": "",
+        "bottlesProduced": "",
+        "vineyardsSurface": "",
+        "grapeVarieties": "",
+        "headquarters": {
+          "lat": "47.01107733788858",
+          "lng": "28.85817396285048"
+        },
+        "representative": {
+          "name": "",
+          "phone": "",
+          "email": ""
+        }
+      },
+      "settings": {
+        "theme": "light",
+        "language": "en",
+        "autosave": true
+      },
+      "isVerified": false,
+      "billing": {
+        "level": "bronze",
+        "plan": "bronze"
+      }
+    },
+    "collections": [],
+    "collectionData": []
+  },
+  {
+    "docId": "Gppi0q9Z99RzKpGTDWLp0aDJgnF3",
+    "docData": {
+      "id": "Gppi0q9Z99RzKpGTDWLp0aDJgnF3",
+      "info": {
+        "certifications": [],
+        "name": "",
+        "avatar": "/images/avatar.svg",
+        "foundedIn": "",
+        "createdAt": {
+          "_seconds": 1733871425,
+          "_nanoseconds": 463000000
+        },
+        "lastUpdated": {
+          "_seconds": 1733871425,
+          "_nanoseconds": 464000000
+        },
+        "wineCollections": "",
+        "bottlesProduced": "",
+        "vineyardsSurface": "",
+        "grapeVarieties": "",
+        "headquarters": {
+          "lat": "47.01107733788858",
+          "lng": "28.85817396285048"
+        },
+        "representative": {
+          "name": "",
+          "phone": "",
+          "email": ""
+        }
+      },
+      "settings": {
+        "theme": "light",
+        "language": "en",
+        "autosave": true
+      },
+      "isVerified": false,
+      "billing": {
+        "level": "bronze",
+        "plan": "bronze"
+      }
+    },
+    "collections": [],
+    "collectionData": []
+  },
+  {
+    "docId": "GukWtsBDm4huTzuDBELzDtLtkCF3",
+    "docData": {
+      "id": "GukWtsBDm4huTzuDBELzDtLtkCF3",
+      "info": {
+        "certifications": [],
+        "name": "",
+        "avatar": "/images/avatar.svg",
+        "foundedIn": "",
+        "createdAt": {
+          "_seconds": 1738928818,
+          "_nanoseconds": 735000000
+        },
+        "lastUpdated": {
+          "_seconds": 1738928818,
+          "_nanoseconds": 735000000
+        },
+        "wineCollections": "",
+        "bottlesProduced": "",
+        "vineyardsSurface": "",
+        "grapeVarieties": "",
+        "headquarters": {
+          "lat": "47.01107733788858",
+          "lng": "28.85817396285048"
+        },
+        "representative": {
+          "name": "",
+          "phone": "",
+          "email": ""
+        }
+      },
+      "settings": {
+        "theme": "light",
+        "language": "en",
+        "autosave": true
+      },
+      "billing": {
+        "level": "bronze"
+      },
+      "isVerified": false
+    },
+    "collections": [],
+    "collectionData": []
+  },
+  {
+    "docId": "HIEuwjp3W8SJy0QlkIjkZ6LZSrt2",
+    "docData": {
+      "id": "HIEuwjp3W8SJy0QlkIjkZ6LZSrt2",
+      "info": {
+        "certifications": [],
+        "name": "",
+        "avatar": "/images/avatar.svg",
+        "foundedIn": "",
+        "createdAt": {
+          "_seconds": 1733870289,
+          "_nanoseconds": 593000000
+        },
+        "lastUpdated": {
+          "_seconds": 1733870289,
+          "_nanoseconds": 593000000
+        },
+        "wineCollections": "",
+        "bottlesProduced": "",
+        "vineyardsSurface": "",
+        "grapeVarieties": "",
+        "headquarters": {
+          "lat": "47.01107733788858",
+          "lng": "28.85817396285048"
+        },
+        "representative": {
+          "name": "",
+          "phone": "",
+          "email": ""
+        }
+      },
+      "settings": {
+        "theme": "light",
+        "language": "en",
+        "autosave": true
+      },
+      "isVerified": false,
+      "billing": {
+        "level": "bronze",
+        "plan": "bronze"
+      }
+    },
+    "collections": [],
+    "collectionData": []
+  },
+  {
+    "docId": "Hj6GT2m7eFcJzv7wXAbwyI6asip2",
+    "docData": {
+      "id": "Hj6GT2m7eFcJzv7wXAbwyI6asip2",
+      "info": {
+        "certifications": [],
+        "name": "",
+        "avatar": "/images/avatar.svg",
+        "foundedIn": "",
+        "createdAt": {
+          "_seconds": 1739980720,
+          "_nanoseconds": 645000000
+        },
+        "lastUpdated": {
+          "_seconds": 1739980720,
+          "_nanoseconds": 645000000
+        },
+        "wineCollections": "",
+        "bottlesProduced": "",
+        "vineyardsSurface": "",
+        "grapeVarieties": "",
+        "headquarters": {
+          "lat": "47.01107733788858",
+          "lng": "28.85817396285048"
+        },
+        "representative": {
+          "name": "",
+          "phone": "",
+          "email": ""
+        }
+      },
+      "settings": {
+        "theme": "light",
+        "language": "en",
+        "autosave": true
+      },
+      "billing": {
+        "level": "bronze"
+      },
+      "isVerified": false
+    },
+    "collections": [],
+    "collectionData": []
+  },
+  {
+    "docId": "KWlyYxNQz6hgoHVuRgUHm1wcpmn2",
+    "docData": {
+      "id": "KWlyYxNQz6hgoHVuRgUHm1wcpmn2",
+      "info": {
+        "certifications": [],
+        "name": "",
+        "avatar": "/images/avatar.svg",
+        "foundedIn": "",
+        "createdAt": {
+          "_seconds": 1733873103,
+          "_nanoseconds": 968000000
+        },
+        "lastUpdated": {
+          "_seconds": 1733873103,
+          "_nanoseconds": 968000000
+        },
+        "wineCollections": "",
+        "bottlesProduced": "",
+        "vineyardsSurface": "",
+        "grapeVarieties": "",
+        "headquarters": {
+          "lat": "47.01107733788858",
+          "lng": "28.85817396285048"
+        },
+        "representative": {
+          "name": "",
+          "phone": "",
+          "email": ""
+        }
+      },
+      "settings": {
+        "theme": "light",
+        "language": "en",
+        "autosave": true
+      },
+      "isVerified": false,
+      "billing": {
+        "level": "bronze",
+        "plan": "bronze"
+      }
+    },
+    "collections": [],
+    "collectionData": []
+  },
+  {
+    "docId": "N40XKkkHA4VwgumVUbh8mxhIsOx2",
+    "docData": {
+      "id": "N40XKkkHA4VwgumVUbh8mxhIsOx2",
+      "info": {
+        "certifications": [],
+        "name": "",
+        "avatar": "/images/avatar.svg",
+        "foundedIn": "",
+        "createdAt": {
+          "_seconds": 1733870391,
+          "_nanoseconds": 104000000
+        },
+        "lastUpdated": {
+          "_seconds": 1733870391,
+          "_nanoseconds": 104000000
+        },
+        "wineCollections": "",
+        "bottlesProduced": "",
+        "vineyardsSurface": "",
+        "grapeVarieties": "",
+        "headquarters": {
+          "lat": "47.01107733788858",
+          "lng": "28.85817396285048"
+        },
+        "representative": {
+          "name": "",
+          "phone": "",
+          "email": ""
+        }
+      },
+      "settings": {
+        "theme": "light",
+        "language": "en",
+        "autosave": true
+      },
+      "isVerified": false,
+      "billing": {
+        "level": "bronze",
+        "plan": "bronze"
+      }
+    },
+    "collections": [],
+    "collectionData": []
+  },
+  {
+    "docId": "Nie0WqQ5rmPM9nS3uQjUuGwpDn62",
+    "docData": {
+      "id": "Nie0WqQ5rmPM9nS3uQjUuGwpDn62",
+      "info": {
+        "certifications": [],
+        "name": "",
+        "avatar": "/images/avatar.svg",
+        "foundedIn": "",
+        "createdAt": {
+          "_seconds": 1733867381,
+          "_nanoseconds": 371000000
+        },
+        "lastUpdated": {
+          "_seconds": 1733867381,
+          "_nanoseconds": 371000000
+        },
+        "wineCollections": "",
+        "bottlesProduced": "",
+        "vineyardsSurface": "",
+        "grapeVarieties": "",
+        "headquarters": {
+          "lat": "47.01107733788858",
+          "lng": "28.85817396285048"
+        },
+        "representative": {
+          "name": "",
+          "phone": "",
+          "email": ""
+        }
+      },
+      "settings": {
+        "theme": "light",
+        "language": "en",
+        "autosave": true
+      },
+      "isVerified": false,
+      "billing": {
+        "level": "bronze",
+        "plan": "bronze"
+      }
+    },
+    "collections": [],
+    "collectionData": []
+  },
+  {
+    "docId": "O2TTwjD5Trbzy3SUY4ZU0h61pHe2",
+    "docData": {
+      "id": "O2TTwjD5Trbzy3SUY4ZU0h61pHe2",
+      "info": {
+        "certifications": [],
+        "name": "",
+        "avatar": "/images/avatar.svg",
+        "foundedIn": "",
+        "createdAt": {
+          "_seconds": 1739980720,
+          "_nanoseconds": 645000000
+        },
+        "lastUpdated": {
+          "_seconds": 1739980720,
+          "_nanoseconds": 645000000
+        },
+        "wineCollections": "",
+        "bottlesProduced": "",
+        "vineyardsSurface": "",
+        "grapeVarieties": "",
+        "headquarters": {
+          "lat": "47.01107733788858",
+          "lng": "28.85817396285048"
+        },
+        "representative": {
+          "name": "",
+          "phone": "",
+          "email": ""
+        }
+      },
+      "settings": {
+        "theme": "light",
+        "language": "en",
+        "autosave": true
+      },
+      "billing": {
+        "level": "bronze"
+      },
+      "isVerified": false
+    },
+    "collections": [],
+    "collectionData": []
+  },
+  {
+    "docId": "OjcHX4ydJaNbj0jMMtdxSammWDw2",
+    "docData": {
+      "id": "OjcHX4ydJaNbj0jMMtdxSammWDw2",
+      "info": {
+        "certifications": [],
+        "name": "",
+        "avatar": "/images/avatar.svg",
+        "foundedIn": "",
+        "createdAt": {
+          "_seconds": 1733858031,
+          "_nanoseconds": 9000000
+        },
+        "lastUpdated": {
+          "_seconds": 1733858031,
+          "_nanoseconds": 9000000
+        },
+        "wineCollections": "",
+        "bottlesProduced": "",
+        "vineyardsSurface": "",
+        "grapeVarieties": "",
+        "headquarters": {
+          "lat": "47.01107733788858",
+          "lng": "28.85817396285048"
+        },
+        "representative": {
+          "name": "",
+          "phone": "",
+          "email": ""
+        }
+      },
+      "settings": {
+        "theme": "light",
+        "language": "en",
+        "autosave": true
+      },
+      "isVerified": false,
+      "billing": {
+        "level": "bronze",
+        "plan": "bronze"
+      }
+    },
+    "collections": [],
+    "collectionData": []
+  },
+  {
+    "docId": "OkIjcolaFwb6MlwRV7j1CP7labC3",
+    "docData": {
+      "id": "OkIjcolaFwb6MlwRV7j1CP7labC3",
+      "info": {
+        "certifications": [],
+        "name": "",
+        "avatar": "/images/avatar.svg",
+        "foundedIn": "",
+        "createdAt": {
+          "_seconds": 1733870867,
+          "_nanoseconds": 847000000
+        },
+        "lastUpdated": {
+          "_seconds": 1733870867,
+          "_nanoseconds": 847000000
+        },
+        "wineCollections": "",
+        "bottlesProduced": "",
+        "vineyardsSurface": "",
+        "grapeVarieties": "",
+        "headquarters": {
+          "lat": "47.01107733788858",
+          "lng": "28.85817396285048"
+        },
+        "representative": {
+          "name": "",
+          "phone": "",
+          "email": ""
+        }
+      },
+      "settings": {
+        "theme": "light",
+        "language": "en",
+        "autosave": true
+      },
+      "isVerified": false,
+      "billing": {
+        "level": "bronze",
+        "plan": "bronze"
+      }
+    },
+    "collections": [],
+    "collectionData": []
+  },
+  {
+    "docId": "PdBV6wOo64RAHVAARK0XJ35iwDt2",
+    "docData": {
+      "id": "PdBV6wOo64RAHVAARK0XJ35iwDt2",
+      "info": {
+        "certifications": [],
+        "name": "",
+        "avatar": "/images/avatar.svg",
+        "foundedIn": "",
+        "createdAt": {
+          "_seconds": 1733866477,
+          "_nanoseconds": 160000000
+        },
+        "lastUpdated": {
+          "_seconds": 1733866477,
+          "_nanoseconds": 160000000
+        },
+        "wineCollections": "",
+        "bottlesProduced": "",
+        "vineyardsSurface": "",
+        "grapeVarieties": "",
+        "headquarters": {
+          "lat": "47.01107733788858",
+          "lng": "28.85817396285048"
+        },
+        "representative": {
+          "name": "",
+          "phone": "",
+          "email": ""
+        }
+      },
+      "settings": {
+        "theme": "light",
+        "language": "en",
+        "autosave": true
+      },
+      "isVerified": false,
+      "billing": {
+        "level": "bronze",
+        "plan": "bronze"
+      }
+    },
+    "collections": [],
+    "collectionData": []
+  },
+  {
+    "docId": "PjAjXNjSPSgO87XP2Q0XQgbhAFS2",
+    "docData": {
+      "id": "PjAjXNjSPSgO87XP2Q0XQgbhAFS2",
+      "info": {
+        "certifications": [],
+        "name": "",
+        "avatar": "/images/avatar.svg",
+        "foundedIn": "",
+        "createdAt": {
+          "_seconds": 1739980720,
+          "_nanoseconds": 645000000
+        },
+        "lastUpdated": {
+          "_seconds": 1739980720,
+          "_nanoseconds": 645000000
+        },
+        "wineCollections": "",
+        "bottlesProduced": "",
+        "vineyardsSurface": "",
+        "grapeVarieties": "",
+        "headquarters": {
+          "lat": "47.01107733788858",
+          "lng": "28.85817396285048"
+        },
+        "representative": {
+          "name": "",
+          "phone": "",
+          "email": ""
+        }
+      },
+      "settings": {
+        "theme": "light",
+        "language": "en",
+        "autosave": true
+      },
+      "billing": {
+        "level": "bronze"
+      },
+      "isVerified": false
+    },
+    "collections": [],
+    "collectionData": []
+  },
+  {
+    "docId": "QZRKvtcZoyZTVjfNXDOm1aBzfEy2",
+    "docData": {
+      "id": "QZRKvtcZoyZTVjfNXDOm1aBzfEy2",
+      "info": {
+        "certifications": [],
+        "name": "",
+        "avatar": "/images/avatar.svg",
+        "foundedIn": "",
+        "createdAt": {
+          "_seconds": 1733759231,
+          "_nanoseconds": 83000000
+        },
+        "lastUpdated": {
+          "_seconds": 1733759231,
+          "_nanoseconds": 83000000
+        },
+        "wineCollections": "",
+        "bottlesProduced": "",
+        "vineyardsSurface": "",
+        "grapeVarieties": "",
+        "headquarters": {
+          "lat": "47.01107733788858",
+          "lng": "28.85817396285048"
+        },
+        "representative": {
+          "name": "",
+          "phone": "",
+          "email": ""
+        }
+      },
+      "settings": {
+        "theme": "light",
+        "language": "en",
+        "autosave": true
+      },
+      "isVerified": false,
+      "billing": {
+        "level": "bronze",
+        "plan": "bronze"
+      }
+    },
+    "collections": [],
+    "collectionData": []
+  },
+  {
+    "docId": "R1t94azIo5YroCXMxyoFlWZyRcq2",
+    "docData": {
+      "id": "R1t94azIo5YroCXMxyoFlWZyRcq2",
+      "settings": {
+        "autosave": true,
+        "language": "en",
+        "theme": "light"
+      },
+      "isVerified": true,
+      "billing": {
+        "level": "bronze",
+        "plan": "bronze"
+      },
+      "info": {
+        "grapeVarieties": [],
+        "name": "",
+        "avatar": "/images/avatar.svg",
+        "bottlesProduced": "",
+        "foundedIn": "",
+        "vineyardsSurface": "",
+        "wineCollections": "",
+        "representative": {
+          "phone": ""
+        },
+        "headquarters": {
+          "lng": "",
+          "lat": ""
+        }
+      }
+    },
+    "collections": [],
+    "collectionData": []
+  },
+  {
+    "docId": "RcIogyQT7BRPZi2iuwPPY3IvexF2",
+    "docData": {
+      "id": "RcIogyQT7BRPZi2iuwPPY3IvexF2",
+      "info": {
+        "certifications": [],
+        "name": "",
+        "avatar": "/images/avatar.svg",
+        "foundedIn": "",
+        "createdAt": {
+          "_seconds": 1733867772,
+          "_nanoseconds": 228000000
+        },
+        "lastUpdated": {
+          "_seconds": 1733867772,
+          "_nanoseconds": 228000000
+        },
+        "wineCollections": "",
+        "bottlesProduced": "",
+        "vineyardsSurface": "",
+        "grapeVarieties": "",
+        "headquarters": {
+          "lat": "47.01107733788858",
+          "lng": "28.85817396285048"
+        },
+        "representative": {
+          "name": "",
+          "phone": "",
+          "email": ""
+        }
+      },
+      "settings": {
+        "theme": "light",
+        "language": "en",
+        "autosave": true
+      },
+      "isVerified": false,
+      "billing": {
+        "level": "bronze",
+        "plan": "bronze"
+      }
+    },
+    "collections": [],
+    "collectionData": []
+  },
+  {
+    "docId": "SgezFQggkPgph3J9pMkP6VcdLfH3",
+    "docData": {
+      "id": "SgezFQggkPgph3J9pMkP6VcdLfH3",
+      "info": {
+        "certifications": [],
+        "name": "",
+        "avatar": "/images/avatar.svg",
+        "foundedIn": "",
+        "createdAt": {
+          "_seconds": 1739737451,
+          "_nanoseconds": 801000000
+        },
+        "lastUpdated": {
+          "_seconds": 1739737451,
+          "_nanoseconds": 801000000
+        },
+        "wineCollections": "",
+        "bottlesProduced": "",
+        "vineyardsSurface": "",
+        "grapeVarieties": "",
+        "headquarters": {
+          "lat": "47.01107733788858",
+          "lng": "28.85817396285048"
+        },
+        "representative": {
+          "name": "",
+          "phone": "",
+          "email": ""
+        }
+      },
+      "settings": {
+        "theme": "light",
+        "language": "en",
+        "autosave": true
+      },
+      "billing": {
+        "level": "bronze"
+      },
+      "isVerified": false
+    },
+    "collections": [],
+    "collectionData": []
+  },
+  {
+    "docId": "TkgsVh0DyAOwnvJV7eD8Y84yJIl1",
+    "docData": {
+      "id": "TkgsVh0DyAOwnvJV7eD8Y84yJIl1",
+      "info": {
+        "certifications": [],
+        "name": "",
+        "avatar": "/images/avatar.svg",
+        "foundedIn": "",
+        "createdAt": {
+          "_seconds": 1733871020,
+          "_nanoseconds": 69000000
+        },
+        "lastUpdated": {
+          "_seconds": 1733871020,
+          "_nanoseconds": 69000000
+        },
+        "wineCollections": "",
+        "bottlesProduced": "",
+        "vineyardsSurface": "",
+        "grapeVarieties": "",
+        "headquarters": {
+          "lat": "47.01107733788858",
+          "lng": "28.85817396285048"
+        },
+        "representative": {
+          "name": "",
+          "phone": "",
+          "email": ""
+        }
+      },
+      "settings": {
+        "theme": "light",
+        "language": "en",
+        "autosave": true
+      },
+      "isVerified": false,
+      "billing": {
+        "level": "bronze",
+        "plan": "bronze"
+      }
+    },
+    "collections": [],
+    "collectionData": []
+  },
+  {
+    "docId": "U2qxva0T0chIE5kFWLwZyBcxwgs2",
+    "docData": {
+      "id": "U2qxva0T0chIE5kFWLwZyBcxwgs2",
+      "info": {
+        "certifications": [],
+        "name": "",
+        "avatar": "/images/avatar.svg",
+        "foundedIn": "",
+        "createdAt": {
+          "_seconds": 1733868450,
+          "_nanoseconds": 389000000
+        },
+        "lastUpdated": {
+          "_seconds": 1733868450,
+          "_nanoseconds": 389000000
+        },
+        "wineCollections": "",
+        "bottlesProduced": "",
+        "vineyardsSurface": "",
+        "grapeVarieties": "",
+        "headquarters": {
+          "lat": "47.01107733788858",
+          "lng": "28.85817396285048"
+        },
+        "representative": {
+          "name": "",
+          "phone": "",
+          "email": ""
+        }
+      },
+      "settings": {
+        "theme": "light",
+        "language": "en",
+        "autosave": true
+      },
+      "isVerified": false,
+      "billing": {
+        "level": "bronze",
+        "plan": "bronze"
+      }
+    },
+    "collections": [],
+    "collectionData": []
+  },
+  {
+    "docId": "UIkYCmF1PmeHD9ayICZf2buyrW63",
+    "docData": {
+      "id": "UIkYCmF1PmeHD9ayICZf2buyrW63",
+      "info": {
+        "certifications": [],
+        "name": "",
+        "avatar": "/images/avatar.svg",
+        "foundedIn": "",
+        "createdAt": {
+          "_seconds": 1733867419,
+          "_nanoseconds": 297000000
+        },
+        "lastUpdated": {
+          "_seconds": 1733867419,
+          "_nanoseconds": 297000000
+        },
+        "wineCollections": "",
+        "bottlesProduced": "",
+        "vineyardsSurface": "",
+        "grapeVarieties": "",
+        "headquarters": {
+          "lat": "47.01107733788858",
+          "lng": "28.85817396285048"
+        },
+        "representative": {
+          "name": "",
+          "phone": "",
+          "email": ""
+        }
+      },
+      "settings": {
+        "theme": "light",
+        "language": "en",
+        "autosave": true
+      },
+      "isVerified": false,
+      "billing": {
+        "level": "bronze",
+        "plan": "bronze"
+      }
+    },
+    "collections": [],
+    "collectionData": []
+  },
+  {
+    "docId": "V3zeOkijAJfjfpqLefgGmH90Xwp2",
+    "docData": {
+      "id": "V3zeOkijAJfjfpqLefgGmH90Xwp2",
+      "info": {
+        "certifications": [],
+        "name": "",
+        "avatar": "/images/avatar.svg",
+        "foundedIn": "",
+        "createdAt": {
+          "_seconds": 1733865331,
+          "_nanoseconds": 214000000
+        },
+        "lastUpdated": {
+          "_seconds": 1733865331,
+          "_nanoseconds": 215000000
+        },
+        "wineCollections": "",
+        "bottlesProduced": "",
+        "vineyardsSurface": "",
+        "grapeVarieties": "",
+        "headquarters": {
+          "lat": "47.01107733788858",
+          "lng": "28.85817396285048"
+        },
+        "representative": {
+          "name": "",
+          "phone": "",
+          "email": ""
+        }
+      },
+      "settings": {
+        "theme": "light",
+        "language": "en",
+        "autosave": true
+      },
+      "isVerified": false,
+      "billing": {
+        "level": "bronze",
+        "plan": "bronze"
+      }
+    },
+    "collections": [],
+    "collectionData": []
+  },
+  {
+    "docId": "YgU6c0NTBEUVWNWrWEYYU2dBexO2",
+    "docData": {
+      "id": "YgU6c0NTBEUVWNWrWEYYU2dBexO2",
+      "info": {
+        "certifications": [],
+        "name": "VINUM estate.",
+        "avatar": "/images/avatar.svg",
+        "bottlesProduced": "20000",
+        "foundedIn": "2017",
+        "vineyardsSurface": "4.5",
+        "wineCollections": "18",
+        "grapeVarieties": "10",
+        "representative": {
+          "name": "Vladlen Uzhakov",
+          "email": "info@vinum.md",
+          "phone": ""
+        },
+        "headquarters": {
+          "lng": 28.897004127502445,
+          "lat": 46.989276848402646
+        }
+      },
+      "settings": {
+        "autosave": true,
+        "language": "en",
+        "theme": "light"
+      },
+      "isVerified": true,
+      "billing": {
+        "level": "silver",
+        "plan": "silver"
+      }
+    },
+    "collections": [
+      "qrcodes",
+      "wines"
+    ],
+    "collectionData": [
+      {
+        "collection": "qrcodes",
+        "docsData": [
+          {
+            "docId": "1QYlv-1721638647586",
+            "docData": {
+              "uid": "YgU6c0NTBEUVWNWrWEYYU2dBexO2",
+              "wineId": "1QYlv-1721638647586",
+              "imageUrl": "https://firebasestorage.googleapis.com/v0/b/wine-app-8c2f9.appspot.com/o/images%2FYgU6c0NTBEUVWNWrWEYYU2dBexO2%2F1QYlv-1721638647586.png?alt=media&token=c80cbe08-c0c8-41ac-825f-bf7a2c67998c",
+              "staticUrl": "http://localhost:3001/dynamic/1QYlv-1721638647586",
+              "redirectUrl": "http://localhost:3000/explore/wine/1QYlv-1721638647586",
+              "createdAt": {
+                "_seconds": 1733428214,
+                "_nanoseconds": 724000000
+              },
+              "lastUpdated": {
+                "_seconds": 1733428214,
+                "_nanoseconds": 724000000
+              }
+            },
+            "collections": [],
+            "collectionData": []
+          },
+          {
+            "docId": "7PlCy-1733230610238",
+            "docData": {
+              "uid": "YgU6c0NTBEUVWNWrWEYYU2dBexO2",
+              "wineId": "7PlCy-1733230610238",
+              "imageUrl": "https://firebasestorage.googleapis.com/v0/b/wine-app-8c2f9.appspot.com/o/images%2FYgU6c0NTBEUVWNWrWEYYU2dBexO2%2F7PlCy-1733230610238.png?alt=media&token=fb32fefe-178e-45ed-9cc3-400fc7b492f6",
+              "staticUrl": "http://localhost:3001/dynamic/7PlCy-1733230610238",
+              "redirectUrl": "http://localhost:3000/explore/wine/7PlCy-1733230610238",
+              "createdAt": {
+                "_seconds": 1733428214,
+                "_nanoseconds": 727000000
+              },
+              "lastUpdated": {
+                "_seconds": 1733428214,
+                "_nanoseconds": 727000000
+              }
+            },
+            "collections": [],
+            "collectionData": []
+          },
+          {
+            "docId": "TEtXD-1733219811805",
+            "docData": {
+              "uid": "YgU6c0NTBEUVWNWrWEYYU2dBexO2",
+              "wineId": "TEtXD-1733219811805",
+              "imageUrl": "https://firebasestorage.googleapis.com/v0/b/wine-app-8c2f9.appspot.com/o/images%2FYgU6c0NTBEUVWNWrWEYYU2dBexO2%2FTEtXD-1733219811805.png?alt=media&token=e0110ef9-0ab1-4324-8451-0cc7f2cf4a40",
+              "staticUrl": "http://localhost:3001/dynamic/TEtXD-1733219811805",
+              "redirectUrl": "http://localhost:3000/explore/wine/TEtXD-1733219811805",
+              "createdAt": {
+                "_seconds": 1733428214,
+                "_nanoseconds": 726000000
+              },
+              "lastUpdated": {
+                "_seconds": 1733428214,
+                "_nanoseconds": 726000000
+              }
+            },
+            "collections": [],
+            "collectionData": []
+          },
+          {
+            "docId": "ZNWCE-1714055457943",
+            "docData": {
+              "uid": "YgU6c0NTBEUVWNWrWEYYU2dBexO2",
+              "wineId": "ZNWCE-1714055457943",
+              "imageUrl": "https://firebasestorage.googleapis.com/v0/b/wine-app-8c2f9.appspot.com/o/images%2FYgU6c0NTBEUVWNWrWEYYU2dBexO2%2FZNWCE-1714055457943.png?alt=media&token=a6a1d000-1f98-40e5-8e52-a590613ea86e",
+              "staticUrl": "http://localhost:3001/dynamic/ZNWCE-1714055457943",
+              "redirectUrl": "http://localhost:3000/explore/wine/ZNWCE-1714055457943",
+              "createdAt": {
+                "_seconds": 1733428214,
+                "_nanoseconds": 617000000
+              },
+              "lastUpdated": {
+                "_seconds": 1733428214,
+                "_nanoseconds": 617000000
+              }
+            },
+            "collections": [],
+            "collectionData": []
+          },
+          {
+            "docId": "i6lOC-1722500046334",
+            "docData": {
+              "uid": "YgU6c0NTBEUVWNWrWEYYU2dBexO2",
+              "wineId": "i6lOC-1722500046334",
+              "imageUrl": "https://firebasestorage.googleapis.com/v0/b/wine-app-8c2f9.appspot.com/o/images%2FYgU6c0NTBEUVWNWrWEYYU2dBexO2%2Fi6lOC-1722500046334.png?alt=media&token=d21cb144-d0d3-450d-8840-50b7bfc95476",
+              "staticUrl": "http://localhost:3001/dynamic/i6lOC-1722500046334",
+              "redirectUrl": "http://localhost:3000/explore/wine/i6lOC-1722500046334",
+              "createdAt": {
+                "_seconds": 1733428214,
+                "_nanoseconds": 726000000
+              },
+              "lastUpdated": {
+                "_seconds": 1733428214,
+                "_nanoseconds": 726000000
+              }
+            },
+            "collections": [],
+            "collectionData": []
+          },
+          {
+            "docId": "n4lFE-1714056345308",
+            "docData": {
+              "uid": "YgU6c0NTBEUVWNWrWEYYU2dBexO2",
+              "wineId": "n4lFE-1714056345308",
+              "imageUrl": "https://firebasestorage.googleapis.com/v0/b/wine-app-8c2f9.appspot.com/o/images%2FYgU6c0NTBEUVWNWrWEYYU2dBexO2%2Fn4lFE-1714056345308.png?alt=media&token=0b4f75c1-8f09-47a2-8e60-da6de9199ab0",
+              "staticUrl": "http://localhost:3001/dynamic/n4lFE-1714056345308",
+              "redirectUrl": "http://localhost:3000/explore/wine/n4lFE-1714056345308",
+              "createdAt": {
+                "_seconds": 1733428214,
+                "_nanoseconds": 723000000
+              },
+              "lastUpdated": {
+                "_seconds": 1733428214,
+                "_nanoseconds": 723000000
+              }
+            },
+            "collections": [],
+            "collectionData": []
+          }
+        ]
+      },
+      {
+        "collection": "wines",
+        "docsData": [
+          {
+            "docId": "1QYlv-1721638647586",
+            "docData": {
+              "uid": "YgU6c0NTBEUVWNWrWEYYU2dBexO2",
+              "id": "1QYlv-1721638647586",
+              "qrCode": "https://firebasestorage.googleapis.com/v0/b/wine-app-8c2f9.appspot.com/o/images%2FYgU6c0NTBEUVWNWrWEYYU2dBexO2%2F1QYlv-1721638647586.png?alt=media&token=c80cbe08-c0c8-41ac-825f-bf7a2c67998c",
+              "publicUrl": "/explore/wine/1QYlv-1721638647586",
+              "status": "published",
+              "isReadyToPublish": false,
+              "createdAt": {
+                "seconds": 1733428186,
+                "nanoseconds": 174000000
+              },
+              "lastUpdated": {
+                "seconds": 1733428186,
+                "nanoseconds": 174000000
+              },
+              "nutritionalInfo": {
+                "energy": "",
+                "fat": "0",
+                "carbohydrates": "2.5",
+                "protein": "0",
+                "salt": "0"
+              },
+              "makingTechnique": {
+                "fermentationType": [],
+                "yeastType": [],
+                "vegan": null,
+                "organic": null,
+                "bioDynamic": null,
+                "natural": null,
+                "ageingPotential": ""
+              },
+              "terroir": {
+                "soilType": [],
+                "irrigationPractices": [],
+                "vineyardLocation": [],
+                "vineyardName": "",
+                "cdo": "",
+                "sunExposure": "",
+                "elevation": "",
+                "ageOfVines": "",
+                "grapesHarvesing": {
+                  "method": "",
+                  "yieldPerHa": ""
+                }
+              },
+              "likes": 0,
+              "generalInfo": {
+                "image": "https://firebasestorage.googleapis.com/v0/b/wine-app-8c2f9.appspot.com/o/images%2FYgU6c0NTBEUVWNWrWEYYU2dBexO2%2Fwines%2F1QYlv-1721638647586.jpeg?alt=media&token=7b973093-403f-490b-b856-eb413d647e5e",
+                "wineryName": "VINUM estate.",
+                "collectionName": "Spumant Viu",
+                "volume": "750ml",
+                "grapeVarieties": [
+                  {
+                    "name": "Feteasca regala",
+                    "percentage": "100",
+                    "vintage": "2023"
+                  }
+                ],
+                "country": "Moldova (the Republic of)",
+                "cdo": "",
+                "collectionSize": "",
+                "type": "Sparkling Wine"
+              },
+              "ingredients": {
+                "acidityRegulators": [],
+                "finingAgents": [],
+                "alcoholByVolume": "11.5",
+                "sugar": "2.5",
+                "stabilizers": [
+                  {
+                    "name": "Citrogum Plus"
+                  }
+                ],
+                "antioxidants": [
+                  {
+                    "name": "Tanin Blanc"
+                  },
+                  {
+                    "name": "PVPP"
+                  }
+                ],
+                "rawMaterial": "Grapes"
+              },
+              "profile": {
+                "aromaProfile": [],
+                "flavorProfile": [],
+                "barrelFermented": [],
+                "awards": [],
+                "color": "",
+                "perceivedAlcohol": "",
+                "acidityLevel": "",
+                "taningLevel": "",
+                "sweetness": "Brut Nature"
+              }
+            },
+            "collections": [],
+            "collectionData": []
+          },
+          {
+            "docId": "7PlCy-1733230610238",
+            "docData": {
+              "uid": "YgU6c0NTBEUVWNWrWEYYU2dBexO2",
+              "id": "7PlCy-1733230610238",
+              "qrCode": "https://firebasestorage.googleapis.com/v0/b/wine-app-8c2f9.appspot.com/o/images%2FYgU6c0NTBEUVWNWrWEYYU2dBexO2%2F7PlCy-1733230610238.png?alt=media&token=fb32fefe-178e-45ed-9cc3-400fc7b492f6",
+              "publicUrl": "/explore/wine/7PlCy-1733230610238",
+              "status": "published",
+              "isReadyToPublish": false,
+              "createdAt": {
+                "seconds": 1733428186,
+                "nanoseconds": 175000000
+              },
+              "lastUpdated": {
+                "seconds": 1733428186,
+                "nanoseconds": 175000000
+              },
+              "nutritionalInfo": {
+                "energy": "",
+                "fat": "0",
+                "carbohydrates": "1.5",
+                "protein": "0",
+                "salt": "0"
+              },
+              "makingTechnique": {
+                "fermentationType": [],
+                "yeastType": [],
+                "vegan": null,
+                "organic": null,
+                "bioDynamic": null,
+                "natural": null,
+                "ageingPotential": ""
+              },
+              "terroir": {
+                "soilType": [],
+                "irrigationPractices": [],
+                "vineyardLocation": [],
+                "vineyardName": "",
+                "cdo": "",
+                "sunExposure": "",
+                "elevation": "",
+                "ageOfVines": "",
+                "grapesHarvesing": {
+                  "method": "",
+                  "yieldPerHa": ""
+                }
+              },
+              "likes": 0,
+              "generalInfo": {
+                "image": "https://firebasestorage.googleapis.com/v0/b/wine-app-8c2f9.appspot.com/o/images%2FYgU6c0NTBEUVWNWrWEYYU2dBexO2%2Fwines%2F7PlCy-1733230610238.jpeg?alt=media&token=ef5d69db-8924-47a3-8ea3-ee4136c05720",
+                "wineryName": "VINUM estate.",
+                "collectionName": "VINUM estate, 3 SONS",
+                "volume": "750ml",
+                "grapeVarieties": [
+                  {
+                    "name": "Cabernet Sauvignon",
+                    "percentage": "35",
+                    "vintage": "2021"
+                  },
+                  {
+                    "name": "Merlot",
+                    "percentage": "35",
+                    "vintage": "2021"
+                  },
+                  {
+                    "name": "Saperavi",
+                    "percentage": "30",
+                    "vintage": "2021"
+                  }
+                ],
+                "country": "Moldova (the Republic of)",
+                "cdo": "",
+                "collectionSize": "",
+                "type": "Red Wine"
+              },
+              "ingredients": {
+                "acidityRegulators": [],
+                "finingAgents": [],
+                "alcoholByVolume": "13.5",
+                "sugar": "1.5",
+                "stabilizers": [
+                  {
+                    "name": "Citrogum plus"
+                  },
+                  {
+                    "name": "Hidroclar 30"
+                  }
+                ],
+                "antioxidants": [
+                  {
+                    "name": "Tanin Ruj"
+                  },
+                  {
+                    "name": "Tanin Unico 2"
+                  }
+                ],
+                "rawMaterial": "Grapes"
+              },
+              "profile": {
+                "aromaProfile": [],
+                "flavorProfile": [],
+                "barrelFermented": [],
+                "awards": [],
+                "color": "",
+                "perceivedAlcohol": "",
+                "acidityLevel": "",
+                "taningLevel": "",
+                "sweetness": "Dry"
+              }
+            },
+            "collections": [],
+            "collectionData": []
+          },
+          {
+            "docId": "TEtXD-1733219811805",
+            "docData": {
+              "uid": "YgU6c0NTBEUVWNWrWEYYU2dBexO2",
+              "id": "TEtXD-1733219811805",
+              "qrCode": "https://firebasestorage.googleapis.com/v0/b/wine-app-8c2f9.appspot.com/o/images%2FYgU6c0NTBEUVWNWrWEYYU2dBexO2%2FTEtXD-1733219811805.png?alt=media&token=e0110ef9-0ab1-4324-8451-0cc7f2cf4a40",
+              "publicUrl": "/explore/wine/TEtXD-1733219811805",
+              "status": "published",
+              "isReadyToPublish": false,
+              "createdAt": {
+                "seconds": 1733428186,
+                "nanoseconds": 175000000
+              },
+              "lastUpdated": {
+                "seconds": 1733428186,
+                "nanoseconds": 175000000
+              },
+              "nutritionalInfo": {
+                "energy": "",
+                "fat": "0",
+                "carbohydrates": "2.0",
+                "protein": "0",
+                "salt": "0"
+              },
+              "makingTechnique": {
+                "fermentationType": [],
+                "yeastType": [],
+                "vegan": null,
+                "organic": null,
+                "bioDynamic": null,
+                "natural": null,
+                "ageingPotential": ""
+              },
+              "terroir": {
+                "soilType": [],
+                "irrigationPractices": [],
+                "vineyardLocation": [],
+                "vineyardName": "",
+                "cdo": "",
+                "sunExposure": "",
+                "elevation": "",
+                "ageOfVines": "",
+                "grapesHarvesing": {
+                  "method": "",
+                  "yieldPerHa": ""
+                }
+              },
+              "likes": 0,
+              "generalInfo": {
+                "image": "https://firebasestorage.googleapis.com/v0/b/wine-app-8c2f9.appspot.com/o/images%2FYgU6c0NTBEUVWNWrWEYYU2dBexO2%2Fwines%2FTEtXD-1733219811805.jpeg?alt=media&token=f1ca9a2f-839c-4ead-beb4-a22c350e602b",
+                "wineryName": "VINUM estate.",
+                "collectionName": "VINUM estate",
+                "volume": "750ml",
+                "country": "Moldova (the Republic of)",
+                "cdo": "",
+                "collectionSize": "",
+                "grapeVarieties": [
+                  {
+                    "vintage": "2022",
+                    "name": "Chardonnay",
+                    "percentage": "100"
+                  }
+                ],
+                "type": "Sparkling Wine"
+              },
+              "profile": {
+                "aromaProfile": [],
+                "flavorProfile": [],
+                "barrelFermented": [],
+                "awards": [],
+                "color": "",
+                "perceivedAlcohol": "",
+                "acidityLevel": "",
+                "taningLevel": "",
+                "sweetness": "Extra Brut"
+              },
+              "ingredients": {
+                "acidityRegulators": [],
+                "finingAgents": [],
+                "alcoholByVolume": "12.00",
+                "sugar": "2.0",
+                "stabilizers": [
+                  {
+                    "name": "Hydroclar"
+                  }
+                ],
+                "antioxidants": [
+                  {
+                    "name": "PVPP"
+                  }
+                ],
+                "rawMaterial": "Grapes"
+              }
+            },
+            "collections": [],
+            "collectionData": []
+          },
+          {
+            "docId": "ZNWCE-1714055457943",
+            "docData": {
+              "uid": "YgU6c0NTBEUVWNWrWEYYU2dBexO2",
+              "id": "ZNWCE-1714055457943",
+              "qrCode": "https://firebasestorage.googleapis.com/v0/b/wine-app-8c2f9.appspot.com/o/images%2FYgU6c0NTBEUVWNWrWEYYU2dBexO2%2FZNWCE-1714055457943.png?alt=media&token=a6a1d000-1f98-40e5-8e52-a590613ea86e",
+              "publicUrl": "/explore/wine/ZNWCE-1714055457943",
+              "status": "published",
+              "isReadyToPublish": false,
+              "createdAt": {
+                "seconds": 1733428186,
+                "nanoseconds": 174000000
+              },
+              "lastUpdated": {
+                "seconds": 1733428186,
+                "nanoseconds": 174000000
+              },
+              "nutritionalInfo": {
+                "energy": "",
+                "fat": "0",
+                "carbohydrates": "1",
+                "protein": "0",
+                "salt": "0"
+              },
+              "makingTechnique": {
+                "fermentationType": [],
+                "yeastType": [],
+                "vegan": null,
+                "organic": null,
+                "bioDynamic": null,
+                "natural": null,
+                "ageingPotential": ""
+              },
+              "terroir": {
+                "soilType": [],
+                "irrigationPractices": [],
+                "vineyardLocation": [],
+                "vineyardName": "",
+                "cdo": "",
+                "sunExposure": "",
+                "elevation": "",
+                "ageOfVines": "",
+                "grapesHarvesing": {
+                  "method": "",
+                  "yieldPerHa": ""
+                }
+              },
+              "likes": 0,
+              "generalInfo": {
+                "image": "https://firebasestorage.googleapis.com/v0/b/wine-app-8c2f9.appspot.com/o/images%2FYgU6c0NTBEUVWNWrWEYYU2dBexO2%2Fwines%2FZNWCE-1714055457943.jpeg?alt=media&token=c88939bd-fd42-4af3-9b4e-0db5926d3960",
+                "wineryName": "VINUM estate.",
+                "collectionName": "Feteasca Regala, VINUM estate",
+                "volume": "750ml",
+                "grapeVarieties": [
+                  {
+                    "name": "Feteasca Regala",
+                    "percentage": "100",
+                    "vintage": "2023"
+                  }
+                ],
+                "country": "Moldova (the Republic of)",
+                "cdo": "",
+                "collectionSize": "",
+                "type": "White Wine"
+              },
+              "ingredients": {
+                "acidityRegulators": [],
+                "alcoholByVolume": "11.5",
+                "sugar": "1",
+                "stabilizers": [
+                  {
+                    "name": "Arabic gum"
+                  }
+                ],
+                "finingAgents": [
+                  {
+                    "name": "Protoclar"
+                  }
+                ],
+                "antioxidants": [
+                  {
+                    "name": "PVPP"
+                  }
+                ],
+                "rawMaterial": "Grapes"
+              },
+              "profile": {
+                "aromaProfile": [],
+                "flavorProfile": [],
+                "barrelFermented": [],
+                "awards": [],
+                "color": "",
+                "perceivedAlcohol": "",
+                "acidityLevel": "",
+                "taningLevel": "",
+                "sweetness": "Dry"
+              }
+            },
+            "collections": [],
+            "collectionData": []
+          },
+          {
+            "docId": "i6lOC-1722500046334",
+            "docData": {
+              "uid": "YgU6c0NTBEUVWNWrWEYYU2dBexO2",
+              "id": "i6lOC-1722500046334",
+              "qrCode": "https://firebasestorage.googleapis.com/v0/b/wine-app-8c2f9.appspot.com/o/images%2FYgU6c0NTBEUVWNWrWEYYU2dBexO2%2Fi6lOC-1722500046334.png?alt=media&token=d21cb144-d0d3-450d-8840-50b7bfc95476",
+              "publicUrl": "/explore/wine/i6lOC-1722500046334",
+              "status": "published",
+              "isReadyToPublish": false,
+              "createdAt": {
+                "seconds": 1733428186,
+                "nanoseconds": 175000000
+              },
+              "lastUpdated": {
+                "seconds": 1733428186,
+                "nanoseconds": 174000000
+              },
+              "nutritionalInfo": {
+                "energy": "",
+                "fat": "0",
+                "carbohydrates": "1",
+                "protein": "0",
+                "salt": "0"
+              },
+              "makingTechnique": {
+                "fermentationType": [],
+                "yeastType": [],
+                "vegan": null,
+                "organic": null,
+                "bioDynamic": null,
+                "natural": null,
+                "ageingPotential": ""
+              },
+              "terroir": {
+                "soilType": [],
+                "irrigationPractices": [],
+                "vineyardLocation": [],
+                "vineyardName": "",
+                "cdo": "",
+                "sunExposure": "",
+                "elevation": "",
+                "ageOfVines": "",
+                "grapesHarvesing": {
+                  "method": "",
+                  "yieldPerHa": ""
+                }
+              },
+              "likes": 0,
+              "ingredients": {
+                "acidityRegulators": [],
+                "antioxidants": [],
+                "alcoholByVolume": "13",
+                "sugar": "1",
+                "stabilizers": [
+                  {
+                    "name": "Arabic Gum"
+                  }
+                ],
+                "finingAgents": [
+                  {
+                    "name": "PVPP"
+                  }
+                ],
+                "rawMaterial": "Grapes"
+              },
+              "profile": {
+                "aromaProfile": [],
+                "flavorProfile": [],
+                "barrelFermented": [],
+                "awards": [],
+                "color": "",
+                "perceivedAlcohol": "",
+                "acidityLevel": "",
+                "taningLevel": "",
+                "sweetness": "Dry"
+              },
+              "generalInfo": {
+                "grapeVarieties": [],
+                "image": "https://firebasestorage.googleapis.com/v0/b/wine-app-8c2f9.appspot.com/o/images%2FYgU6c0NTBEUVWNWrWEYYU2dBexO2%2Fwines%2Fi6lOC-1722500046334.jpeg?alt=media&token=8446e473-eb93-4c45-ba84-1f4bf2b7c43d",
+                "wineryName": "VINUM estate.",
+                "collectionName": "Merlot-Pinot Noir, VINUM estate",
+                "volume": "750ml",
+                "country": "Moldova (the Republic of)",
+                "cdo": "",
+                "collectionSize": "",
+                "type": "Rose Wine"
+              }
+            },
+            "collections": [],
+            "collectionData": []
+          },
+          {
+            "docId": "n4lFE-1714056345308",
+            "docData": {
+              "uid": "YgU6c0NTBEUVWNWrWEYYU2dBexO2",
+              "id": "n4lFE-1714056345308",
+              "qrCode": "https://firebasestorage.googleapis.com/v0/b/wine-app-8c2f9.appspot.com/o/images%2FYgU6c0NTBEUVWNWrWEYYU2dBexO2%2Fn4lFE-1714056345308.png?alt=media&token=0b4f75c1-8f09-47a2-8e60-da6de9199ab0",
+              "publicUrl": "/explore/wine/n4lFE-1714056345308",
+              "status": "published",
+              "isReadyToPublish": false,
+              "createdAt": {
+                "seconds": 1733428186,
+                "nanoseconds": 174000000
+              },
+              "lastUpdated": {
+                "seconds": 1733428186,
+                "nanoseconds": 174000000
+              },
+              "nutritionalInfo": {
+                "energy": "",
+                "fat": "0",
+                "carbohydrates": "0.5",
+                "protein": "0",
+                "salt": "0"
+              },
+              "makingTechnique": {
+                "fermentationType": [],
+                "yeastType": [],
+                "vegan": null,
+                "organic": null,
+                "bioDynamic": null,
+                "natural": null,
+                "ageingPotential": ""
+              },
+              "terroir": {
+                "soilType": [],
+                "irrigationPractices": [],
+                "vineyardLocation": [],
+                "vineyardName": "",
+                "cdo": "",
+                "sunExposure": "",
+                "elevation": "",
+                "ageOfVines": "",
+                "grapesHarvesing": {
+                  "method": "",
+                  "yieldPerHa": ""
+                }
+              },
+              "likes": 0,
+              "generalInfo": {
+                "grapeVarieties": [],
+                "image": "https://firebasestorage.googleapis.com/v0/b/wine-app-8c2f9.appspot.com/o/images%2FYgU6c0NTBEUVWNWrWEYYU2dBexO2%2Fwines%2Fn4lFE-1714056345308.jpeg?alt=media&token=b372ac89-f94a-4047-bb63-6011993d59bb",
+                "wineryName": "VINUM estate.",
+                "collectionName": "Sauvignon blanc, VINUM estate",
+                "volume": "750ml",
+                "country": "Moldova (the Republic of)",
+                "cdo": "",
+                "collectionSize": "",
+                "type": "White Wine"
+              },
+              "ingredients": {
+                "acidityRegulators": [],
+                "antioxidants": [],
+                "alcoholByVolume": "12.5",
+                "sugar": "0.5",
+                "stabilizers": [
+                  {
+                    "name": "Arabic gum"
+                  }
+                ],
+                "finingAgents": [
+                  {
+                    "name": "Protoclair"
+                  }
+                ],
+                "rawMaterial": "Grapes"
+              },
+              "profile": {
+                "aromaProfile": [],
+                "flavorProfile": [],
+                "barrelFermented": [],
+                "awards": [],
+                "color": "",
+                "perceivedAlcohol": "",
+                "acidityLevel": "",
+                "taningLevel": "",
+                "sweetness": "Dry"
+              }
+            },
+            "collections": [],
+            "collectionData": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "docId": "ZJP5KUgmzvdwLQJ6lNWzd1spl7x2",
+    "docData": {
+      "id": "ZJP5KUgmzvdwLQJ6lNWzd1spl7x2",
+      "info": {
+        "certifications": [],
+        "name": "",
+        "avatar": "/images/avatar.svg",
+        "foundedIn": "",
+        "createdAt": {
+          "_seconds": 1733871393,
+          "_nanoseconds": 179000000
+        },
+        "lastUpdated": {
+          "_seconds": 1733871393,
+          "_nanoseconds": 179000000
+        },
+        "wineCollections": "",
+        "bottlesProduced": "",
+        "vineyardsSurface": "",
+        "grapeVarieties": "",
+        "headquarters": {
+          "lat": "47.01107733788858",
+          "lng": "28.85817396285048"
+        },
+        "representative": {
+          "name": "",
+          "phone": "",
+          "email": ""
+        }
+      },
+      "settings": {
+        "theme": "light",
+        "language": "en",
+        "autosave": true
+      },
+      "isVerified": false,
+      "billing": {
+        "level": "bronze",
+        "plan": "bronze"
+      }
+    },
+    "collections": [],
+    "collectionData": []
+  },
+  {
+    "docId": "ZMvI9erGXkROYg8LMpCYrwHCMzz2",
+    "docData": {
+      "id": "ZMvI9erGXkROYg8LMpCYrwHCMzz2",
+      "info": {
+        "certifications": [],
+        "name": "",
+        "avatar": "/images/avatar.svg",
+        "foundedIn": "",
+        "createdAt": {
+          "_seconds": 1733759231,
+          "_nanoseconds": 83000000
+        },
+        "lastUpdated": {
+          "_seconds": 1733759231,
+          "_nanoseconds": 83000000
+        },
+        "wineCollections": "",
+        "bottlesProduced": "",
+        "vineyardsSurface": "",
+        "grapeVarieties": "",
+        "headquarters": {
+          "lat": "47.01107733788858",
+          "lng": "28.85817396285048"
+        },
+        "representative": {
+          "name": "",
+          "phone": "",
+          "email": ""
+        }
+      },
+      "settings": {
+        "theme": "light",
+        "language": "en",
+        "autosave": true
+      },
+      "isVerified": false,
+      "billing": {
+        "level": "bronze",
+        "plan": "bronze"
+      }
+    },
+    "collections": [],
+    "collectionData": []
+  },
+  {
+    "docId": "bTeqkg8addOyUImKyR13dxV9gtx1",
+    "docData": {
+      "id": "bTeqkg8addOyUImKyR13dxV9gtx1",
+      "info": {
+        "certifications": [],
+        "grapeVarieties": [],
+        "name": "",
+        "avatar": "/images/avatar.svg",
+        "bottlesProduced": "",
+        "foundedIn": "",
+        "vineyardsSurface": "",
+        "wineCollections": "",
+        "representative": {
+          "name": null,
+          "email": null,
+          "phone": ""
+        },
+        "headquarters": {
+          "lng": null,
+          "lat": null
+        }
+      },
+      "settings": {
+        "autosave": true,
+        "language": "en",
+        "theme": "light"
+      },
+      "isVerified": true,
+      "billing": {
+        "level": "bronze",
+        "plan": "bronze"
+      }
+    },
+    "collections": [],
+    "collectionData": []
+  },
+  {
+    "docId": "c6qzzhHNEIX6vLBadt4t3RTbT0H3",
+    "docData": {
+      "id": "c6qzzhHNEIX6vLBadt4t3RTbT0H3",
+      "info": {
+        "certifications": [],
+        "name": "",
+        "avatar": "/images/avatar.svg",
+        "foundedIn": "",
+        "createdAt": {
+          "_seconds": 1733873027,
+          "_nanoseconds": 773000000
+        },
+        "lastUpdated": {
+          "_seconds": 1733873027,
+          "_nanoseconds": 773000000
+        },
+        "wineCollections": "",
+        "bottlesProduced": "",
+        "vineyardsSurface": "",
+        "grapeVarieties": "",
+        "headquarters": {
+          "lat": "47.01107733788858",
+          "lng": "28.85817396285048"
+        },
+        "representative": {
+          "name": "",
+          "phone": "",
+          "email": ""
+        }
+      },
+      "settings": {
+        "theme": "light",
+        "language": "en",
+        "autosave": true
+      },
+      "isVerified": false,
+      "billing": {
+        "level": "bronze",
+        "plan": "bronze"
+      }
+    },
+    "collections": [],
+    "collectionData": []
+  },
+  {
+    "docId": "dQYq4S0cXRSPdcTc9KxXvdDMKuq2",
+    "docData": {
+      "id": "dQYq4S0cXRSPdcTc9KxXvdDMKuq2",
+      "info": {
+        "certifications": [],
+        "name": "",
+        "avatar": "/images/avatar.svg",
+        "foundedIn": "",
+        "createdAt": {
+          "_seconds": 1733865737,
+          "_nanoseconds": 188000000
+        },
+        "lastUpdated": {
+          "_seconds": 1733865737,
+          "_nanoseconds": 188000000
+        },
+        "wineCollections": "",
+        "bottlesProduced": "",
+        "vineyardsSurface": "",
+        "grapeVarieties": "",
+        "headquarters": {
+          "lat": "47.01107733788858",
+          "lng": "28.85817396285048"
+        },
+        "representative": {
+          "name": "",
+          "phone": "",
+          "email": ""
+        }
+      },
+      "settings": {
+        "theme": "light",
+        "language": "en",
+        "autosave": true
+      },
+      "isVerified": false,
+      "billing": {
+        "level": "bronze",
+        "plan": "bronze"
+      }
+    },
+    "collections": [],
+    "collectionData": []
+  },
+  {
+    "docId": "ehNpZGUw3MPEInXWmOCA6m2jgoB2",
+    "docData": {
+      "id": "ehNpZGUw3MPEInXWmOCA6m2jgoB2",
+      "info": {
+        "certifications": [],
+        "grapeVarieties": [],
+        "name": "",
+        "avatar": "/images/avatar.svg",
+        "bottlesProduced": "",
+        "foundedIn": "",
+        "vineyardsSurface": "",
+        "wineCollections": "",
+        "representative": {
+          "name": null,
+          "email": null,
+          "phone": ""
+        },
+        "headquarters": {
+          "lng": null,
+          "lat": null
+        }
+      },
+      "settings": {
+        "autosave": true,
+        "language": "en",
+        "theme": "light"
+      },
+      "isVerified": true,
+      "billing": {
+        "level": "bronze",
+        "plan": "bronze"
+      }
+    },
+    "collections": [],
+    "collectionData": []
+  },
+  {
+    "docId": "fJFpobDLReeHw6xejTP7Itgk1ox2",
+    "docData": {
+      "id": "fJFpobDLReeHw6xejTP7Itgk1ox2",
+      "info": {
+        "certifications": [],
+        "name": "",
+        "avatar": "/images/avatar.svg",
+        "foundedIn": "",
+        "createdAt": {
+          "_seconds": 1733868381,
+          "_nanoseconds": 933000000
+        },
+        "lastUpdated": {
+          "_seconds": 1733868381,
+          "_nanoseconds": 933000000
+        },
+        "wineCollections": "",
+        "bottlesProduced": "",
+        "vineyardsSurface": "",
+        "grapeVarieties": "",
+        "headquarters": {
+          "lat": "47.01107733788858",
+          "lng": "28.85817396285048"
+        },
+        "representative": {
+          "name": "",
+          "phone": "",
+          "email": ""
+        }
+      },
+      "settings": {
+        "theme": "light",
+        "language": "en",
+        "autosave": true
+      },
+      "isVerified": false,
+      "billing": {
+        "level": "bronze",
+        "plan": "bronze"
+      }
+    },
+    "collections": [],
+    "collectionData": []
+  },
+  {
+    "docId": "iX2Y0hVi9UTfyOQFP059bqypls23",
+    "docData": {
+      "id": "iX2Y0hVi9UTfyOQFP059bqypls23",
+      "info": {
+        "certifications": [],
+        "name": "",
+        "avatar": "/images/avatar.svg",
+        "foundedIn": "",
+        "createdAt": {
+          "_seconds": 1733867879,
+          "_nanoseconds": 549000000
+        },
+        "lastUpdated": {
+          "_seconds": 1733867879,
+          "_nanoseconds": 549000000
+        },
+        "wineCollections": "",
+        "bottlesProduced": "",
+        "vineyardsSurface": "",
+        "grapeVarieties": "",
+        "headquarters": {
+          "lat": "47.01107733788858",
+          "lng": "28.85817396285048"
+        },
+        "representative": {
+          "name": "",
+          "phone": "",
+          "email": ""
+        }
+      },
+      "settings": {
+        "theme": "light",
+        "language": "en",
+        "autosave": true
+      },
+      "isVerified": false,
+      "billing": {
+        "level": "bronze",
+        "plan": "bronze"
+      }
+    },
+    "collections": [],
+    "collectionData": []
+  },
+  {
+    "docId": "iYaS1hc2PHasomjd0qcIEsDERzh2",
+    "docData": {
+      "id": "iYaS1hc2PHasomjd0qcIEsDERzh2",
+      "info": {
+        "certifications": [],
+        "name": "",
+        "avatar": "/images/avatar.svg",
+        "foundedIn": "",
+        "createdAt": {
+          "_seconds": 1739987732,
+          "_nanoseconds": 710000000
+        },
+        "lastUpdated": {
+          "_seconds": 1739987732,
+          "_nanoseconds": 710000000
+        },
+        "wineCollections": "",
+        "bottlesProduced": "",
+        "vineyardsSurface": "",
+        "grapeVarieties": "",
+        "headquarters": {
+          "lat": "47.01107733788858",
+          "lng": "28.85817396285048"
+        },
+        "representative": {
+          "name": "",
+          "phone": "",
+          "email": ""
+        }
+      },
+      "settings": {
+        "theme": "light",
+        "language": "en",
+        "autosave": true
+      },
+      "billing": {
+        "level": "bronze"
+      },
+      "isVerified": false
+    },
+    "collections": [],
+    "collectionData": []
+  },
+  {
+    "docId": "kRVKTH1x3RWO0FqqXKrWkDEiSR62",
+    "docData": {
+      "id": "kRVKTH1x3RWO0FqqXKrWkDEiSR62",
+      "info": {
+        "certifications": [],
+        "name": "",
+        "avatar": "/images/avatar.svg",
+        "foundedIn": "",
+        "createdAt": {
+          "_seconds": 1733858031,
+          "_nanoseconds": 9000000
+        },
+        "lastUpdated": {
+          "_seconds": 1733858031,
+          "_nanoseconds": 9000000
+        },
+        "wineCollections": "",
+        "bottlesProduced": "",
+        "vineyardsSurface": "",
+        "grapeVarieties": "",
+        "headquarters": {
+          "lat": "47.01107733788858",
+          "lng": "28.85817396285048"
+        },
+        "representative": {
+          "name": "",
+          "phone": "",
+          "email": ""
+        }
+      },
+      "settings": {
+        "theme": "light",
+        "language": "en",
+        "autosave": true
+      },
+      "isVerified": false,
+      "billing": {
+        "level": "bronze",
+        "plan": "bronze"
+      }
+    },
+    "collections": [],
+    "collectionData": []
+  },
+  {
+    "docId": "mLnBUEoDyzXugkHk5VFYhMTQk5d2",
+    "docData": {
+      "id": "mLnBUEoDyzXugkHk5VFYhMTQk5d2",
+      "info": {
+        "name": "\"APPA\" WINERY",
+        "avatar": "/images/avatar.svg",
+        "bottlesProduced": "600",
+        "certifications": [
+          {
+            "name": "Certificat Asocia{ia Producltorilor de Vinuri cu Indica{ia Geografici Protejati ,,$TEFAN VODA\" "
+          },
+          {
+            "name": "Departamentul înregistrare şi licenţiere a unităţilor de drept"
+          },
+          {
+            "name": "VINUL. MOLDOVEI: IP Oficiul Naţional al Viei şi Vinului"
+          }
+        ],
+        "foundedIn": "2022",
+        "vineyardsSurface": "2",
+        "wineCollections": "1",
+        "grapeVarieties": "2",
+        "representative": {
+          "name": "Andrei Parasiuc",
+          "email": "sandani-prim@mail.ru",
+          "phone": ""
+        },
+        "headquarters": {
+          "lng": "29.700285063248423",
+          "lat": "46.60111868769133"
+        }
+      },
+      "settings": {
+        "autosave": true,
+        "language": "en",
+        "theme": "light"
+      },
+      "isVerified": true,
+      "billing": {
+        "level": "bronze",
+        "plan": "bronze"
+      }
+    },
+    "collections": [
+      "qrcodes",
+      "wines"
+    ],
+    "collectionData": [
+      {
+        "collection": "qrcodes",
+        "docsData": [
+          {
+            "docId": "swSkB-1721292497372",
+            "docData": {
+              "uid": "mLnBUEoDyzXugkHk5VFYhMTQk5d2",
+              "wineId": "swSkB-1721292497372",
+              "imageUrl": "https://firebasestorage.googleapis.com/v0/b/wine-app-8c2f9.appspot.com/o/images%2FmLnBUEoDyzXugkHk5VFYhMTQk5d2%2FswSkB-1721292497372.png?alt=media&token=b58ecf1c-c5ae-42fe-89e1-25436b9b0ba3",
+              "staticUrl": "http://localhost:3001/dynamic/swSkB-1721292497372",
+              "redirectUrl": "http://localhost:3000/explore/wine/swSkB-1721292497372",
+              "createdAt": {
+                "_seconds": 1733428224,
+                "_nanoseconds": 287000000
+              },
+              "lastUpdated": {
+                "_seconds": 1733428224,
+                "_nanoseconds": 287000000
+              }
+            },
+            "collections": [],
+            "collectionData": []
+          }
+        ]
+      },
+      {
+        "collection": "wines",
+        "docsData": [
+          {
+            "docId": "swSkB-1721292497372",
+            "docData": {
+              "uid": "mLnBUEoDyzXugkHk5VFYhMTQk5d2",
+              "id": "swSkB-1721292497372",
+              "qrCode": "https://firebasestorage.googleapis.com/v0/b/wine-app-8c2f9.appspot.com/o/images%2FmLnBUEoDyzXugkHk5VFYhMTQk5d2%2FswSkB-1721292497372.png?alt=media&token=b58ecf1c-c5ae-42fe-89e1-25436b9b0ba3",
+              "publicUrl": "/explore/wine/swSkB-1721292497372",
+              "status": "published",
+              "isReadyToPublish": false,
+              "createdAt": {
+                "seconds": 1733428186,
+                "nanoseconds": 175000000
+              },
+              "lastUpdated": {
+                "seconds": 1733428186,
+                "nanoseconds": 175000000
+              },
+              "nutritionalInfo": {
+                "energy": "",
+                "fat": "0",
+                "carbohydrates": "1.5",
+                "protein": "0",
+                "salt": "0"
+              },
+              "makingTechnique": {
+                "fermentationType": [],
+                "yeastType": [],
+                "vegan": null,
+                "organic": null,
+                "bioDynamic": null,
+                "natural": null,
+                "ageingPotential": ""
+              },
+              "terroir": {
+                "soilType": [],
+                "irrigationPractices": [],
+                "vineyardLocation": [],
+                "vineyardName": "",
+                "cdo": "",
+                "sunExposure": "",
+                "elevation": "",
+                "ageOfVines": "",
+                "grapesHarvesing": {
+                  "method": "",
+                  "yieldPerHa": ""
+                }
+              },
+              "likes": 0,
+              "generalInfo": {
+                "image": "https://firebasestorage.googleapis.com/v0/b/wine-app-8c2f9.appspot.com/o/images%2FmLnBUEoDyzXugkHk5VFYhMTQk5d2%2Fwines%2FswSkB-1721292497372.png?alt=media&token=d0efce9d-5d0f-4638-977f-9027a4ed3126",
+                "wineryName": "\"APPA\" WINERY",
+                "collectionName": "Sandani",
+                "volume": "750ml",
+                "grapeVarieties": [
+                  {
+                    "name": "Merlot ",
+                    "percentage": "100",
+                    "vintage": "2023"
+                  }
+                ],
+                "country": "Moldova (the Republic of)",
+                "cdo": "",
+                "collectionSize": "",
+                "type": "Red Wine"
+              },
+              "profile": {
+                "aromaProfile": [],
+                "flavorProfile": [],
+                "barrelFermented": [],
+                "awards": [],
+                "color": "",
+                "perceivedAlcohol": "",
+                "acidityLevel": "",
+                "taningLevel": "",
+                "sweetness": "Off-Dry"
+              },
+              "ingredients": {
+                "acidityRegulators": [],
+                "stabilizers": [],
+                "finingAgents": [],
+                "antioxidants": [],
+                "alcoholByVolume": "15",
+                "sugar": "1.5",
+                "rawMaterial": "Grapes"
+              }
+            },
+            "collections": [],
+            "collectionData": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "docId": "n5PQHdWsg6UJJ7aE3zB1Zvo5zlu2",
+    "docData": {
+      "id": "n5PQHdWsg6UJJ7aE3zB1Zvo5zlu2",
+      "info": {
+        "certifications": [],
+        "name": "",
+        "avatar": "/images/avatar.svg",
+        "foundedIn": "",
+        "createdAt": {
+          "_seconds": 1739982175,
+          "_nanoseconds": 241000000
+        },
+        "lastUpdated": {
+          "_seconds": 1739982175,
+          "_nanoseconds": 241000000
+        },
+        "wineCollections": "",
+        "bottlesProduced": "",
+        "vineyardsSurface": "",
+        "grapeVarieties": "",
+        "headquarters": {
+          "lat": "47.01107733788858",
+          "lng": "28.85817396285048"
+        },
+        "representative": {
+          "name": "",
+          "phone": "",
+          "email": ""
+        }
+      },
+      "settings": {
+        "theme": "light",
+        "language": "en",
+        "autosave": true
+      },
+      "billing": {
+        "level": "bronze"
+      },
+      "isVerified": false
+    },
+    "collections": [],
+    "collectionData": []
+  },
+  {
+    "docId": "n9dKafGyv7TxHFTeVzh74mUcfo23",
+    "docData": {
+      "id": "n9dKafGyv7TxHFTeVzh74mUcfo23",
+      "info": {
+        "certifications": [],
+        "name": "",
+        "avatar": "/images/avatar.svg",
+        "foundedIn": "",
+        "createdAt": {
+          "_seconds": 1738960571,
+          "_nanoseconds": 914000000
+        },
+        "lastUpdated": {
+          "_seconds": 1738960571,
+          "_nanoseconds": 914000000
+        },
+        "wineCollections": "",
+        "bottlesProduced": "",
+        "vineyardsSurface": "",
+        "grapeVarieties": "",
+        "headquarters": {
+          "lat": "47.01107733788858",
+          "lng": "28.85817396285048"
+        },
+        "representative": {
+          "name": "",
+          "phone": "",
+          "email": ""
+        }
+      },
+      "settings": {
+        "theme": "light",
+        "language": "en",
+        "autosave": true
+      },
+      "billing": {
+        "level": "bronze"
+      },
+      "isVerified": false
+    },
+    "collections": [],
+    "collectionData": []
+  },
+  {
+    "docId": "oMM0JP51PWSRUCPLnEm7eWfLp0R2",
+    "docData": {
+      "id": "oMM0JP51PWSRUCPLnEm7eWfLp0R2",
+      "info": {
+        "certifications": [],
+        "name": "",
+        "avatar": "/images/avatar.svg",
+        "foundedIn": "",
+        "createdAt": {
+          "_seconds": 1733868450,
+          "_nanoseconds": 389000000
+        },
+        "lastUpdated": {
+          "_seconds": 1733868450,
+          "_nanoseconds": 389000000
+        },
+        "wineCollections": "",
+        "bottlesProduced": "",
+        "vineyardsSurface": "",
+        "grapeVarieties": "",
+        "headquarters": {
+          "lat": "47.01107733788858",
+          "lng": "28.85817396285048"
+        },
+        "representative": {
+          "name": "",
+          "phone": "",
+          "email": ""
+        }
+      },
+      "settings": {
+        "theme": "light",
+        "language": "en",
+        "autosave": true
+      },
+      "isVerified": false,
+      "billing": {
+        "level": "bronze",
+        "plan": "bronze"
+      }
+    },
+    "collections": [],
+    "collectionData": []
+  },
+  {
+    "docId": "oprjeAhpdIP9k9YkE9DliFi58PK2",
+    "docData": {
+      "id": "oprjeAhpdIP9k9YkE9DliFi58PK2",
+      "info": {
+        "certifications": [],
+        "name": "",
+        "avatar": "/images/avatar.svg",
+        "foundedIn": "",
+        "createdAt": {
+          "_seconds": 1733866765,
+          "_nanoseconds": 280000000
+        },
+        "lastUpdated": {
+          "_seconds": 1733866765,
+          "_nanoseconds": 280000000
+        },
+        "wineCollections": "",
+        "bottlesProduced": "",
+        "vineyardsSurface": "",
+        "grapeVarieties": "",
+        "headquarters": {
+          "lat": "47.01107733788858",
+          "lng": "28.85817396285048"
+        },
+        "representative": {
+          "name": "",
+          "phone": "",
+          "email": ""
+        }
+      },
+      "settings": {
+        "theme": "light",
+        "language": "en",
+        "autosave": true
+      },
+      "isVerified": false,
+      "billing": {
+        "level": "bronze",
+        "plan": "bronze"
+      }
+    },
+    "collections": [],
+    "collectionData": []
+  },
+  {
+    "docId": "puMH95iHfdZVXTem6OoJRgSQhYl1",
+    "docData": {
+      "id": "puMH95iHfdZVXTem6OoJRgSQhYl1",
+      "info": {
+        "certifications": [],
+        "grapeVarieties": [],
+        "name": "",
+        "avatar": "/images/avatar.svg",
+        "bottlesProduced": "",
+        "foundedIn": "",
+        "vineyardsSurface": "",
+        "wineCollections": "",
+        "representative": {
+          "name": null,
+          "email": null,
+          "phone": ""
+        },
+        "headquarters": {
+          "lng": null,
+          "lat": null
+        }
+      },
+      "settings": {
+        "autosave": true,
+        "language": "en",
+        "theme": "light"
+      },
+      "isVerified": true,
+      "billing": {
+        "level": "bronze",
+        "plan": "bronze"
+      }
+    },
+    "collections": [],
+    "collectionData": []
+  },
+  {
+    "docId": "q11iI7iqqYY2cIZAkv4ykq6jrTT2",
+    "docData": {
+      "id": "q11iI7iqqYY2cIZAkv4ykq6jrTT2",
+      "info": {
+        "certifications": [],
+        "grapeVarieties": [],
+        "name": "",
+        "avatar": "/images/avatar.svg",
+        "bottlesProduced": "",
+        "foundedIn": "",
+        "vineyardsSurface": "",
+        "wineCollections": "",
+        "representative": {
+          "name": null,
+          "email": null,
+          "phone": ""
+        },
+        "headquarters": {
+          "lng": null,
+          "lat": null
+        }
+      },
+      "settings": {
+        "autosave": true,
+        "language": "en",
+        "theme": "light"
+      },
+      "isVerified": true,
+      "billing": {
+        "level": "bronze",
+        "plan": "bronze"
+      }
+    },
+    "collections": [],
+    "collectionData": []
+  },
+  {
+    "docId": "qKE1N8JqJTRsHYUqV4ehJiIOerJ2",
+    "docData": {
+      "id": "qKE1N8JqJTRsHYUqV4ehJiIOerJ2",
+      "info": {
+        "certifications": [],
+        "grapeVarieties": [],
+        "name": "",
+        "avatar": "/images/avatar.svg",
+        "bottlesProduced": "",
+        "foundedIn": "",
+        "vineyardsSurface": "",
+        "wineCollections": "",
+        "representative": {
+          "name": null,
+          "email": null,
+          "phone": ""
+        },
+        "headquarters": {
+          "lng": null,
+          "lat": null
+        }
+      },
+      "settings": {
+        "autosave": true,
+        "language": "en",
+        "theme": "light"
+      },
+      "isVerified": true,
+      "billing": {
+        "level": "bronze",
+        "plan": "bronze"
+      }
+    },
+    "collections": [],
+    "collectionData": []
+  },
+  {
+    "docId": "t16ZBiwTcZNbrDu6CU5Z6IJDghH3",
+    "docData": {
+      "id": "t16ZBiwTcZNbrDu6CU5Z6IJDghH3",
+      "info": {
+        "certifications": [],
+        "name": "",
+        "avatar": "/images/avatar.svg",
+        "foundedIn": "",
+        "createdAt": {
+          "_seconds": 1733865643,
+          "_nanoseconds": 5000000
+        },
+        "lastUpdated": {
+          "_seconds": 1733865643,
+          "_nanoseconds": 5000000
+        },
+        "wineCollections": "",
+        "bottlesProduced": "",
+        "vineyardsSurface": "",
+        "grapeVarieties": "",
+        "headquarters": {
+          "lat": "47.01107733788858",
+          "lng": "28.85817396285048"
+        },
+        "representative": {
+          "name": "",
+          "phone": "",
+          "email": ""
+        }
+      },
+      "settings": {
+        "theme": "light",
+        "language": "en",
+        "autosave": true
+      },
+      "isVerified": false,
+      "billing": {
+        "level": "bronze",
+        "plan": "bronze"
+      }
+    },
+    "collections": [],
+    "collectionData": []
+  },
+  {
+    "docId": "t8yyFpl2XDVXiFj07MVtuoxXP2H3",
+    "docData": {
+      "id": "t8yyFpl2XDVXiFj07MVtuoxXP2H3",
+      "settings": {
+        "theme": "light",
+        "language": "en",
+        "autosave": true
+      },
+      "billing": {
+        "level": "bronze"
+      },
+      "isVerified": false,
+      "info": {
+        "certifications": [],
+        "name": "",
+        "foundedIn": "",
+        "wineCollections": "",
+        "bottlesProduced": "",
+        "vineyardsSurface": "",
+        "grapeVarieties": "",
+        "headquarters": {
+          "lng": "28.85817396285048",
+          "lat": "47.01107733788858"
+        },
+        "representative": {
+          "phone": "",
+          "email": "",
+          "name": ""
+        },
+        "avatar": "/images/avatar.svg"
+      }
+    },
+    "collections": [
+      "qrcodes",
+      "wines"
+    ],
+    "collectionData": [
+      {
+        "collection": "qrcodes",
+        "docsData": [
+          {
+            "docId": "75ehBraSGVVQLd2V",
+            "docData": {
+              "uid": "t8yyFpl2XDVXiFj07MVtuoxXP2H3",
+              "wineId": "75ehBraSGVVQLd2V",
+              "imageUrl": "https://firebasestorage.googleapis.com/v0/b/qrcode-wine-app-dev.firebasestorage.app/o/wineries%2Ft8yyFpl2XDVXiFj07MVtuoxXP2H3%2Fwines%2F75ehBraSGVVQLd2V%2Fqr-code.png?alt=media&token=338c21eb-2dbc-4a78-91a1-0debd4fc44df",
+              "staticUrl": "http://localhost:3001/dynamic/75ehBraSGVVQLd2V",
+              "redirectUrl": "http://localhost:3000/explore/wine/75ehBraSGVVQLd2V",
+              "createdAt": {
+                "_seconds": 1739132566,
+                "_nanoseconds": 195000000
+              },
+              "lastUpdated": {
+                "_seconds": 1739132566,
+                "_nanoseconds": 195000000
+              }
+            },
+            "collections": [],
+            "collectionData": []
+          }
+        ]
+      },
+      {
+        "collection": "wines",
+        "docsData": [
+          {
+            "docId": "75ehBraSGVVQLd2V",
+            "docData": {
+              "uid": "t8yyFpl2XDVXiFj07MVtuoxXP2H3",
+              "id": "75ehBraSGVVQLd2V",
+              "createdAt": {
+                "_seconds": 1739139444,
+                "_nanoseconds": 833000000
+              },
+              "makingTechnique": {
+                "fermentationType": [],
+                "yeastType": [],
+                "vegan": null,
+                "organic": null,
+                "bioDynamic": null,
+                "natural": null,
+                "ageingPotential": ""
+              },
+              "terroir": {
+                "soilType": [],
+                "irrigationPractices": [],
+                "vineyardLocation": [],
+                "vineyardName": "",
+                "cdo": "",
+                "sunExposure": "",
+                "elevation": "",
+                "ageOfVines": "",
+                "grapesHarvesing": {
+                  "method": "",
+                  "yieldPerHa": ""
+                }
+              },
+              "likes": 0,
+              "profile": {
+                "aromaProfile": [],
+                "flavorProfile": [],
+                "barrelFermented": [],
+                "awards": [],
+                "color": "",
+                "perceivedAlcohol": "",
+                "sweetness": "Sweet",
+                "acidityLevel": "",
+                "taningLevel": ""
+              },
+              "generalInfo": {
+                "image": "/images/wine.jpg",
+                "wineryName": "Test",
+                "collectionName": "Test Collection",
+                "volume": "750ml",
+                "type": "Red Wine",
+                "grapeVarieties": [
+                  {
+                    "name": "Grape var test",
+                    "percentage": "10",
+                    "vintage": "2020"
+                  }
+                ],
+                "country": "Colombia",
+                "cdo": "",
+                "collectionSize": "10"
+              },
+              "ingredients": {
+                "acidityRegulators": [],
+                "stabilizers": [],
+                "finingAgents": [],
+                "antioxidants": [],
+                "rawMaterial": "Grapes",
+                "alcoholByVolume": "5",
+                "sugar": "10"
+              },
+              "nutritionalInfo": {
+                "energy": "132",
+                "fat": "10",
+                "carbohydrates": "10",
+                "protein": "10",
+                "salt": "5"
+              },
+              "isReadyToPublish": true,
+              "lastUpdated": {
+                "_seconds": 1739139573,
+                "_nanoseconds": 653000000
+              },
+              "publicUrl": "/explore/wine/75ehBraSGVVQLd2V",
+              "status": "published",
+              "qrCode": "https://firebasestorage.googleapis.com/v0/b/qrcode-wine-app-dev.firebasestorage.app/o/wineries%2Ft8yyFpl2XDVXiFj07MVtuoxXP2H3%2Fwines%2F75ehBraSGVVQLd2V%2Fqr-code.png?alt=media&token=338c21eb-2dbc-4a78-91a1-0debd4fc44df"
+            },
+            "collections": [],
+            "collectionData": []
+          },
+          {
+            "docId": "nhHpsjcK7BNj3HcW",
+            "docData": {
+              "uid": "t8yyFpl2XDVXiFj07MVtuoxXP2H3",
+              "id": "nhHpsjcK7BNj3HcW",
+              "qrCode": "",
+              "publicUrl": "",
+              "status": "draft",
+              "isReadyToPublish": false,
+              "createdAt": {
+                "_seconds": 1739140006,
+                "_nanoseconds": 716000000
+              },
+              "generalInfo": {
+                "grapeVarieties": [],
+                "image": "/images/wine.jpg",
+                "wineryName": "",
+                "collectionName": "",
+                "volume": "",
+                "type": "",
+                "country": "",
+                "cdo": "",
+                "collectionSize": ""
+              },
+              "ingredients": {
+                "acidityRegulators": [],
+                "stabilizers": [],
+                "finingAgents": [],
+                "antioxidants": [],
+                "rawMaterial": "",
+                "alcoholByVolume": "",
+                "sugar": ""
+              },
+              "nutritionalInfo": {
+                "energy": "",
+                "fat": "",
+                "carbohydrates": "",
+                "protein": "",
+                "salt": ""
+              },
+              "profile": {
+                "aromaProfile": [],
+                "flavorProfile": [],
+                "barrelFermented": [],
+                "awards": [],
+                "color": "",
+                "perceivedAlcohol": "",
+                "sweetness": "",
+                "acidityLevel": "",
+                "taningLevel": ""
+              },
+              "makingTechnique": {
+                "fermentationType": [],
+                "yeastType": [],
+                "vegan": null,
+                "organic": null,
+                "bioDynamic": null,
+                "natural": null,
+                "ageingPotential": ""
+              },
+              "terroir": {
+                "soilType": [],
+                "irrigationPractices": [],
+                "vineyardLocation": [],
+                "vineyardName": "",
+                "cdo": "",
+                "sunExposure": "",
+                "elevation": "",
+                "ageOfVines": "",
+                "grapesHarvesing": {
+                  "method": "",
+                  "yieldPerHa": ""
+                }
+              },
+              "likes": 0,
+              "lastUpdated": {
+                "_seconds": 1739140096,
+                "_nanoseconds": 848000000
+              }
+            },
+            "collections": [],
+            "collectionData": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "docId": "tpxcI2jWarO9x3M7aqYF0WYvndR2",
+    "docData": {
+      "id": "tpxcI2jWarO9x3M7aqYF0WYvndR2",
+      "info": {
+        "certifications": [],
+        "name": "",
+        "avatar": "/images/avatar.svg",
+        "foundedIn": "",
+        "createdAt": {
+          "_seconds": 1738602852,
+          "_nanoseconds": 168000000
+        },
+        "lastUpdated": {
+          "_seconds": 1738602852,
+          "_nanoseconds": 168000000
+        },
+        "wineCollections": "",
+        "bottlesProduced": "",
+        "vineyardsSurface": "",
+        "grapeVarieties": "",
+        "headquarters": {
+          "lat": "47.01107733788858",
+          "lng": "28.85817396285048"
+        },
+        "representative": {
+          "name": "",
+          "phone": "",
+          "email": ""
+        }
+      },
+      "settings": {
+        "theme": "light",
+        "language": "en",
+        "autosave": true
+      },
+      "billing": {
+        "level": "bronze"
+      },
+      "isVerified": false
+    },
+    "collections": [],
+    "collectionData": []
+  },
+  {
+    "docId": "v3Pqg1f8tSNHFrlmvH4HqlQb2uw2",
+    "docData": {
+      "id": "v3Pqg1f8tSNHFrlmvH4HqlQb2uw2",
+      "info": {
+        "certifications": [],
+        "name": "Crama Ulinici",
+        "avatar": "/images/avatar.svg",
+        "bottlesProduced": "6000",
+        "foundedIn": "2020",
+        "vineyardsSurface": "5",
+        "wineCollections": "5",
+        "grapeVarieties": "6",
+        "representative": {
+          "name": "Nicu",
+          "email": "ulinici_nicu@yahoo.com",
+          "phone": ""
+        },
+        "headquarters": {
+          "lng": 28.077664778622715,
+          "lat": 47.0897292995628
+        }
+      },
+      "settings": {
+        "autosave": true,
+        "language": "en",
+        "theme": "light"
+      },
+      "isVerified": true,
+      "billing": {
+        "level": "bronze",
+        "plan": "bronze"
+      }
+    },
+    "collections": [],
+    "collectionData": []
+  },
+  {
+    "docId": "vAxind56BXWntzFqng0lLilzIQz2",
+    "docData": {
+      "id": "vAxind56BXWntzFqng0lLilzIQz2",
+      "info": {
+        "certifications": [],
+        "name": "ATU Winery",
+        "avatar": "/images/avatar.svg",
+        "bottlesProduced": "150000",
+        "foundedIn": "1977",
+        "vineyardsSurface": "5",
+        "wineCollections": "19",
+        "grapeVarieties": "7",
+        "representative": {
+          "name": "",
+          "email": "",
+          "phone": ""
+        },
+        "headquarters": {
+          "lng": 0,
+          "lat": 0
+        }
+      },
+      "settings": {
+        "autosave": true,
+        "language": "en",
+        "theme": "light"
+      },
+      "isVerified": true,
+      "billing": {
+        "level": "bronze",
+        "plan": "bronze"
+      }
+    },
+    "collections": [
+      "qrcodes",
+      "wines"
+    ],
+    "collectionData": [
+      {
+        "collection": "qrcodes",
+        "docsData": [
+          {
+            "docId": "ARQ2Q-1716910554998",
+            "docData": {
+              "uid": "vAxind56BXWntzFqng0lLilzIQz2",
+              "wineId": "ARQ2Q-1716910554998",
+              "imageUrl": "https://firebasestorage.googleapis.com/v0/b/wine-app-8c2f9.appspot.com/o/images%2FvAxind56BXWntzFqng0lLilzIQz2%2FARQ2Q-1716910554998.png?alt=media&token=e1b1dc66-7e0e-451b-ba4c-5202491628d7",
+              "staticUrl": "http://localhost:3001/dynamic/ARQ2Q-1716910554998",
+              "redirectUrl": "http://localhost:3000/explore/wine/ARQ2Q-1716910554998",
+              "createdAt": {
+                "_seconds": 1733428256,
+                "_nanoseconds": 824000000
+              },
+              "lastUpdated": {
+                "_seconds": 1733428256,
+                "_nanoseconds": 824000000
+              }
+            },
+            "collections": [],
+            "collectionData": []
+          }
+        ]
+      },
+      {
+        "collection": "wines",
+        "docsData": [
+          {
+            "docId": "ARQ2Q-1716910554998",
+            "docData": {
+              "uid": "vAxind56BXWntzFqng0lLilzIQz2",
+              "id": "ARQ2Q-1716910554998",
+              "qrCode": "https://firebasestorage.googleapis.com/v0/b/wine-app-8c2f9.appspot.com/o/images%2FvAxind56BXWntzFqng0lLilzIQz2%2FARQ2Q-1716910554998.png?alt=media&token=e1b1dc66-7e0e-451b-ba4c-5202491628d7",
+              "publicUrl": "/explore/wine/ARQ2Q-1716910554998",
+              "status": "published",
+              "isReadyToPublish": false,
+              "createdAt": {
+                "seconds": 1733428186,
+                "nanoseconds": 175000000
+              },
+              "lastUpdated": {
+                "seconds": 1733428186,
+                "nanoseconds": 175000000
+              },
+              "nutritionalInfo": {
+                "energy": "",
+                "fat": "0",
+                "carbohydrates": "3.5",
+                "protein": "0",
+                "salt": "0"
+              },
+              "makingTechnique": {
+                "fermentationType": [],
+                "yeastType": [],
+                "vegan": null,
+                "organic": null,
+                "bioDynamic": null,
+                "natural": null,
+                "ageingPotential": ""
+              },
+              "terroir": {
+                "soilType": [],
+                "irrigationPractices": [],
+                "vineyardLocation": [],
+                "vineyardName": "",
+                "cdo": "",
+                "sunExposure": "",
+                "elevation": "",
+                "ageOfVines": "",
+                "grapesHarvesing": {
+                  "method": "",
+                  "yieldPerHa": ""
+                }
+              },
+              "likes": 0,
+              "profile": {
+                "aromaProfile": [],
+                "flavorProfile": [],
+                "barrelFermented": [],
+                "awards": [],
+                "color": "",
+                "perceivedAlcohol": "",
+                "acidityLevel": "",
+                "taningLevel": "",
+                "sweetness": "Dry"
+              },
+              "ingredients": {
+                "acidityRegulators": [],
+                "stabilizers": [],
+                "finingAgents": [],
+                "antioxidants": [],
+                "alcoholByVolume": "13.5",
+                "sugar": "3.5",
+                "rawMaterial": "Grapes"
+              },
+              "generalInfo": {
+                "grapeVarieties": [],
+                "image": "/images/wine.jpg",
+                "wineryName": "ATU Winery",
+                "collectionName": "Viorica",
+                "volume": "750ml",
+                "country": "Moldova (the Republic of)",
+                "cdo": "",
+                "collectionSize": "10000",
+                "type": "White Wine"
+              }
+            },
+            "collections": [],
+            "collectionData": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "docId": "vMyMzultf8eBOVoF3ekMCVtOaXD2",
+    "docData": {
+      "id": "vMyMzultf8eBOVoF3ekMCVtOaXD2",
+      "info": {
+        "certifications": [],
+        "name": "DIVUS",
+        "avatar": "/images/avatar.svg",
+        "bottlesProduced": "100000",
+        "foundedIn": "2020",
+        "vineyardsSurface": "15",
+        "wineCollections": "20",
+        "grapeVarieties": "6",
+        "representative": {
+          "name": "Stirbu Andrei ",
+          "email": "andrei.stirbu@divus.wine",
+          "phone": ""
+        },
+        "headquarters": {
+          "lng": 0,
+          "lat": 0
+        }
+      },
+      "settings": {
+        "autosave": true,
+        "language": "en",
+        "theme": "light"
+      },
+      "isVerified": true,
+      "billing": {
+        "level": "silver",
+        "plan": "silver"
+      }
+    },
+    "collections": [
+      "qrcodes",
+      "wines"
+    ],
+    "collectionData": [
+      {
+        "collection": "qrcodes",
+        "docsData": [
+          {
+            "docId": "P2vOB-1729752085645",
+            "docData": {
+              "uid": "vMyMzultf8eBOVoF3ekMCVtOaXD2",
+              "wineId": "P2vOB-1729752085645",
+              "imageUrl": "https://firebasestorage.googleapis.com/v0/b/wine-app-8c2f9.appspot.com/o/images%2FvMyMzultf8eBOVoF3ekMCVtOaXD2%2FP2vOB-1729752085645.png?alt=media&token=cff3b255-6a1f-4fd3-b25c-23c3fa4dc087",
+              "staticUrl": "http://localhost:3001/dynamic/P2vOB-1729752085645",
+              "redirectUrl": "http://localhost:3000/explore/wine/P2vOB-1729752085645",
+              "createdAt": {
+                "_seconds": 1733428260,
+                "_nanoseconds": 718000000
+              },
+              "lastUpdated": {
+                "_seconds": 1733428260,
+                "_nanoseconds": 718000000
+              }
+            },
+            "collections": [],
+            "collectionData": []
+          },
+          {
+            "docId": "jsHu7-1730274295841",
+            "docData": {
+              "uid": "vMyMzultf8eBOVoF3ekMCVtOaXD2",
+              "wineId": "jsHu7-1730274295841",
+              "imageUrl": "https://firebasestorage.googleapis.com/v0/b/wine-app-8c2f9.appspot.com/o/images%2FvMyMzultf8eBOVoF3ekMCVtOaXD2%2FjsHu7-1730274295841.png?alt=media&token=aa990429-81f1-4548-8a5b-0b727349fa0f",
+              "staticUrl": "http://localhost:3001/dynamic/jsHu7-1730274295841",
+              "redirectUrl": "http://localhost:3000/explore/wine/jsHu7-1730274295841",
+              "createdAt": {
+                "_seconds": 1733428260,
+                "_nanoseconds": 719000000
+              },
+              "lastUpdated": {
+                "_seconds": 1733428260,
+                "_nanoseconds": 719000000
+              }
+            },
+            "collections": [],
+            "collectionData": []
+          },
+          {
+            "docId": "pLhUB-1730878844549",
+            "docData": {
+              "uid": "vMyMzultf8eBOVoF3ekMCVtOaXD2",
+              "wineId": "pLhUB-1730878844549",
+              "imageUrl": "https://firebasestorage.googleapis.com/v0/b/wine-app-8c2f9.appspot.com/o/images%2FvMyMzultf8eBOVoF3ekMCVtOaXD2%2FpLhUB-1730878844549.png?alt=media&token=295b9402-3f22-468b-9805-130614e16383",
+              "staticUrl": "http://localhost:3001/dynamic/pLhUB-1730878844549",
+              "redirectUrl": "http://localhost:3000/explore/wine/pLhUB-1730878844549",
+              "createdAt": {
+                "_seconds": 1733428260,
+                "_nanoseconds": 720000000
+              },
+              "lastUpdated": {
+                "_seconds": 1733428260,
+                "_nanoseconds": 720000000
+              }
+            },
+            "collections": [],
+            "collectionData": []
+          },
+          {
+            "docId": "yl5IK-1730705148818",
+            "docData": {
+              "uid": "vMyMzultf8eBOVoF3ekMCVtOaXD2",
+              "wineId": "yl5IK-1730705148818",
+              "imageUrl": "https://firebasestorage.googleapis.com/v0/b/wine-app-8c2f9.appspot.com/o/images%2FvMyMzultf8eBOVoF3ekMCVtOaXD2%2Fyl5IK-1730705148818.png?alt=media&token=e00caa65-f277-4a84-ba21-e775fd295716",
+              "staticUrl": "http://localhost:3001/dynamic/yl5IK-1730705148818",
+              "redirectUrl": "http://localhost:3000/explore/wine/yl5IK-1730705148818",
+              "createdAt": {
+                "_seconds": 1733428260,
+                "_nanoseconds": 720000000
+              },
+              "lastUpdated": {
+                "_seconds": 1733428260,
+                "_nanoseconds": 720000000
+              }
+            },
+            "collections": [],
+            "collectionData": []
+          },
+          {
+            "docId": "zDOUA-1729663333770",
+            "docData": {
+              "uid": "vMyMzultf8eBOVoF3ekMCVtOaXD2",
+              "wineId": "zDOUA-1729663333770",
+              "imageUrl": "https://firebasestorage.googleapis.com/v0/b/wine-app-8c2f9.appspot.com/o/images%2FvMyMzultf8eBOVoF3ekMCVtOaXD2%2FzDOUA-1729663333770.png?alt=media&token=fa1f20f4-e98f-45f6-9125-65991f97449a",
+              "staticUrl": "http://localhost:3001/dynamic/zDOUA-1729663333770",
+              "redirectUrl": "http://localhost:3000/explore/wine/zDOUA-1729663333770",
+              "createdAt": {
+                "_seconds": 1733428260,
+                "_nanoseconds": 582000000
+              },
+              "lastUpdated": {
+                "_seconds": 1733428260,
+                "_nanoseconds": 582000000
+              }
+            },
+            "collections": [],
+            "collectionData": []
+          }
+        ]
+      },
+      {
+        "collection": "wines",
+        "docsData": [
+          {
+            "docId": "P2vOB-1729752085645",
+            "docData": {
+              "uid": "vMyMzultf8eBOVoF3ekMCVtOaXD2",
+              "id": "P2vOB-1729752085645",
+              "qrCode": "https://firebasestorage.googleapis.com/v0/b/wine-app-8c2f9.appspot.com/o/images%2FvMyMzultf8eBOVoF3ekMCVtOaXD2%2FP2vOB-1729752085645.png?alt=media&token=cff3b255-6a1f-4fd3-b25c-23c3fa4dc087",
+              "publicUrl": "/explore/wine/P2vOB-1729752085645",
+              "status": "published",
+              "isReadyToPublish": false,
+              "createdAt": {
+                "seconds": 1733428186,
+                "nanoseconds": 175000000
+              },
+              "lastUpdated": {
+                "seconds": 1733428186,
+                "nanoseconds": 175000000
+              },
+              "nutritionalInfo": {
+                "energy": "",
+                "fat": "0",
+                "carbohydrates": "2",
+                "protein": "0",
+                "salt": "0"
+              },
+              "makingTechnique": {
+                "fermentationType": [],
+                "yeastType": [],
+                "vegan": null,
+                "organic": null,
+                "bioDynamic": null,
+                "natural": null,
+                "ageingPotential": ""
+              },
+              "terroir": {
+                "soilType": [],
+                "irrigationPractices": [],
+                "vineyardLocation": [],
+                "vineyardName": "",
+                "cdo": "",
+                "sunExposure": "",
+                "elevation": "",
+                "ageOfVines": "",
+                "grapesHarvesing": {
+                  "method": "",
+                  "yieldPerHa": ""
+                }
+              },
+              "likes": 0,
+              "generalInfo": {
+                "grapeVarieties": [],
+                "image": "/images/wine.jpg",
+                "wineryName": "DIVUS",
+                "collectionName": "DOMENIILE VORNICENI \"TREI MANDRE\"",
+                "volume": "750ml",
+                "country": "Moldova (the Republic of)",
+                "cdo": "",
+                "collectionSize": "",
+                "type": "White Wine"
+              },
+              "ingredients": {
+                "acidityRegulators": [],
+                "alcoholByVolume": "12.5",
+                "sugar": "2",
+                "stabilizers": [
+                  {
+                    "name": "TOTALSTAB"
+                  }
+                ],
+                "finingAgents": [
+                  {
+                    "name": "BENTONITA"
+                  }
+                ],
+                "antioxidants": [
+                  {
+                    "name": "ACID ASCORBIC"
+                  }
+                ],
+                "rawMaterial": "Grapes"
+              },
+              "profile": {
+                "aromaProfile": [],
+                "flavorProfile": [],
+                "barrelFermented": [],
+                "awards": [],
+                "color": "",
+                "perceivedAlcohol": "",
+                "acidityLevel": "",
+                "taningLevel": "",
+                "sweetness": "Dry"
+              }
+            },
+            "collections": [],
+            "collectionData": []
+          },
+          {
+            "docId": "jsHu7-1730274295841",
+            "docData": {
+              "uid": "vMyMzultf8eBOVoF3ekMCVtOaXD2",
+              "id": "jsHu7-1730274295841",
+              "qrCode": "https://firebasestorage.googleapis.com/v0/b/wine-app-8c2f9.appspot.com/o/images%2FvMyMzultf8eBOVoF3ekMCVtOaXD2%2FjsHu7-1730274295841.png?alt=media&token=aa990429-81f1-4548-8a5b-0b727349fa0f",
+              "publicUrl": "/explore/wine/jsHu7-1730274295841",
+              "status": "published",
+              "isReadyToPublish": false,
+              "createdAt": {
+                "seconds": 1733428186,
+                "nanoseconds": 175000000
+              },
+              "lastUpdated": {
+                "seconds": 1733428186,
+                "nanoseconds": 175000000
+              },
+              "nutritionalInfo": {
+                "energy": "",
+                "fat": "0",
+                "carbohydrates": "2",
+                "protein": "0",
+                "salt": "0"
+              },
+              "makingTechnique": {
+                "fermentationType": [],
+                "yeastType": [],
+                "vegan": null,
+                "organic": null,
+                "bioDynamic": null,
+                "natural": null,
+                "ageingPotential": ""
+              },
+              "terroir": {
+                "soilType": [],
+                "irrigationPractices": [],
+                "vineyardLocation": [],
+                "vineyardName": "",
+                "cdo": "",
+                "sunExposure": "",
+                "elevation": "",
+                "ageOfVines": "",
+                "grapesHarvesing": {
+                  "method": "",
+                  "yieldPerHa": ""
+                }
+              },
+              "likes": 0,
+              "ingredients": {
+                "acidityRegulators": [],
+                "stabilizers": [],
+                "finingAgents": [],
+                "antioxidants": [],
+                "alcoholByVolume": "12",
+                "sugar": "2",
+                "rawMaterial": "Grapes"
+              },
+              "generalInfo": {
+                "grapeVarieties": [],
+                "image": "/images/wine.jpg",
+                "wineryName": "DIVUS",
+                "collectionName": "Floricica DOMENIILE VORNICENI",
+                "volume": "750ml",
+                "country": "Moldova (the Republic of)",
+                "cdo": "",
+                "collectionSize": "",
+                "type": "White Wine"
+              },
+              "profile": {
+                "aromaProfile": [],
+                "flavorProfile": [],
+                "barrelFermented": [],
+                "awards": [],
+                "color": "",
+                "perceivedAlcohol": "",
+                "acidityLevel": "",
+                "taningLevel": "",
+                "sweetness": "Dry"
+              }
+            },
+            "collections": [],
+            "collectionData": []
+          },
+          {
+            "docId": "pLhUB-1730878844549",
+            "docData": {
+              "uid": "vMyMzultf8eBOVoF3ekMCVtOaXD2",
+              "id": "pLhUB-1730878844549",
+              "qrCode": "https://firebasestorage.googleapis.com/v0/b/wine-app-8c2f9.appspot.com/o/images%2FvMyMzultf8eBOVoF3ekMCVtOaXD2%2FpLhUB-1730878844549.png?alt=media&token=295b9402-3f22-468b-9805-130614e16383",
+              "publicUrl": "/explore/wine/pLhUB-1730878844549",
+              "status": "published",
+              "isReadyToPublish": false,
+              "createdAt": {
+                "seconds": 1733428186,
+                "nanoseconds": 176000000
+              },
+              "lastUpdated": {
+                "seconds": 1733428186,
+                "nanoseconds": 176000000
+              },
+              "nutritionalInfo": {
+                "energy": "",
+                "fat": "0",
+                "carbohydrates": "2",
+                "protein": "0",
+                "salt": "0"
+              },
+              "makingTechnique": {
+                "fermentationType": [],
+                "yeastType": [],
+                "vegan": null,
+                "organic": null,
+                "bioDynamic": null,
+                "natural": null,
+                "ageingPotential": ""
+              },
+              "terroir": {
+                "soilType": [],
+                "irrigationPractices": [],
+                "vineyardLocation": [],
+                "vineyardName": "",
+                "cdo": "",
+                "sunExposure": "",
+                "elevation": "",
+                "ageOfVines": "",
+                "grapesHarvesing": {
+                  "method": "",
+                  "yieldPerHa": ""
+                }
+              },
+              "likes": 0,
+              "generalInfo": {
+                "image": "/images/wine.jpg",
+                "wineryName": "DIVUS",
+                "collectionName": "Brut Natur DIVUS",
+                "volume": "750ml",
+                "grapeVarieties": [
+                  {
+                    "name": "Feteasca Alba ",
+                    "percentage": "50",
+                    "vintage": "2020"
+                  },
+                  {
+                    "name": "Feteasca Regala ",
+                    "percentage": "50",
+                    "vintage": "2020"
+                  }
+                ],
+                "country": "Moldova (the Republic of)",
+                "cdo": "",
+                "collectionSize": "",
+                "type": "Sparkling Wine"
+              },
+              "ingredients": {
+                "acidityRegulators": [],
+                "stabilizers": [],
+                "finingAgents": [],
+                "antioxidants": [],
+                "alcoholByVolume": "12.5",
+                "sugar": "2",
+                "rawMaterial": "Grapes"
+              },
+              "profile": {
+                "aromaProfile": [],
+                "flavorProfile": [],
+                "barrelFermented": [],
+                "awards": [],
+                "color": "",
+                "perceivedAlcohol": "",
+                "acidityLevel": "",
+                "taningLevel": "",
+                "sweetness": "Brut Nature"
+              }
+            },
+            "collections": [],
+            "collectionData": []
+          },
+          {
+            "docId": "yl5IK-1730705148818",
+            "docData": {
+              "uid": "vMyMzultf8eBOVoF3ekMCVtOaXD2",
+              "id": "yl5IK-1730705148818",
+              "qrCode": "https://firebasestorage.googleapis.com/v0/b/wine-app-8c2f9.appspot.com/o/images%2FvMyMzultf8eBOVoF3ekMCVtOaXD2%2Fyl5IK-1730705148818.png?alt=media&token=e00caa65-f277-4a84-ba21-e775fd295716",
+              "publicUrl": "/explore/wine/yl5IK-1730705148818",
+              "status": "published",
+              "isReadyToPublish": false,
+              "createdAt": {
+                "seconds": 1733428186,
+                "nanoseconds": 175000000
+              },
+              "lastUpdated": {
+                "seconds": 1733428186,
+                "nanoseconds": 175000000
+              },
+              "nutritionalInfo": {
+                "energy": "",
+                "fat": "0",
+                "carbohydrates": "2.5",
+                "protein": "0",
+                "salt": "0"
+              },
+              "makingTechnique": {
+                "fermentationType": [],
+                "yeastType": [],
+                "vegan": null,
+                "organic": null,
+                "bioDynamic": null,
+                "natural": null,
+                "ageingPotential": ""
+              },
+              "terroir": {
+                "soilType": [],
+                "irrigationPractices": [],
+                "vineyardLocation": [],
+                "vineyardName": "",
+                "cdo": "",
+                "sunExposure": "",
+                "elevation": "",
+                "ageOfVines": "",
+                "grapesHarvesing": {
+                  "method": "",
+                  "yieldPerHa": ""
+                }
+              },
+              "likes": 0,
+              "generalInfo": {
+                "image": "/images/wine.jpg",
+                "wineryName": "DIVUS",
+                "collectionName": "iELE DOMENIILE VORNICENI",
+                "volume": "750ml",
+                "grapeVarieties": [
+                  {
+                    "name": "Sauvignon Blanc",
+                    "percentage": "90",
+                    "vintage": "2022"
+                  },
+                  {
+                    "name": "Floricica",
+                    "percentage": "10",
+                    "vintage": "2022"
+                  }
+                ],
+                "country": "Moldova (the Republic of)",
+                "cdo": "",
+                "collectionSize": "",
+                "type": "White Wine"
+              },
+              "ingredients": {
+                "acidityRegulators": [],
+                "stabilizers": [],
+                "finingAgents": [],
+                "antioxidants": [],
+                "alcoholByVolume": "12",
+                "sugar": "2.5",
+                "rawMaterial": "Grapes"
+              },
+              "profile": {
+                "aromaProfile": [],
+                "flavorProfile": [],
+                "barrelFermented": [],
+                "awards": [],
+                "color": "",
+                "perceivedAlcohol": "",
+                "acidityLevel": "",
+                "taningLevel": "",
+                "sweetness": "Dry"
+              }
+            },
+            "collections": [],
+            "collectionData": []
+          },
+          {
+            "docId": "zDOUA-1729663333770",
+            "docData": {
+              "uid": "vMyMzultf8eBOVoF3ekMCVtOaXD2",
+              "id": "zDOUA-1729663333770",
+              "qrCode": "https://firebasestorage.googleapis.com/v0/b/wine-app-8c2f9.appspot.com/o/images%2FvMyMzultf8eBOVoF3ekMCVtOaXD2%2FzDOUA-1729663333770.png?alt=media&token=fa1f20f4-e98f-45f6-9125-65991f97449a",
+              "publicUrl": "/explore/wine/zDOUA-1729663333770",
+              "status": "published",
+              "isReadyToPublish": false,
+              "createdAt": {
+                "seconds": 1733428186,
+                "nanoseconds": 175000000
+              },
+              "lastUpdated": {
+                "seconds": 1733428186,
+                "nanoseconds": 175000000
+              },
+              "nutritionalInfo": {
+                "energy": "",
+                "fat": "0",
+                "carbohydrates": "2.0",
+                "protein": "0",
+                "salt": "0"
+              },
+              "makingTechnique": {
+                "fermentationType": [],
+                "yeastType": [],
+                "vegan": null,
+                "organic": null,
+                "bioDynamic": null,
+                "natural": null,
+                "ageingPotential": ""
+              },
+              "terroir": {
+                "soilType": [],
+                "irrigationPractices": [],
+                "vineyardLocation": [],
+                "vineyardName": "",
+                "cdo": "",
+                "sunExposure": "",
+                "elevation": "",
+                "ageOfVines": "",
+                "grapesHarvesing": {
+                  "method": "",
+                  "yieldPerHa": ""
+                }
+              },
+              "likes": 0,
+              "generalInfo": {
+                "image": "/images/wine.jpg",
+                "wineryName": "DIVUS",
+                "collectionName": "DOMENIILE VORNICENI \"VIORICA\"",
+                "volume": "750ml",
+                "grapeVarieties": [
+                  {
+                    "name": "VIORICA ",
+                    "percentage": "100",
+                    "vintage": "2024"
+                  }
+                ],
+                "country": "Moldova (the Republic of)",
+                "cdo": "",
+                "collectionSize": "",
+                "type": "White Wine"
+              },
+              "ingredients": {
+                "acidityRegulators": [],
+                "alcoholByVolume": "13",
+                "sugar": "2.0",
+                "stabilizers": [
+                  {
+                    "name": "TOTALSTAB"
+                  }
+                ],
+                "finingAgents": [
+                  {
+                    "name": "BENTONITA"
+                  }
+                ],
+                "antioxidants": [
+                  {
+                    "name": "ACID ASCORBIC"
+                  }
+                ],
+                "rawMaterial": "Grapes"
+              },
+              "profile": {
+                "aromaProfile": [],
+                "flavorProfile": [],
+                "barrelFermented": [],
+                "awards": [],
+                "color": "",
+                "perceivedAlcohol": "",
+                "acidityLevel": "",
+                "taningLevel": "",
+                "sweetness": "Dry"
+              }
+            },
+            "collections": [],
+            "collectionData": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "docId": "vXNTg3TcLsetvrTcUNml49i0dW43",
+    "docData": {
+      "id": "vXNTg3TcLsetvrTcUNml49i0dW43",
+      "info": {
+        "certifications": [],
+        "name": "",
+        "avatar": "/images/avatar.svg",
+        "foundedIn": "",
+        "createdAt": {
+          "_seconds": 1739497608,
+          "_nanoseconds": 646000000
+        },
+        "lastUpdated": {
+          "_seconds": 1739497608,
+          "_nanoseconds": 646000000
+        },
+        "wineCollections": "",
+        "bottlesProduced": "",
+        "vineyardsSurface": "",
+        "grapeVarieties": "",
+        "headquarters": {
+          "lat": "47.01107733788858",
+          "lng": "28.85817396285048"
+        },
+        "representative": {
+          "name": "",
+          "phone": "",
+          "email": ""
+        }
+      },
+      "settings": {
+        "theme": "light",
+        "language": "en",
+        "autosave": true
+      },
+      "billing": {
+        "level": "bronze"
+      },
+      "isVerified": false
+    },
+    "collections": [
+      "qrcodes",
+      "wines"
+    ],
+    "collectionData": [
+      {
+        "collection": "qrcodes",
+        "docsData": [
+          {
+            "docId": "TQJcWRn58cXImogg",
+            "docData": {
+              "uid": "vXNTg3TcLsetvrTcUNml49i0dW43",
+              "wineId": "TQJcWRn58cXImogg",
+              "imageUrl": "https://firebasestorage.googleapis.com/v0/b/qrcode-wine-app-dev.firebasestorage.app/o/wineries%2FvXNTg3TcLsetvrTcUNml49i0dW43%2Fwines%2FTQJcWRn58cXImogg%2Fqr-code.png?alt=media&token=b4d5bccc-7c06-4e3b-a3d1-745deab44034",
+              "staticUrl": "/explore/wine/TQJcWRn58cXImogg",
+              "redirectUrl": "https://staging.tracecork.com/explore/wine/TQJcWRn58cXImogg",
+              "createdAt": {
+                "_seconds": 1739755490,
+                "_nanoseconds": 367000000
+              },
+              "lastUpdated": {
+                "_seconds": 1739755490,
+                "_nanoseconds": 367000000
+              }
+            },
+            "collections": [],
+            "collectionData": []
+          },
+          {
+            "docId": "z2N7RRTfNA8O9XkK",
+            "docData": {
+              "uid": "vXNTg3TcLsetvrTcUNml49i0dW43",
+              "wineId": "z2N7RRTfNA8O9XkK",
+              "imageUrl": "https://firebasestorage.googleapis.com/v0/b/qrcode-wine-app-dev.firebasestorage.app/o/wineries%2FvXNTg3TcLsetvrTcUNml49i0dW43%2Fwines%2Fz2N7RRTfNA8O9XkK%2Fqr-code.png?alt=media&token=cca46fa7-f2e1-4546-9827-7d5b2df49a52",
+              "staticUrl": "https://staging-qrcodes.tracecork.com/explore/wine/z2N7RRTfNA8O9XkK",
+              "redirectUrl": "https://staging.tracecork.com/explore/wine/z2N7RRTfNA8O9XkK",
+              "createdAt": {
+                "_seconds": 1739757393,
+                "_nanoseconds": 307000000
+              },
+              "lastUpdated": {
+                "_seconds": 1739757393,
+                "_nanoseconds": 307000000
+              }
+            },
+            "collections": [],
+            "collectionData": []
+          }
+        ]
+      },
+      {
+        "collection": "wines",
+        "docsData": [
+          {
+            "docId": "TQJcWRn58cXImogg",
+            "docData": {
+              "uid": "vXNTg3TcLsetvrTcUNml49i0dW43",
+              "id": "TQJcWRn58cXImogg",
+              "createdAt": {
+                "_seconds": 1739741003,
+                "_nanoseconds": 884000000
+              },
+              "makingTechnique": {
+                "fermentationType": [],
+                "yeastType": [],
+                "vegan": null,
+                "organic": null,
+                "bioDynamic": null,
+                "natural": null,
+                "ageingPotential": ""
+              },
+              "terroir": {
+                "soilType": [],
+                "irrigationPractices": [],
+                "vineyardLocation": [],
+                "vineyardName": "",
+                "cdo": "",
+                "sunExposure": "",
+                "elevation": "",
+                "ageOfVines": "",
+                "grapesHarvesing": {
+                  "method": "",
+                  "yieldPerHa": ""
+                }
+              },
+              "likes": 0,
+              "nutritionalInfo": {
+                "salt": "0.1",
+                "fat": "2",
+                "energy": "5",
+                "carbohydrates": "0.3",
+                "protein": "0.1"
+              },
+              "isReadyToPublish": true,
+              "qrCode": "https://firebasestorage.googleapis.com/v0/b/qrcode-wine-app-dev.firebasestorage.app/o/wineries%2FvXNTg3TcLsetvrTcUNml49i0dW43%2Fwines%2FTQJcWRn58cXImogg%2Fqr-code.png?alt=media&token=b4d5bccc-7c06-4e3b-a3d1-745deab44034",
+              "status": "draft",
+              "publicUrl": "/explore/wine/TQJcWRn58cXImogg",
+              "generalInfo": {
+                "image": "/images/wine.jpg",
+                "cdo": "",
+                "type": "red-wine",
+                "country": "Barbados",
+                "grapeVarieties": [
+                  {
+                    "name": "Indigo Bay",
+                    "vintage": "2018",
+                    "percentage": "2"
+                  }
+                ],
+                "volume": "1000ml",
+                "collectionSize": "",
+                "wineryName": "Island Breeze",
+                "collectionName": "Caribbean Heritage Collection"
+              },
+              "profile": {
+                "awards": [],
+                "barrelFermented": [],
+                "flavorProfile": [],
+                "aromaProfile": [],
+                "sweetness": "other-medium-sweet",
+                "perceivedAlcohol": "",
+                "acidityLevel": "",
+                "taningLevel": "",
+                "color": ""
+              },
+              "ingredients": {
+                "stabilizers": [],
+                "antioxidants": [],
+                "acidityRegulators": [],
+                "finingAgents": [],
+                "alcoholByVolume": "0.2",
+                "rawMaterial": "grape-must",
+                "sugar": "0.3"
+              },
+              "lastUpdated": {
+                "_seconds": 1739906007,
+                "_nanoseconds": 921000000
+              }
+            },
+            "collections": [],
+            "collectionData": []
+          },
+          {
+            "docId": "z2N7RRTfNA8O9XkK",
+            "docData": {
+              "uid": "vXNTg3TcLsetvrTcUNml49i0dW43",
+              "id": "z2N7RRTfNA8O9XkK",
+              "createdAt": {
+                "_seconds": 1739757459,
+                "_nanoseconds": 149000000
+              },
+              "makingTechnique": {
+                "fermentationType": [],
+                "yeastType": [],
+                "vegan": null,
+                "organic": null,
+                "bioDynamic": null,
+                "natural": null,
+                "ageingPotential": ""
+              },
+              "terroir": {
+                "soilType": [],
+                "irrigationPractices": [],
+                "vineyardLocation": [],
+                "vineyardName": "",
+                "cdo": "",
+                "sunExposure": "",
+                "elevation": "",
+                "ageOfVines": "",
+                "grapesHarvesing": {
+                  "method": "",
+                  "yieldPerHa": ""
+                }
+              },
+              "likes": 0,
+              "isReadyToPublish": true,
+              "nutritionalInfo": {
+                "energy": "5",
+                "fat": "9",
+                "carbohydrates": "0.5",
+                "protein": "0.4",
+                "salt": "0.6"
+              },
+              "publicUrl": "/explore/wine/z2N7RRTfNA8O9XkK",
+              "qrCode": "https://firebasestorage.googleapis.com/v0/b/qrcode-wine-app-dev.firebasestorage.app/o/wineries%2FvXNTg3TcLsetvrTcUNml49i0dW43%2Fwines%2Fz2N7RRTfNA8O9XkK%2Fqr-code.png?alt=media&token=cca46fa7-f2e1-4546-9827-7d5b2df49a52",
+              "generalInfo": {
+                "country": "Barbados",
+                "collectionSize": "10",
+                "image": "/images/wine.jpg",
+                "type": "sparkling-wine",
+                "collectionName": "Tropical Terroir",
+                "cdo": "",
+                "wineryName": "Coral Vine",
+                "volume": "2000ml",
+                "grapeVarieties": [
+                  {
+                    "percentage": "6",
+                    "name": "Sugarcane Blanc",
+                    "vintage": "2018"
+                  }
+                ]
+              },
+              "profile": {
+                "awards": [],
+                "aromaProfile": [],
+                "flavorProfile": [],
+                "barrelFermented": [],
+                "sweetness": "other-medium-sweet",
+                "perceivedAlcohol": "",
+                "acidityLevel": "",
+                "color": "",
+                "taningLevel": ""
+              },
+              "ingredients": {
+                "acidityRegulators": [],
+                "stabilizers": [],
+                "finingAgents": [],
+                "antioxidants": [],
+                "rawMaterial": "rectified-concentrated-grape-must",
+                "alcoholByVolume": "0.2",
+                "sugar": "0.3"
+              },
+              "lastUpdated": {
+                "_seconds": 1739906565,
+                "_nanoseconds": 341000000
+              },
+              "status": "published"
+            },
+            "collections": [],
+            "collectionData": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "docId": "vZyxrUDPQDMEpEVrwaJtm3iq7a53",
+    "docData": {
+      "id": "vZyxrUDPQDMEpEVrwaJtm3iq7a53",
+      "info": {
+        "certifications": [],
+        "name": "Poiana Codrilor",
+        "avatar": "/images/avatar.svg",
+        "bottlesProduced": "50000",
+        "foundedIn": "2003",
+        "vineyardsSurface": "35",
+        "wineCollections": "15",
+        "grapeVarieties": "14",
+        "representative": {
+          "name": "Sergiu ",
+          "email": "ssuvac@yahoo.com",
+          "phone": ""
+        },
+        "headquarters": {
+          "lng": "28,51280 E",
+          "lat": "47,05533 N"
+        }
+      },
+      "settings": {
+        "autosave": true,
+        "language": "en",
+        "theme": "light"
+      },
+      "isVerified": true,
+      "billing": {
+        "level": "silver",
+        "plan": "silver"
+      }
+    },
+    "collections": [
+      "qrcodes",
+      "wines"
+    ],
+    "collectionData": [
+      {
+        "collection": "qrcodes",
+        "docsData": [
+          {
+            "docId": "bF0jz-1719589081594",
+            "docData": {
+              "uid": "vZyxrUDPQDMEpEVrwaJtm3iq7a53",
+              "wineId": "bF0jz-1719589081594",
+              "imageUrl": "https://firebasestorage.googleapis.com/v0/b/wine-app-8c2f9.appspot.com/o/images%2FvZyxrUDPQDMEpEVrwaJtm3iq7a53%2Fwines%2FbF0jz-1719589081594%2Fqrcode.png?alt=media&token=0148b3cf-5d17-4470-962c-9fd2201492e1",
+              "staticUrl": "http://localhost:3001/dynamic/bF0jz-1719589081594",
+              "redirectUrl": "http://localhost:3000/explore/wine/bF0jz-1719589081594",
+              "createdAt": {
+                "_seconds": 1733428264,
+                "_nanoseconds": 758000000
+              },
+              "lastUpdated": {
+                "_seconds": 1733428264,
+                "_nanoseconds": 758000000
+              }
+            },
+            "collections": [],
+            "collectionData": []
+          },
+          {
+            "docId": "wxe2k-1719589517077",
+            "docData": {
+              "uid": "vZyxrUDPQDMEpEVrwaJtm3iq7a53",
+              "wineId": "wxe2k-1719589517077",
+              "imageUrl": "https://firebasestorage.googleapis.com/v0/b/wine-app-8c2f9.appspot.com/o/images%2FvZyxrUDPQDMEpEVrwaJtm3iq7a53%2Fwines%2Fwxe2k-1719589517077%2Fqrcode.png?alt=media&token=c85f90aa-c4f2-4115-a8c4-7b24f3e27c59",
+              "staticUrl": "http://localhost:3001/dynamic/wxe2k-1719589517077",
+              "redirectUrl": "http://localhost:3000/explore/wine/wxe2k-1719589517077",
+              "createdAt": {
+                "_seconds": 1733428264,
+                "_nanoseconds": 893000000
+              },
+              "lastUpdated": {
+                "_seconds": 1733428264,
+                "_nanoseconds": 893000000
+              }
+            },
+            "collections": [],
+            "collectionData": []
+          }
+        ]
+      },
+      {
+        "collection": "wines",
+        "docsData": [
+          {
+            "docId": "bF0jz-1719589081594",
+            "docData": {
+              "uid": "vZyxrUDPQDMEpEVrwaJtm3iq7a53",
+              "id": "bF0jz-1719589081594",
+              "qrCode": "https://firebasestorage.googleapis.com/v0/b/wine-app-8c2f9.appspot.com/o/images%2FvZyxrUDPQDMEpEVrwaJtm3iq7a53%2Fwines%2FbF0jz-1719589081594%2Fqrcode.png?alt=media&token=0148b3cf-5d17-4470-962c-9fd2201492e1",
+              "publicUrl": "/explore/wine/bF0jz-1719589081594",
+              "status": "published",
+              "isReadyToPublish": false,
+              "createdAt": {
+                "seconds": 1733428186,
+                "nanoseconds": 176000000
+              },
+              "lastUpdated": {
+                "seconds": 1733428186,
+                "nanoseconds": 176000000
+              },
+              "nutritionalInfo": {
+                "energy": "",
+                "fat": "0",
+                "carbohydrates": "0",
+                "protein": "0",
+                "salt": "0"
+              },
+              "makingTechnique": {
+                "fermentationType": [],
+                "yeastType": [],
+                "vegan": null,
+                "organic": null,
+                "bioDynamic": null,
+                "natural": null,
+                "ageingPotential": ""
+              },
+              "terroir": {
+                "soilType": [],
+                "irrigationPractices": [],
+                "vineyardLocation": [],
+                "vineyardName": "",
+                "cdo": "",
+                "sunExposure": "",
+                "elevation": "",
+                "ageOfVines": "",
+                "grapesHarvesing": {
+                  "method": "",
+                  "yieldPerHa": ""
+                }
+              },
+              "likes": 0,
+              "ingredients": {
+                "acidityRegulators": [],
+                "stabilizers": [],
+                "finingAgents": [],
+                "antioxidants": [],
+                "alcoholByVolume": "13",
+                "sugar": "0",
+                "rawMaterial": "Grapes"
+              },
+              "profile": {
+                "aromaProfile": [],
+                "flavorProfile": [],
+                "barrelFermented": [],
+                "awards": [],
+                "color": "",
+                "perceivedAlcohol": "",
+                "acidityLevel": "",
+                "taningLevel": "",
+                "sweetness": "Dry"
+              },
+              "generalInfo": {
+                "grapeVarieties": [],
+                "image": "/images/wine.jpg",
+                "wineryName": "Poiana Codrilor",
+                "collectionName": "Sauvignon Blanc & Legenda",
+                "volume": "750ml",
+                "country": "Moldova (the Republic of)",
+                "cdo": "",
+                "collectionSize": "",
+                "type": "White Wine"
+              }
+            },
+            "collections": [],
+            "collectionData": []
+          },
+          {
+            "docId": "wxe2k-1719589517077",
+            "docData": {
+              "uid": "vZyxrUDPQDMEpEVrwaJtm3iq7a53",
+              "id": "wxe2k-1719589517077",
+              "qrCode": "https://firebasestorage.googleapis.com/v0/b/wine-app-8c2f9.appspot.com/o/images%2FvZyxrUDPQDMEpEVrwaJtm3iq7a53%2Fwines%2Fwxe2k-1719589517077%2Fqrcode.png?alt=media&token=c85f90aa-c4f2-4115-a8c4-7b24f3e27c59",
+              "publicUrl": "/explore/wine/wxe2k-1719589517077",
+              "status": "published",
+              "isReadyToPublish": false,
+              "createdAt": {
+                "seconds": 1733428186,
+                "nanoseconds": 176000000
+              },
+              "lastUpdated": {
+                "seconds": 1733428186,
+                "nanoseconds": 176000000
+              },
+              "nutritionalInfo": {
+                "energy": "",
+                "fat": "0",
+                "carbohydrates": "0",
+                "protein": "0",
+                "salt": "0"
+              },
+              "makingTechnique": {
+                "fermentationType": [],
+                "yeastType": [],
+                "vegan": null,
+                "organic": null,
+                "bioDynamic": null,
+                "natural": null,
+                "ageingPotential": ""
+              },
+              "terroir": {
+                "soilType": [],
+                "irrigationPractices": [],
+                "vineyardLocation": [],
+                "vineyardName": "",
+                "cdo": "",
+                "sunExposure": "",
+                "elevation": "",
+                "ageOfVines": "",
+                "grapesHarvesing": {
+                  "method": "",
+                  "yieldPerHa": ""
+                }
+              },
+              "likes": 0,
+              "generalInfo": {
+                "grapeVarieties": [],
+                "image": "/images/wine.jpg",
+                "wineryName": "Poiana Codrilor",
+                "collectionName": "Fetească Albă & Fetească Regală",
+                "volume": "750ml",
+                "country": "Moldova (the Republic of)",
+                "cdo": "",
+                "collectionSize": "",
+                "type": "White Wine"
+              },
+              "ingredients": {
+                "acidityRegulators": [],
+                "stabilizers": [],
+                "finingAgents": [],
+                "antioxidants": [],
+                "alcoholByVolume": "13",
+                "sugar": "0",
+                "rawMaterial": "Grapes"
+              },
+              "profile": {
+                "aromaProfile": [],
+                "flavorProfile": [],
+                "barrelFermented": [],
+                "awards": [],
+                "color": "",
+                "perceivedAlcohol": "",
+                "acidityLevel": "",
+                "taningLevel": "",
+                "sweetness": "Dry"
+              }
+            },
+            "collections": [],
+            "collectionData": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "docId": "vprfnxDyxScsN0D9L9Tx2m2ESNI3",
+    "docData": {
+      "id": "vprfnxDyxScsN0D9L9Tx2m2ESNI3",
+      "info": {
+        "certifications": [],
+        "name": "",
+        "avatar": "/images/avatar.svg",
+        "foundedIn": "",
+        "createdAt": {
+          "_seconds": 1733866129,
+          "_nanoseconds": 822000000
+        },
+        "lastUpdated": {
+          "_seconds": 1733866129,
+          "_nanoseconds": 822000000
+        },
+        "wineCollections": "",
+        "bottlesProduced": "",
+        "vineyardsSurface": "",
+        "grapeVarieties": "",
+        "headquarters": {
+          "lat": "47.01107733788858",
+          "lng": "28.85817396285048"
+        },
+        "representative": {
+          "name": "",
+          "phone": "",
+          "email": ""
+        }
+      },
+      "settings": {
+        "theme": "light",
+        "language": "en",
+        "autosave": true
+      },
+      "isVerified": false,
+      "billing": {
+        "level": "bronze",
+        "plan": "bronze"
+      }
+    },
+    "collections": [],
+    "collectionData": []
+  },
+  {
+    "docId": "wvxYPgfQDjTOF3ymWElIxNh7T933",
+    "docData": {
+      "id": "wvxYPgfQDjTOF3ymWElIxNh7T933",
+      "info": {
+        "certifications": [],
+        "name": "",
+        "avatar": "/images/avatar.svg",
+        "foundedIn": "",
+        "createdAt": {
+          "_seconds": 1739131274,
+          "_nanoseconds": 672000000
+        },
+        "lastUpdated": {
+          "_seconds": 1739131274,
+          "_nanoseconds": 673000000
+        },
+        "wineCollections": "",
+        "bottlesProduced": "",
+        "vineyardsSurface": "",
+        "grapeVarieties": "",
+        "headquarters": {
+          "lat": "47.01107733788858",
+          "lng": "28.85817396285048"
+        },
+        "representative": {
+          "name": "",
+          "phone": "",
+          "email": ""
+        }
+      },
+      "settings": {
+        "theme": "light",
+        "language": "en",
+        "autosave": true
+      },
+      "billing": {
+        "level": "bronze"
+      },
+      "isVerified": false
+    },
+    "collections": [],
+    "collectionData": []
+  },
+  {
+    "docId": "zaWKBMEVCrXtVBm5FFYoyyyXIXM2",
+    "docData": {
+      "id": "zaWKBMEVCrXtVBm5FFYoyyyXIXM2",
+      "info": {
+        "certifications": [],
+        "name": "",
+        "avatar": "/images/avatar.svg",
+        "foundedIn": "",
+        "createdAt": {
+          "_seconds": 1733870947,
+          "_nanoseconds": 711000000
+        },
+        "lastUpdated": {
+          "_seconds": 1733870947,
+          "_nanoseconds": 711000000
+        },
+        "wineCollections": "",
+        "bottlesProduced": "",
+        "vineyardsSurface": "",
+        "grapeVarieties": "",
+        "headquarters": {
+          "lat": "47.01107733788858",
+          "lng": "28.85817396285048"
+        },
+        "representative": {
+          "name": "",
+          "phone": "",
+          "email": ""
+        }
+      },
+      "settings": {
+        "theme": "light",
+        "language": "en",
+        "autosave": true
+      },
+      "isVerified": false,
+      "billing": {
+        "level": "bronze",
+        "plan": "bronze"
+      }
+    },
+    "collections": [],
+    "collectionData": []
+  }
+]

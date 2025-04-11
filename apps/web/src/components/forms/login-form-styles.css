@@ -1,0 +1,7 @@
+.legal-text-container {
+  a {
+    color: hsl(var(--primary));
+    text-decoration: underline;
+    font-weight: 500;
+  }
+}
