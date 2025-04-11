@@ -22,6 +22,11 @@ function formatPrivateKey(key: string) {
 export function createFirebaseAdminApp(params: FirebaseAdminAppParams) {
   const privateKey = formatPrivateKey(params.privateKey);
 
+  console.log("\n\n===============================");
+  console.log(params.privateKey);
+  console.log(privateKey);
+  console.log("===============================\n\n");
+
   if (admin.apps.length > 0) {
     return admin.app();
   }

@@ -4,7 +4,7 @@ import { NextResponse } from "next/server";
 
 export async function POST(request: Request) {
   try {
-    // await initAdmin();
+    await initAdmin();
     // const adminAuth = admin.auth();
 
     const authHeader = request.headers.get("Authorization");

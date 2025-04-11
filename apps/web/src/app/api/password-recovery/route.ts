@@ -10,7 +10,7 @@ import admin from "firebase-admin";
 import { ActionCodeSettings } from "firebase-admin/auth";
 
 export async function POST(request: Request) {
-  // await initAdmin();
+  await initAdmin();
   // const adminAuth = admin.auth();
 
   sgMail.setApiKey(NEXT_PUBLIC_SENDGRID_API_KEY);
