@@ -25,7 +25,7 @@
 
 ## Overview
 
-This monorepository includes all the apps and packages used within the ecosystem of [Tracecork](https://www.tracecork.com/). All the apps share common dependencies and configuration, allowing you to focus on the specific features of each app, while keeping homogenity between them as the main component/ui library is used across the whole ecosystem.
+This monorepository includes all apps and packages used within the ecosystem of [Tracecork](https://www.tracecork.com/). All the apps share common dependencies and configuration, allowing you to focus on the specific features of each app, while keeping homogenity between them as the main component/ui library is used across the whole ecosystem.
 
 ## System Architecture
 

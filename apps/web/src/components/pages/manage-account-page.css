@@ -1,0 +1,6 @@
+.delete-notice-description-container {
+  strong {
+    color: hsl(var(--primary));
+    text-decoration: underline;
+  }
+}

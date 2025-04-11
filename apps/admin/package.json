@@ -1,0 +1,38 @@
+{
+  "name": "admin",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --port 3001",
+    "build": "next build --verbose",
+    "start": "next start",
+    "lint": "eslint . --max-warnings 0"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^3.9.1",
+    "@repo/ui": "workspace:*",
+    "@sanity/client": "^6.24.1",
+    "firebase": "^11.1.0",
+    "firebase-admin": "^13.0.1",
+    "lucide-react": "^0.468.0",
+    "next": "14.2.8",
+    "react": "catalog:react18",
+    "react-dom": "catalog:react18",
+    "react-hook-form": "^7.54.1",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@next/eslint-plugin-next": "14.2.8",
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@types/eslint": "catalog:",
+    "@types/node": "catalog:",
+    "@types/react": "catalog:react18",
+    "@types/react-dom": "catalog:react18",
+    "autoprefixer": "^10",
+    "eslint": "catalog:",
+    "postcss": "^8",
+    "tailwindcss": "catalog:",
+    "typescript": "catalog:"
+  }
+}
