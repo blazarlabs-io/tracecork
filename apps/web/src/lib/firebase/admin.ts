@@ -22,10 +22,10 @@ function formatPrivateKey(key: string) {
 export function createFirebaseAdminApp(params: FirebaseAdminAppParams) {
   const privateKey = formatPrivateKey(params.privateKey);
 
-  console.log("\n\n===============================");
-  console.log(params.privateKey);
-  console.log(privateKey);
-  console.log("===============================\n\n");
+  // console.log("\n\n===============================");
+  // console.log(params.privateKey);
+  // console.log(privateKey);
+  // console.log("===============================\n\n");
 
   if (admin.apps.length > 0) {
     return admin.app();
@@ -49,7 +49,9 @@ export async function initAdmin() {
     projectId: NEXT_PUBLIC_FIREBASE_PROJECT_ID,
     clientEmail: FIREBASE_CLIENT_EMAIL,
     storageBucket: NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
-    privateKey: FIREBASE_PRIVATE_KEY,
+    privateKey: FIREBASE_PRIVATE_KEY
+      ? Buffer.from(FIREBASE_PRIVATE_KEY).toString()
+      : "",
   };
 
   return createFirebaseAdminApp(params);
