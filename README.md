@@ -127,7 +127,7 @@ pnpm dev --filter web
 
 ### Setup Wine Tokenization Service
 
-The wine tokenization service is a separate app, which is used to tokenize wines on the Cardano blockchain. Tracecork interacts with this service through a custom API. Find all the necessary information in the [wine-tokenization-service](https://github.com/mariusgeorgescu/wine-tokenization-service) repository. The endpoints allows tracecork web to tokenize wines on the blockchain through a series of fetches using the custom API.
+The wine tokenization service is a separate app, which is used to tokenize wines on the Cardano blockchain. Tracecork interacts with this service through a custom API. Find all the necessary information in the [wine-tokenization-service](https://github.com/mariusgeorgescu/wine-tokenization-service) repository. The endpoints allows tracecork web-app to tokenize wines on the blockchain through a series of fetches using the custom API.
 
 ![Wine Tokenization Service](./assets/wine-tokenization-service.png)
 
