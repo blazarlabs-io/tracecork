@@ -37,6 +37,7 @@ apps/admin/.env.development
 apps/admin/.env.production
 apps/web/src/lib/firebase/migration/google-services/production.json
 apps/web/src/lib/firebase/migration/google-services/development.json
+apps/token-update-server/.env
 
 # turbo
 .turbo
