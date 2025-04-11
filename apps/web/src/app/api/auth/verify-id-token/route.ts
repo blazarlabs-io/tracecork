@@ -8,6 +8,9 @@ export async function POST(request: Request) {
     const adminAuth = admin.auth();
 
     const authHeader = request.headers.get("Authorization");
+    // console.log("\n\n==============================");
+    // console.log("authHeader", authHeader);
+    // console.log("==============================\n\n");
 
     if (!authHeader || !authHeader.startsWith("Bearer ")) {
       return NextResponse.json({ undefined }, { status: 401 });
