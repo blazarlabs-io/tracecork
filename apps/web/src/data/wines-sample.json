@@ -1,0 +1,491 @@
+[
+  {
+    "uid": "1234567892",
+    "qrCode": "",
+    "publicUrl": "https://wines.blazarlabs.com/wine/12345abcdef",
+    "status": "draft",
+    "lastUpdated": "2020-01-01T00:00:00+00:00",
+    "generalInfo": {
+      "image": "/images/wine.jpg",
+      "wineryName": "Château Lafite Rothschild",
+      "collectionName": "Carruades de Lafite",
+      "volume": "750ml",
+      "type": "Red Wine",
+      "grapeVarieties": [
+        {
+          "name": "Cabernet Sauvignon",
+          "percentage": "70",
+          "vintage": "2020"
+        },
+        { "name": "Merlot", "percentage": "30", "vintage": "2020" }
+      ],
+      "country": "France",
+      "cdo": "AOC Pauillac",
+      "collectionSize": "5000"
+    },
+    "ingredients": {
+      "rawMaterial": "Grapes",
+      "alcoholByVolume": "13.5",
+      "sugar": "2",
+      "acidityRegulators": ["Tartaric Acid"],
+      "stabilizers": ["Potassium Metabisulfite"],
+      "finingAgents": ["Bentonite"],
+      "antioxidants": ["Sulfur Dioxide"]
+    }
+  },
+  {
+    "uid": "0987654323",
+    "qrCode": "",
+    "publicUrl": "https://wines.blazarlabs.com/wine/12345abcdef",
+    "status": "published",
+    "lastUpdated": "2020-01-01T00:00:00+00:00",
+    "generalInfo": {
+      "image": "/images/wine.jpg",
+      "wineryName": "Robert Mondavi Winery",
+      "collectionName": "Cabernet Sauvignon Reserve",
+      "volume": "750ml",
+      "type": "Red Wine",
+      "grapeVarieties": [
+        {
+          "name": "Cabernet Sauvignon",
+          "percentage": "92",
+          "vintage": "2018"
+        },
+        { "name": "Merlot", "percentage": "8", "vintage": "2018" }
+      ],
+      "country": "United States",
+      "cdo": "Napa Valley",
+      "collectionSize": "12000"
+    },
+    "ingredients": {
+      "rawMaterial": "Grapes",
+      "alcoholByVolume": "14.5",
+      "sugar": "4",
+      "acidityRegulators": ["Tartaric Acid", "Malic Acid"],
+      "stabilizers": ["Potassium Sorbate"],
+      "finingAgents": ["Egg Whites"],
+      "antioxidants": ["Ascorbic Acid"]
+    }
+  },
+  {
+    "uid": "5678901235",
+    "qrCode": "",
+    "publicUrl": "https://wines.blazarlabs.com/wine/12345abcdef",
+    "status": "draft",
+    "lastUpdated": "2020-01-01T00:00:00+00:00",
+    "generalInfo": {
+      "image": "/images/wine.jpg",
+      "wineryName": "Antinori",
+      "collectionName": "Tignanello",
+      "volume": "750ml",
+      "type": "Red Wine",
+      "grapeVarieties": [
+        { "name": "Sangiovese", "percentage": "80", "vintage": "2019" },
+        {
+          "name": "Cabernet Sauvignon",
+          "percentage": "15",
+          "vintage": "2019"
+        },
+        { "name": "Cabernet Franc", "percentage": "5", "vintage": "2019" }
+      ],
+      "country": "Italy",
+      "cdo": "IGT Toscana",
+      "collectionSize": "25000"
+    },
+    "ingredients": {
+      "rawMaterial": "Grapes",
+      "alcoholByVolume": "13",
+      "sugar": "3",
+      "acidityRegulators": ["Tartaric Acid"],
+      "stabilizers": ["Calcium Carbonate"],
+      "finingAgents": ["Isinglass"],
+      "antioxidants": ["Sulfur Dioxide"]
+    }
+  },
+  {
+    "uid": "2345678906",
+    "qrCode": "",
+    "publicUrl": "https://wines.blazarlabs.com/wine/12345abcdef",
+    "status": "draft",
+    "lastUpdated": "2020-01-01T00:00:00+00:00",
+    "generalInfo": {
+      "image": "/images/wine.jpg",
+      "wineryName": "Vega Sicilia",
+      "collectionName": "Único",
+      "volume": "750ml",
+      "type": "Red Wine",
+      "grapeVarieties": [
+        { "name": "Tempranillo", "percentage": "95", "vintage": "2015" },
+        { "name": "Cabernet Sauvignon", "percentage": "5", "vintage": "2015" }
+      ],
+      "country": "Spain",
+      "cdo": "DO Ribera del Duero",
+      "collectionSize": "8000"
+    },
+    "ingredients": {
+      "rawMaterial": "Grapes",
+      "alcoholByVolume": "14",
+      "sugar": "1",
+      "acidityRegulators": ["Citric Acid"],
+      "stabilizers": ["Calcium Tartrate"],
+      "finingAgents": ["Gelatin"],
+      "antioxidants": ["Sulfur Dioxide"]
+    }
+  },
+  {
+    "uid": "3456789017",
+    "qrCode": "",
+    "publicUrl": "https://wines.blazarlabs.com/wine/12345abcdef",
+    "status": "published",
+    "lastUpdated": "2020-01-01T00:00:00+00:00",
+    "generalInfo": {
+      "image": "/images/wine.jpg",
+      "wineryName": "Penfolds",
+      "collectionName": "Grange",
+      "volume": "750ml",
+      "type": "Red Wine",
+      "grapeVarieties": [
+        { "name": "Shiraz", "percentage": "98", "vintage": "2017" },
+        { "name": "Cabernet Sauvignon", "percentage": "2", "vintage": "2017" }
+      ],
+      "country": "Australia",
+      "cdo": "South Australia",
+      "collectionSize": "7000"
+    },
+    "ingredients": {
+      "rawMaterial": "Grapes",
+      "alcoholByVolume": "14.5",
+      "sugar": "3",
+      "acidityRegulators": ["Tartaric Acid", "Lactic Acid"],
+      "stabilizers": ["Potassium Sorbate"],
+      "finingAgents": ["Egg Whites"],
+      "antioxidants": ["Ascorbic Acid", "Sulfur Dioxide"]
+    }
+  },
+  {
+    "uid": "1234567892",
+    "qrCode": "",
+    "publicUrl": "https://wines.blazarlabs.com/wine/12345abcdef",
+    "status": "draft",
+    "lastUpdated": "2020-01-01T00:00:00+00:00",
+    "generalInfo": {
+      "image": "/images/wine.jpg",
+      "wineryName": "Château Lafite Rothschild",
+      "collectionName": "Carruades de Lafite",
+      "volume": "750ml",
+      "type": "Red Wine",
+      "grapeVarieties": [
+        {
+          "name": "Cabernet Sauvignon",
+          "percentage": "70",
+          "vintage": "2020"
+        },
+        { "name": "Merlot", "percentage": "30", "vintage": "2020" }
+      ],
+      "country": "France",
+      "cdo": "AOC Pauillac",
+      "collectionSize": "5000"
+    },
+    "ingredients": {
+      "rawMaterial": "Grapes",
+      "alcoholByVolume": "13.5",
+      "sugar": "2",
+      "acidityRegulators": ["Tartaric Acid"],
+      "stabilizers": ["Potassium Metabisulfite"],
+      "finingAgents": ["Bentonite"],
+      "antioxidants": ["Sulfur Dioxide"]
+    }
+  },
+  {
+    "uid": "0987654323",
+    "qrCode": "",
+    "publicUrl": "https://wines.blazarlabs.com/wine/12345abcdef",
+    "status": "published",
+    "lastUpdated": "2020-01-01T00:00:00+00:00",
+    "generalInfo": {
+      "image": "/images/wine.jpg",
+      "wineryName": "Robert Mondavi Winery",
+      "collectionName": "Cabernet Sauvignon Reserve",
+      "volume": "750ml",
+      "type": "Red Wine",
+      "grapeVarieties": [
+        {
+          "name": "Cabernet Sauvignon",
+          "percentage": "92",
+          "vintage": "2018"
+        },
+        { "name": "Merlot", "percentage": "8", "vintage": "2018" }
+      ],
+      "country": "United States",
+      "cdo": "Napa Valley",
+      "collectionSize": "12000"
+    },
+    "ingredients": {
+      "rawMaterial": "Grapes",
+      "alcoholByVolume": "14.5",
+      "sugar": "4",
+      "acidityRegulators": ["Tartaric Acid", "Malic Acid"],
+      "stabilizers": ["Potassium Sorbate"],
+      "finingAgents": ["Egg Whites"],
+      "antioxidants": ["Ascorbic Acid"]
+    }
+  },
+  {
+    "uid": "5678901235",
+    "qrCode": "",
+    "publicUrl": "https://wines.blazarlabs.com/wine/12345abcdef",
+    "status": "draft",
+    "lastUpdated": "2020-01-01T00:00:00+00:00",
+    "generalInfo": {
+      "image": "/images/wine.jpg",
+      "wineryName": "Antinori",
+      "collectionName": "Tignanello",
+      "volume": "750ml",
+      "type": "Red Wine",
+      "grapeVarieties": [
+        { "name": "Sangiovese", "percentage": "80", "vintage": "2019" },
+        {
+          "name": "Cabernet Sauvignon",
+          "percentage": "15",
+          "vintage": "2019"
+        },
+        { "name": "Cabernet Franc", "percentage": "5", "vintage": "2019" }
+      ],
+      "country": "Italy",
+      "cdo": "IGT Toscana",
+      "collectionSize": "25000"
+    },
+    "ingredients": {
+      "rawMaterial": "Grapes",
+      "alcoholByVolume": "13",
+      "sugar": "3",
+      "acidityRegulators": ["Tartaric Acid"],
+      "stabilizers": ["Calcium Carbonate"],
+      "finingAgents": ["Isinglass"],
+      "antioxidants": ["Sulfur Dioxide"]
+    }
+  },
+  {
+    "uid": "2345678906",
+    "qrCode": "",
+    "publicUrl": "https://wines.blazarlabs.com/wine/12345abcdef",
+    "status": "draft",
+    "lastUpdated": "2020-01-01T00:00:00+00:00",
+    "generalInfo": {
+      "image": "/images/wine.jpg",
+      "wineryName": "Vega Sicilia",
+      "collectionName": "Único",
+      "volume": "750ml",
+      "type": "Red Wine",
+      "grapeVarieties": [
+        { "name": "Tempranillo", "percentage": "95", "vintage": "2015" },
+        { "name": "Cabernet Sauvignon", "percentage": "5", "vintage": "2015" }
+      ],
+      "country": "Spain",
+      "cdo": "DO Ribera del Duero",
+      "collectionSize": "8000"
+    },
+    "ingredients": {
+      "rawMaterial": "Grapes",
+      "alcoholByVolume": "14",
+      "sugar": "1",
+      "acidityRegulators": ["Citric Acid"],
+      "stabilizers": ["Calcium Tartrate"],
+      "finingAgents": ["Gelatin"],
+      "antioxidants": ["Sulfur Dioxide"]
+    }
+  },
+  {
+    "uid": "3456789017",
+    "qrCode": "",
+    "publicUrl": "https://wines.blazarlabs.com/wine/12345abcdef",
+    "status": "published",
+    "lastUpdated": "2020-01-01T00:00:00+00:00",
+    "generalInfo": {
+      "image": "/images/wine.jpg",
+      "wineryName": "Penfolds",
+      "collectionName": "Grange",
+      "volume": "750ml",
+      "type": "Red Wine",
+      "grapeVarieties": [
+        { "name": "Shiraz", "percentage": "98", "vintage": "2017" },
+        { "name": "Cabernet Sauvignon", "percentage": "2", "vintage": "2017" }
+      ],
+      "country": "Australia",
+      "cdo": "South Australia",
+      "collectionSize": "7000"
+    },
+    "ingredients": {
+      "rawMaterial": "Grapes",
+      "alcoholByVolume": "14.5",
+      "sugar": "3",
+      "acidityRegulators": ["Tartaric Acid", "Lactic Acid"],
+      "stabilizers": ["Potassium Sorbate"],
+      "finingAgents": ["Egg Whites"],
+      "antioxidants": ["Ascorbic Acid", "Sulfur Dioxide"]
+    }
+  },
+  {
+    "uid": "1234567892",
+    "qrCode": "",
+    "publicUrl": "https://wines.blazarlabs.com/wine/12345abcdef",
+    "status": "draft",
+    "lastUpdated": "2020-01-01T00:00:00+00:00",
+    "generalInfo": {
+      "image": "/images/wine.jpg",
+      "wineryName": "Château Lafite Rothschild",
+      "collectionName": "Carruades de Lafite",
+      "volume": "750ml",
+      "type": "Red Wine",
+      "grapeVarieties": [
+        {
+          "name": "Cabernet Sauvignon",
+          "percentage": "70",
+          "vintage": "2020"
+        },
+        { "name": "Merlot", "percentage": "30", "vintage": "2020" }
+      ],
+      "country": "France",
+      "cdo": "AOC Pauillac",
+      "collectionSize": "5000"
+    },
+    "ingredients": {
+      "rawMaterial": "Grapes",
+      "alcoholByVolume": "13.5",
+      "sugar": "2",
+      "acidityRegulators": ["Tartaric Acid"],
+      "stabilizers": ["Potassium Metabisulfite"],
+      "finingAgents": ["Bentonite"],
+      "antioxidants": ["Sulfur Dioxide"]
+    }
+  },
+  {
+    "uid": "0987654323",
+    "qrCode": "",
+    "publicUrl": "https://wines.blazarlabs.com/wine/12345abcdef",
+    "status": "published",
+    "lastUpdated": "2020-01-01T00:00:00+00:00",
+    "generalInfo": {
+      "image": "/images/wine.jpg",
+      "wineryName": "Robert Mondavi Winery",
+      "collectionName": "Cabernet Sauvignon Reserve",
+      "volume": "750ml",
+      "type": "Red Wine",
+      "grapeVarieties": [
+        {
+          "name": "Cabernet Sauvignon",
+          "percentage": "92",
+          "vintage": "2018"
+        },
+        { "name": "Merlot", "percentage": "8", "vintage": "2018" }
+      ],
+      "country": "United States",
+      "cdo": "Napa Valley",
+      "collectionSize": "12000"
+    },
+    "ingredients": {
+      "rawMaterial": "Grapes",
+      "alcoholByVolume": "14.5",
+      "sugar": "4",
+      "acidityRegulators": ["Tartaric Acid", "Malic Acid"],
+      "stabilizers": ["Potassium Sorbate"],
+      "finingAgents": ["Egg Whites"],
+      "antioxidants": ["Ascorbic Acid"]
+    }
+  },
+  {
+    "uid": "5678901235",
+    "qrCode": "",
+    "publicUrl": "https://wines.blazarlabs.com/wine/12345abcdef",
+    "status": "draft",
+    "lastUpdated": "2020-01-01T00:00:00+00:00",
+    "generalInfo": {
+      "image": "/images/wine.jpg",
+      "wineryName": "Antinori",
+      "collectionName": "Tignanello",
+      "volume": "750ml",
+      "type": "Red Wine",
+      "grapeVarieties": [
+        { "name": "Sangiovese", "percentage": "80", "vintage": "2019" },
+        {
+          "name": "Cabernet Sauvignon",
+          "percentage": "15",
+          "vintage": "2019"
+        },
+        { "name": "Cabernet Franc", "percentage": "5", "vintage": "2019" }
+      ],
+      "country": "Italy",
+      "cdo": "IGT Toscana",
+      "collectionSize": "25000"
+    },
+    "ingredients": {
+      "rawMaterial": "Grapes",
+      "alcoholByVolume": "13",
+      "sugar": "3",
+      "acidityRegulators": ["Tartaric Acid"],
+      "stabilizers": ["Calcium Carbonate"],
+      "finingAgents": ["Isinglass"],
+      "antioxidants": ["Sulfur Dioxide"]
+    }
+  },
+  {
+    "uid": "2345678906",
+    "qrCode": "",
+    "publicUrl": "https://wines.blazarlabs.com/wine/12345abcdef",
+    "status": "draft",
+    "lastUpdated": "2020-01-01T00:00:00+00:00",
+    "generalInfo": {
+      "image": "/images/wine.jpg",
+      "wineryName": "Vega Sicilia",
+      "collectionName": "Único",
+      "volume": "750ml",
+      "type": "Red Wine",
+      "grapeVarieties": [
+        { "name": "Tempranillo", "percentage": "95", "vintage": "2015" },
+        { "name": "Cabernet Sauvignon", "percentage": "5", "vintage": "2015" }
+      ],
+      "country": "Spain",
+      "cdo": "DO Ribera del Duero",
+      "collectionSize": "8000"
+    },
+    "ingredients": {
+      "rawMaterial": "Grapes",
+      "alcoholByVolume": "14",
+      "sugar": "1",
+      "acidityRegulators": ["Citric Acid"],
+      "stabilizers": ["Calcium Tartrate"],
+      "finingAgents": ["Gelatin"],
+      "antioxidants": ["Sulfur Dioxide"]
+    }
+  },
+  {
+    "uid": "3456789017",
+    "qrCode": "",
+    "publicUrl": "https://wines.blazarlabs.com/wine/12345abcdef",
+    "status": "published",
+    "lastUpdated": "2020-01-01T00:00:00+00:00",
+    "generalInfo": {
+      "image": "/images/wine.jpg",
+      "wineryName": "Penfolds",
+      "collectionName": "Grange",
+      "volume": "750ml",
+      "type": "Red Wine",
+      "grapeVarieties": [
+        { "name": "Shiraz", "percentage": "98", "vintage": "2017" },
+        { "name": "Cabernet Sauvignon", "percentage": "2", "vintage": "2017" }
+      ],
+      "country": "Australia",
+      "cdo": "South Australia",
+      "collectionSize": "7000"
+    },
+    "ingredients": {
+      "rawMaterial": "Grapes",
+      "alcoholByVolume": "14.5",
+      "sugar": "3",
+      "acidityRegulators": ["Tartaric Acid", "Lactic Acid"],
+      "stabilizers": ["Potassium Sorbate"],
+      "finingAgents": ["Egg Whites"],
+      "antioxidants": ["Ascorbic Acid", "Sulfur Dioxide"]
+    }
+  }
+]

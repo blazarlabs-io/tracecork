@@ -1,0 +1,30 @@
+export type Locale = (typeof locales)[number];
+
+export const locales = [
+  "ro",
+  "ru",
+  "es",
+  "it",
+  "fr",
+  "en",
+  "lt",
+  "sk",
+  "pl",
+  "pt",
+  "hu",
+  "nl",
+  "et",
+  "el",
+  "mt",
+  "de",
+  "bg",
+  "fi",
+  "ga",
+  "hr",
+  "cs",
+  "da",
+  "sl",
+  "sv",
+  "lv",
+] as const;
+export const defaultLocale: Locale = "en";

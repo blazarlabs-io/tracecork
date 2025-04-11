@@ -1,0 +1,112 @@
+{
+  "id": "KM5J653Aya7AfLiY",
+  "likes": 0,
+  "nutritionalInfo": {
+    "fat": "0",
+    "protein": "0",
+    "energy": "294",
+    "carbohydrates": "10.5",
+    "salt": "0"
+  },
+  "qrCode": "https://firebasestorage.googleapis.com/v0/b/qrcode-wine-app-dev.firebasestorage.app/o/wineries%2FL1IU5Ayr04VjwLPw094buGcUXZ93%2Fwines%2FKM5J653Aya7AfLiY%2Fqr-code.png?alt=media&token=90586d4d-6d55-4aa3-aab6-9f963a358e25",
+  "isReadyToPublish": true,
+  "status": "published",
+  "generalInfo": {
+    "wineryName": "Blazar Wines",
+    "type": "Red Wine",
+    "collectionSize": "2000",
+    "image": "https://firebasestorage.googleapis.com/v0/b/qrcode-wine-app-dev.firebasestorage.app/o/wineries%2FL1IU5Ayr04VjwLPw094buGcUXZ93%2Fwines%2FKM5J653Aya7AfLiY%2Ftest.png?alt=media&token=80ff4980-a719-4e28-9d45-35ad334671a2",
+    "sweetness": "extra dry",
+    "cdo": "",
+    "grapeVarieties": [
+      {
+        "name": "Carmenere",
+        "percentage": "20",
+        "vintage": "2013"
+      },
+      {
+        "vintage": "2012",
+        "name": " Muscat",
+        "percentage": "80"
+      }
+    ],
+    "volume": "750ml",
+    "collectionName": "Galactic Tastes",
+    "country": "Argentina"
+  },
+  "profile": {
+    "barrelFermented": [],
+    "sweetness": "",
+    "acidityLevel": "",
+    "taningLevel": "",
+    "flavorProfile": [],
+    "awards": [],
+    "aromaProfile": [],
+    "perceivedAlcohol": "",
+    "color": ""
+  },
+  "makingTechnique": {
+    "natural": null,
+    "fermentationType": [],
+    "yeastType": [],
+    "bioDynamic": null,
+    "organic": null,
+    "ageingPotential": "",
+    "vegan": null
+  },
+  "terroir": {
+    "elevation": "",
+    "vineyardLocation": [],
+    "irrigationPractices": [],
+    "vineyardName": "",
+    "sunExposure": "",
+    "grapesHarvesing": {
+      "method": "",
+      "yieldPerHa": ""
+    },
+    "soilType": [],
+    "cdo": "",
+    "ageOfVines": ""
+  },
+  "createdAt": {
+    "seconds": 1732052356,
+    "nanoseconds": 523000000
+  },
+  "uid": "L1IU5Ayr04VjwLPw094buGcUXZ93",
+  "publicUrl": "/explore/wine/KM5J653Aya7AfLiY",
+  "ingredients": {
+    "acidityRegulators": [
+      {
+        "name": "Mallic Acid"
+      }
+    ],
+    "alcoholByVolume": "12.5",
+    "antioxidants": [
+      {
+        "name": "Sulphites"
+      },
+      {
+        "name": "Reservatrol"
+      }
+    ],
+    "rawMaterial": "Concentrated grape must",
+    "finingAgents": [
+      {
+        "name": "Isinglass"
+      },
+      {
+        "name": "Egg Whites"
+      }
+    ],
+    "stabilizers": [
+      {
+        "name": "Potassium Sorbate"
+      }
+    ],
+    "sugar": "3"
+  },
+  "lastUpdated": {
+    "seconds": 1732130097,
+    "nanoseconds": 191000000
+  }
+}
