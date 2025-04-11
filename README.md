@@ -143,4 +143,4 @@ You will find the client configuration for each of these under the src/lib/ fold
 
 ## Licenses
 
-- [MIT License](https://github.com/mariusgeorgescu/tracecorck/blob/main/LICENSE)
+- [APACHE2 License](https://www.apache.org/licenses/LICENSE-2.0)
