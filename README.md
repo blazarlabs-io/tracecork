@@ -139,7 +139,7 @@ Tracecork uses a few third party services in order to facilitate the enabling an
 - [Sanity](https://www.sanity.io/)
 - [Firebase](https://firebase.google.com/)
 
-You will find the client configuration for each of these under the src/lib/ folder within each APP. For example, the firebase client configuration is located in the src/lib/firebase/client.ts file. The environmental variables for each of these services are located in the .env files.
+You will find the client configuration for each of these under the src/lib/ folder within each APP. For example, the firebase client configuration is located in the src/lib/firebase/client.ts file. The environmental variables for each of these services are located in the .env files mentioned before.
 
 ## Licenses
 
