@@ -25,7 +25,7 @@
 
 ## Overview
 
-This monorepository includes all apps and packages used within the ecosystem of [Tracecork](https://www.tracecork.com/). All the apps share common dependencies and configuration, allowing you to focus on the specific features of each app, while keeping homogenity between them as the main component/ui library is used across the whole ecosystem.
+This mono-repository includes all apps and packages used within the ecosystem of [Tracecork](https://www.tracecork.com/). All the apps share common dependencies and configuration, allowing you to focus on the specific features of each app, while keeping homogeneity between them as the main component/ui library is used across the whole ecosystem.
 
 ## System Architecture
 
@@ -38,6 +38,7 @@ This monorepository includes all apps and packages used within the ecosystem of 
 ├─ apps
 │  ├─ admin
 │  ├─ cms
+│  ├─ token-update-server
 │  └─ web
 ├─ assets
 └─ packages
@@ -82,7 +83,7 @@ pnpm install
 
 ### Environments
 
-Tracecork currently works on 3 diferent environments: **development**, **staging** and **production**. Each one has its own configuration and dependencies.
+Tracecork currently works on 3 different environments: **development**, **staging** and **production**. Each one has its own configuration and dependencies.
 
 ### Environment Variables
 
@@ -92,7 +93,7 @@ Each app in the /apps folder has its own .env files, one per environment. Any of
 
       .env.production
 
-Here, the development environmental variables will be used to run the app in development mode (locally) and necesary to run the staging app once deployed to vercel under our "development" github branch.
+Here, the development environmental variables will be used to run the app in development mode (locally) and necessary to run the staging app once deployed to vercel under our "development" github branch.
 
 ### Admin
 
@@ -126,13 +127,13 @@ pnpm dev --filter web
 
 ### Setup Wine Tokenization Service
 
-The wine tokenization service is a separate app, which is used to tokenize wines on the Cardano blockchain. Tracecork interacts with this service through a custom API. Find all the necesary information in the [wine-tokenization-service](https://github.com/mariusgeorgescu/wine-tokenization-service) repository. The endoints allows tracecork web to tokenize wines on the blockchain through a series of fetches using the custom API.
+The wine tokenization service is a separate app, which is used to tokenize wines on the Cardano blockchain. Tracecork interacts with this service through a custom API. Find all the necessary information in the [wine-tokenization-service](https://github.com/mariusgeorgescu/wine-tokenization-service) repository. The endpoints allows tracecork web to tokenize wines on the blockchain through a series of fetches using the custom API.
 
 ![Wine Tokenization Service](./assets/wine-tokenization-service.png)
 
 ### Setup Third Party Clients
 
-Tracecork uses a few third party services in order to facilitate the enabling and maintainance of certain features. These services are:
+Tracecork uses a few third party services in order to facilitate the enabling and maintenance of certain features. These services are:
 
 - [Sendgrid](https://sendgrid.com/)
 - [Sanity](https://www.sanity.io/)
