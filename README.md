@@ -20,6 +20,11 @@
   - [CMS](#cms)
   - [Web](#web)
   - [Setup Wine Tokenization Service](#setup-wine-tokenization-service)
+    - [Pulling the Docker Image](#pulling-the-docker-image)
+    - [Running the Docker Container](#running-the-docker-container)
+    - [Updating Maestro Token](#updating-maestro-token)
+    - [Running the Server](#running-the-server)
+    - [Other Methods](#other-methods)
   - [Setup Third Party Clients](#setup-third-party-clients)
 - [Licenses](#licenses)
 
@@ -130,6 +135,77 @@ pnpm dev --filter web
 The wine tokenization service is a separate app, which is used to tokenize wines on the Cardano blockchain. Tracecork interacts with this service through a custom API. Find all the necessary information in the [wine-tokenization-service](https://github.com/mariusgeorgescu/wine-tokenization-service) repository. The endpoints allows tracecork web-app to tokenize wines on the blockchain through a series of fetches using the custom API.
 
 ![Wine Tokenization Service](./assets/wine-tokenization-service.png)
+
+For each of our environments, the wine tokenization service is deployed as a docker container on our backend server. Subdomains are assigned to each container to match our own working environments:
+
+- staging.wine-tokenization.tracecork.com
+- production.wine-tokenization-service.tracecork.com
+
+#### Pulling the Docker Image
+
+Pull the wine tokenization service as a docker image:
+
+```bash
+docker pull mariusgeorgescu/wine-tokenization-service:amd64
+```
+
+#### Running the Docker Container
+
+To run the wine tokenization service locally or on a server, run the following command. Keep in mind we are using ubuntu 20.04. hence the amd64 version of the image.
+
+```bash
+docker run -it -p 8082:8082 --name wts mariusgeorgescu/wine-tokenization-service:amd64 /bin/bash
+```
+
+#### Updating the Maestro Token
+
+Once inside the container's bash shell, install nano:
+
+```bah
+apt-get install nano
+```
+
+Now edit the maestro token file:
+
+```bash
+nano config_atlas.json
+```
+
+#### Running the Server
+
+Now lets start the server from within the container. So in the container's bash shell, run the following command:
+
+```bash
+server <USERNAME> <PASSWORD>
+```
+
+Finally we do `ctrl+p` followed by `ctrl+q` to exit the bash shell. Once out of the bash shell, run the following command to check if the container is running:
+
+```bash
+docker ps
+```
+
+#### Reconnect to the Container
+
+To reconnect to the container, run the following command:
+
+```bash
+docker start -ai <CONTAINER_NAME>
+```
+
+#### Other Methods
+
+Run a container for staging:
+
+```bash
+docker run -d -p 8082:8082 --name wtsd mariusgeorgescu/wine-tokenization-service:amd64 server <USERNAME> <PASSWORD>
+```
+
+Run a second container for production:
+
+```bash
+docker run -d -p 8083:8083 --name wtsp mariusgeorgescu/wine-tokenization-service:amd64 server <USERNAME> <PASSWORD>
+```
 
 ### Setup Third Party Clients
 
