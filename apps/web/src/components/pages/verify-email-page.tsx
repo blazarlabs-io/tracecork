@@ -9,6 +9,7 @@ import { useCustomCountDown } from "@/hooks/use-custom-count-down";
 import { cn } from "@repo/ui/lib/utils";
 import { useRouter } from "next/navigation";
 import { auth } from "@/lib/firebase/client";
+import { LoadingPage } from "./loading-page";
 
 export const VerifyEmailPage = () => {
   const [isChecking, setIsChecking] = useState(true);
@@ -51,7 +52,7 @@ export const VerifyEmailPage = () => {
     return () => clearTimeout(timeoutId);
   }, [user]);
 
-  if (isChecking) return <h1>Loading...</h1>;
+  if (isChecking) return <LoadingPage containerHeight={400} />;
 
   return (
     <div

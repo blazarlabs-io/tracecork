@@ -5,6 +5,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
 import { Suspense } from "react";
 import { initAdmin } from "@/lib/firebase/admin";
+import { LoadingPage } from "../components/pages/loading-page";
 
 export const metadata: Metadata = {
   title: "Tracecork by Blazar Labs",
@@ -46,7 +47,7 @@ export default async function RootLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
       <body suppressHydrationWarning>
-        <Suspense>
+        <Suspense fallback={<LoadingPage />}>
           <NextIntlClientProvider messages={messages}>
             <Providers>{children}</Providers>
           </NextIntlClientProvider>

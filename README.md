@@ -19,11 +19,14 @@
   - [Admin](#admin)
   - [CMS](#cms)
   - [Web](#web)
+    - [Environment Variables](#environment-variables-1)
   - [Setup Wine Tokenization Service](#setup-wine-tokenization-service)
     - [Pulling the Docker Image](#pulling-the-docker-image)
     - [Running the Docker Container](#running-the-docker-container)
     - [Updating Maestro Token](#updating-maestro-token)
     - [Running the Server](#running-the-server)
+    - [Change Server Port](#change-server-port)
+    - [Reconnecting to the Container](#reconnecting-to-the-container)
     - [Other Methods](#other-methods)
   - [Setup Third Party Clients](#setup-third-party-clients)
 - [Licenses](#licenses)
@@ -184,6 +187,23 @@ Finally we do `ctrl+p` followed by `ctrl+q` to exit the bash shell. Once out of 
 ```bash
 docker ps
 ```
+
+#### Change Server Port
+
+The server which runs in the container is listening on port 8082 by default. In order to run two server (one for staging and one for production) we need to change the port the server is listening on and the port the container is listening on. The container's port can be easily set at the moment of runing it:
+
+````bash
+```bash
+docker run -it -p 8082:8082 --name wts mariusgeorgescu/wine-tokenization-service:amd64 /bin/bash
+````
+
+in this case the container is listening on port 8082. But as mentioned there is an internal env variable in the container for the default server port. In order to override this we need to run the container following command:
+
+```bash
+docker run -it -p 8082:8082 -e PORT=8083 --name wts mariusgeorgescu/wine-tokenization-service:amd64 /bin/bash
+```
+
+In this way we ca run 2 diferent environments, one for staging and one for production.
 
 #### Reconnect to the Container
 
