@@ -10,7 +10,7 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useCallback, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
@@ -44,7 +44,8 @@ export const LoginForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   // * HOOKS
-  const { isGoogleLogin, handleSignInWithGoogle } = useGoogleSignIn();
+  const { isGoogleLogin, isGoogleLoginSuccess, handleSignInWithGoogle } =
+    useGoogleSignIn();
   const form = useForm<z.infer<typeof loginFormSchema>>({
     resolver: zodResolver(loginFormSchema),
     defaultValues: {
@@ -122,6 +123,17 @@ export const LoginForm = () => {
 
   // * It will be on processing if the Google sign-in process is initiated (Google modal Open) and when form is submitting
   const isProcessing = isGoogleLogin || isSubmitting;
+
+  useEffect(() => {
+    if (isGoogleLoginSuccess) {
+      console.log("isGoogleLoginSuccess REDIRECTING");
+      // router.push("/dashboard/home");
+      if (typeof window !== "undefined") {
+        window.location.href = "/dashboard/home";
+      }
+    }
+  }, [isGoogleLoginSuccess, isGoogleLogin]);
+
   return (
     <div
       className={cn(

@@ -31,7 +31,10 @@ export const DynamicIngredients = ({ wine }: DynamicIngredientsProps) => {
             ;{" "}
             {acidityRegulators.length > 0 && (
               <span>
-                acidity regulators:{" "}
+                {t(
+                  "wineStepper.wineryDetails.ingredients.acidityRegulators.label",
+                ).toLocaleLowerCase()}{" "}
+                {/* acidity regulators:{" "} */}
                 {acidityRegulators.map((item: any, index: number) => (
                   <span key={item.name}>
                     {item.isAllergen ? (
@@ -49,7 +52,10 @@ export const DynamicIngredients = ({ wine }: DynamicIngredientsProps) => {
             )}
             {stabilizers.length > 0 && (
               <span>
-                stabilizing agents:{" "}
+                {t(
+                  "wineStepper.wineryDetails.ingredients.stabilizers.label",
+                ).toLocaleLowerCase()}{" "}
+                {/* ||||stabilizing agents:{" "} */}
                 {stabilizers.map((item: any, index: number) => (
                   <span key={item.name}>
                     {item.isAllergen ? (
@@ -67,7 +73,10 @@ export const DynamicIngredients = ({ wine }: DynamicIngredientsProps) => {
             )}
             {finingAgents.length > 0 && (
               <span>
-                fining agents:{" "}
+                {t(
+                  "wineStepper.wineryDetails.ingredients.finingAgents.label",
+                ).toLocaleLowerCase()}{" "}
+                {/* fining agents:{" "} */}
                 {finingAgents.map((item: any, index: number) => (
                   <span key={item.name}>
                     {item.isAllergen ? (
@@ -85,7 +94,10 @@ export const DynamicIngredients = ({ wine }: DynamicIngredientsProps) => {
             )}
             {antioxidants.length > 0 && (
               <span>
-                antioxidants:{" "}
+                {t(
+                  "wineStepper.wineryDetails.ingredients.antioxidants.label",
+                ).toLocaleLowerCase()}{" "}
+                {/* antioxidants:{" "} */}
                 {antioxidants.map((item: any, index: number) => (
                   <span key={item.name}>
                     {item.isAllergen ? (

@@ -1,5 +1,6 @@
 import { WineStepper } from "@/components/widgets/wine-stepper";
 import { Suspense } from "react";
+import { LoadingPage } from "~/src/components/pages/loading-page";
 
 export const dynamic = "force-dynamic";
 export const fetchCache = "force-no-store";
@@ -23,7 +24,7 @@ export default async function Wine(props: {
   const wine = params.wine;
   const step = searchParams.step;
   return (
-    <Suspense fallback={<>Loading...</>}>
+    <Suspense fallback={<LoadingPage />}>
       <WineStepper wineId={wine} selectedStep={step} />
     </Suspense>
   );

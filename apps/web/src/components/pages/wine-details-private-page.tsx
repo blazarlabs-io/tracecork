@@ -28,7 +28,7 @@ export const WineDetailsPrivatePage = ({ wineId }: WineDetailsPageProps) => {
 
   const mountRef = useRef<boolean>(false);
 
-  if (!wine) return <h1>Loading Wine...</h1>;
+  if (!wine) return;
 
   const { generalInfo, profile } = wine;
   const { type: wineType } = generalInfo;
