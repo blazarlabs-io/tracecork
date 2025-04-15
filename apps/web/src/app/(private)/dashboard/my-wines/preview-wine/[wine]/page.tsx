@@ -1,5 +1,6 @@
 import { WinePreviewPage } from "@/components/pages/wine-preview-page";
 import { Suspense } from "react";
+import { LoadingPage } from "~/src/components/pages/loading-page";
 
 export const dynamic = "force-dynamic";
 export const fetchCache = "force-no-store";
@@ -17,7 +18,7 @@ export default async function PreviewWinePage(props: { params: Params }) {
 
   const wine = params.wine;
   return (
-    <Suspense fallback={<>Loading...</>}>
+    <Suspense fallback={<LoadingPage containerHeight={400} />}>
       <WinePreviewPage wineId={wine} />
     </Suspense>
   );

@@ -52,7 +52,7 @@ export const PasswordResetPage = ({ oobCode }: ConfirmEmailParamsType) => {
       )}
     >
       {isConfirming ? (
-        <h1 className="text-3xl pb-4 font-medium text-center">
+        <h1 className="text-lg pb-4 font-medium text-center">
           {t("authPages.resetPassword.confirmMessage")}
         </h1>
       ) : isError ? (

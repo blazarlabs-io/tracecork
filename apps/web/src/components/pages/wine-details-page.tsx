@@ -12,6 +12,7 @@ import { useTranslationHandler } from "@/hooks/use-translation-handler";
 import MarkdownPreviewer from "../markdown-previewer/MarkdownPreviewer";
 import { setUserLocale } from "@/services/locale";
 import { useLocaleContext } from "@/context/LanguageProvider";
+import { LoadingPage } from "./loading-page";
 
 export interface WineDetailsPageProps {
   wineId: string;
@@ -24,8 +25,8 @@ export const WineDetailsPage = ({ wineId }: WineDetailsPageProps) => {
   const { wine } = useGetWine(wineId);
   const { vintage } = useGetVintage(wine as Wine);
 
-  if (isChecking) return <h1>Loading...</h1>;
-  if (!wine) return <h1>Lading Wine...</h1>;
+  // if (isChecking) return <h1>Loading...</h1>;
+  if (!wine) return <LoadingPage containerHeight={400} />;
 
   const { generalInfo, profile } = wine;
   const { type: wineType } = generalInfo;

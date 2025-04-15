@@ -1,6 +1,7 @@
 "use client";
 
 import { useDynamicDomainHandler } from "@/hooks/qr-code-domain/use-dynamic-domain-handler";
+import { LoadingPage } from "./loading-page";
 
 export interface WineDetailsPageProps {
   wineId: string;
@@ -9,5 +10,5 @@ export interface WineDetailsPageProps {
 export const DynamicWineDetailsPage = ({ wineId }: WineDetailsPageProps) => {
   useDynamicDomainHandler(wineId);
 
-  return <h1>Loading...</h1>;
+  return <LoadingPage containerHeight={400} />;
 };

@@ -6,7 +6,9 @@ import { emailTemplates } from "@/utils/email-templates";
 
 export const useGoogleSignIn = () => {
   // * STATE
-  const [isGoogleLogin, setIsGoogleLogin] = useState(false);
+  const [isGoogleLogin, setIsGoogleLogin] = useState<boolean>(false);
+  const [isGoogleLoginSuccess, setIsGoogleLoginSuccess] =
+    useState<boolean>(false);
 
   // * GOOGLE PROVIDER
   const provider = new GoogleAuthProvider();
@@ -23,6 +25,7 @@ export const useGoogleSignIn = () => {
   }
 
   const handleSignInWithGoogle = async () => {
+    setIsGoogleLoginSuccess(false);
     try {
       // Sets the popup state of the google modal to open (true) and try to get the user's data after the login
       setIsGoogleLogin(true);
@@ -33,8 +36,10 @@ export const useGoogleSignIn = () => {
         displayName,
         metadata: { creationTime },
       } = user;
+      console.log(email, displayName, creationTime);
       // If user has been logged successfully using Google for the first time then send a welcome email
       if (!user || !email || !displayName || !creationTime) return;
+      setIsGoogleLoginSuccess(true);
       if (!isUserNew(creationTime)) return;
       await sendEmailService({
         toEmail: email,
@@ -45,6 +50,8 @@ export const useGoogleSignIn = () => {
       });
     } catch (error: any) {
       console.error(error);
+      setIsGoogleLoginSuccess(false);
+      setIsGoogleLogin(false);
       // const errorCode = error.code;
       // const errorMessage = error.message;
       // const email = error.customData.email;
@@ -55,5 +62,5 @@ export const useGoogleSignIn = () => {
     }
   };
 
-  return { isGoogleLogin, handleSignInWithGoogle };
+  return { isGoogleLogin, isGoogleLoginSuccess, handleSignInWithGoogle };
 };

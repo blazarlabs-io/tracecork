@@ -200,14 +200,14 @@ export const NavigationBar = () => {
                 size="sm" // Default size
                 className="md:size-sm lg:size-lg"
               >
-                <Link href="/login">
+                <Link href="/login" className="">
                   {t("publicComponents.topBar.buttons.logIn.label")}
                 </Link>
               </Button>
               <Button
                 asChild
                 size="sm" // Default size
-                className="md:size-sm lg:size-lg w-[90px]"
+                className="md:size-sm lg:size-lg"
               >
                 <Link href="/signup">
                   {t("publicComponents.topBar.buttons.signUp.label")}
