@@ -21,6 +21,8 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@repo/ui/components/ui/tooltip";
+import { db } from "~/src/lib/firebase/services/db";
+import { useAuth } from "~/src/context/auth";
 
 export type UpdateTokenDialogProps = {
   batch: any;
@@ -35,7 +37,9 @@ export const UpdateTokenDialog = ({
   wine,
   children,
 }: UpdateTokenDialogProps) => {
-  const { updateBatchToken } = useTokenizer();
+  const { user } = useAuth();
+  const { updateBatchToken, startStatusMonitor, stopStatusMonitor } =
+    useTokenizer();
 
   const [open, setOpen] = useState<boolean>(false);
 
@@ -69,6 +73,35 @@ export const UpdateTokenDialog = ({
       // * Update token on blockchain using TWS
       updateBatchToken(batch.tokenRefId, updatedBatch, (data: any) => {
         console.log("UPDATE DONE", data);
+
+        // * We start the tokenization status monitor
+        startStatusMonitor(
+          data.txId,
+          user?.uid as string,
+          wine.id,
+          (res: any) => {
+            console.log("MAESTRO RES in callback", res);
+            // * We update the database with the latest TX ID
+            db.wine
+              .update(user?.uid as string, wine.id, {
+                tokenization: {
+                  ...wine.tokenization,
+                  txId: data.txId,
+                },
+              })
+              .then(() => {
+                console.log("TOKENIZE DONE && DB UPDATED");
+                stopStatusMonitor();
+              })
+              .catch((error) => {
+                console.log("TOKENIZE DONE && DB UPDATED ERROR");
+                console.log(error);
+              });
+          },
+          (error: any) => {
+            console.log("MAESTRO ERROR", error);
+          },
+        );
       });
     } catch (error) {
       console.log(error);
