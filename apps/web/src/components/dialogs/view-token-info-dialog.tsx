@@ -97,7 +97,7 @@ export const ViewTokenInfoDialog = ({
               <div className="py-4 flex flex-col items-end justify-center">
                 <Link
                   target="_blank"
-                  href={`${process.env.NEXT_PUBLIC_CARDANO_EXPLORER_URL}${batch.tokenRefId}`}
+                  href={`${process.env.NEXT_PUBLIC_CARDANO_EXPLORER_URL}/${batch.tokenRefId}`}
                   className="underline text-sm"
                 >
                   View on explorer
