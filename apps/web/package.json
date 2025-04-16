@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
+    "@maestro-org/typescript-sdk": "^1.6.3",
     "@repo/ui": "workspace:*",
     "@sanity/client": "^6.24.1",
     "@sendgrid/mail": "^8.1.4",

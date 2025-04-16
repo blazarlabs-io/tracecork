@@ -19,6 +19,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@repo/ui/components/ui/tooltip";
+import { useAuth } from "~/src/context/auth";
 
 export type BurnTokenDialogProps = {
   batchId: string;
@@ -35,24 +36,45 @@ export const BurnTokenDialog = ({
 }: BurnTokenDialogProps) => {
   const [open, setOpen] = useState<boolean>(false);
 
-  const { burnBatchToken } = useTokenizer();
+  const { user } = useAuth();
+  const { burnBatchToken, startStatusMonitor, stopStatusMonitor } =
+    useTokenizer();
 
   const handleBurn = async () => {
     setOpen(false);
     burnBatchToken(batchId, async (data: any) => {
       console.log("BUUUURRRNNNNNNNNN", data);
       //   updateBatch(data);
-      try {
-        await db.wine.update(wine.uid, wine.id, {
-          tokenization: {
-            isTokenized: false,
-            tokenRefId: "",
-            txId: "",
-          },
-        });
-      } catch (error) {
-        console.log(error);
-      }
+
+      // * We start the tokenization status monitor
+      startStatusMonitor(
+        data.txId,
+        user?.uid as string,
+        wine.id,
+        (res: any) => {
+          console.log("MAESTRO RES in callback", res);
+          // * We update the database with the latest TX ID
+          db.wine
+            .update(user?.uid as string, wine.id, {
+              tokenization: {
+                isTokenized: false,
+                tokenRefId: "",
+                txId: "",
+              },
+            })
+            .then(() => {
+              console.log("TOKENIZE DONE && DB UPDATED");
+              stopStatusMonitor();
+            })
+            .catch((error) => {
+              console.log("TOKENIZE DONE && DB UPDATED ERROR");
+              console.log(error);
+            });
+        },
+        (error: any) => {
+          console.log("MAESTRO ERROR", error);
+        },
+      );
     });
   };
 

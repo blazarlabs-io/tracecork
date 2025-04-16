@@ -1,8 +1,11 @@
 "use client";
 
 // LIBS
-import { createContext, useContext, useState } from "react";
-import { TokenAction } from "../types/db";
+import { createContext, useContext, useEffect, useState } from "react";
+import maestroClient from "../lib/maestro/client";
+import { StatusMonitor, StatusTimer, TokenAction } from "../types/db";
+import { db } from "../lib/firebase/services/db";
+import { clear } from "console";
 
 export interface TokenizerContextInterface {
   tokenizing: boolean;
@@ -20,6 +23,16 @@ export interface TokenizerContextInterface {
   burnBatchToken: (tokenId: string, cb: (data: any) => void) => void;
   tokenizeBottle: (data: any, cb: (data: any) => void) => void;
   action: TokenAction;
+  statusMonitor: StatusMonitor;
+  statusTimer: StatusTimer;
+  startStatusMonitor: (
+    txhash: string,
+    uid: string,
+    wineId: string,
+    onComplete: (data: any) => void,
+    onError: (error: any) => void,
+  ) => void;
+  stopStatusMonitor: () => void;
 }
 
 const contextInitialData: TokenizerContextInterface = {
@@ -34,6 +47,13 @@ const contextInitialData: TokenizerContextInterface = {
   burnBatchToken: () => {},
   tokenizeBottle: () => {},
   action: null,
+  statusMonitor: {
+    status: "idle",
+    message: "Not started",
+  },
+  statusTimer: null,
+  startStatusMonitor: () => {},
+  stopStatusMonitor: () => {},
 };
 
 const TokenizerContext = createContext(contextInitialData);
@@ -63,6 +83,12 @@ export const TokenizerProvider = ({
   const [action, setAction] = useState<TokenizerContextInterface["action"]>(
     contextInitialData.action,
   );
+  const [statusMonitor, setStatusMonitor] = useState<
+    TokenizerContextInterface["statusMonitor"]
+  >(contextInitialData.statusMonitor);
+  const [statusTimer, setStatusTimer] = useState<
+    TokenizerContextInterface["statusTimer"]
+  >(contextInitialData.statusTimer);
 
   const updateTokenizing = (state: boolean) => {
     setTokenizing(state);
@@ -105,6 +131,96 @@ export const TokenizerProvider = ({
       });
   };
 
+  const getMaestro = (
+    txhash: string,
+    uid: string,
+    wineId: string,
+    onComplete: (data: any) => void,
+    onError: (error: any) => void,
+  ) => {
+    fetch("/api/maestro/get-tx-details", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ txhash, uid, wineId }),
+    })
+      .then(async (res: any) => {
+        const data = await res.json();
+        console.log("MAESTRO RES", data);
+        onComplete && onComplete(data);
+      })
+      .catch((error: any) => {
+        console.log("MAESTRO ERROR", error);
+        onError && onError(error);
+      });
+  };
+
+  const startStatusMonitor = (
+    txhash: string,
+    uid: string,
+    wineId: string,
+    onComplete: (data: any) => void,
+    onError: (error: any) => void,
+  ) => {
+    if (statusTimer) {
+      clearInterval(statusTimer);
+    }
+
+    setStatusMonitor({
+      status: "tokenizing",
+      message: "Monitoring transaction status",
+    });
+
+    const timer = setInterval(() => {
+      // * We fetch and query the blockchain for the status of the transaction
+      getMaestro(
+        txhash,
+        uid,
+        wineId,
+        (data: any) => {
+          setStatusMonitor({
+            status: "success",
+            message: "Transaction completed",
+          });
+          onComplete && onComplete(data);
+          stopStatusMonitor();
+          clearInterval(timer);
+          setStatusTimer(null);
+          setTokenizing(false);
+        },
+        (error: any) => {
+          setStatusMonitor({
+            status: "error",
+            message: "Transaction failed",
+          });
+          onError && onError(error);
+        },
+      );
+    }, 5000);
+
+    setStatusTimer(timer);
+
+    // * Set timeout to stop the monitor
+    setTimeout(() => {
+      clearInterval(timer);
+      setStatusTimer(null);
+      setStatusMonitor({
+        status: "error",
+        message: "Transaction timed out",
+      });
+      stopStatusMonitor();
+    }, 600000);
+  };
+
+  const stopStatusMonitor = () => {
+    if (statusTimer) {
+      clearInterval(statusTimer);
+    }
+    setStatusMonitor({ status: "idle", message: "Not started" });
+  };
+
   const tokenizeBatch = (data: any, cb: (cbData: any) => void) => {
     setTokenizing(true);
     setAction("create");
@@ -114,7 +230,7 @@ export const TokenizerProvider = ({
     console.log("XXXXXXXXXXXXXXXXXX\n\n");
 
     fetch(
-      `${process.env.NEXT_PUBLIC_TOKENIZATION_API_URL}/tx/true/mint-batch`,
+      `${process.env.NEXT_PUBLIC_TOKENIZATION_API_URL}/tx/false/mint-batch`,
       {
         method: "POST",
         headers: {
@@ -132,12 +248,12 @@ export const TokenizerProvider = ({
     )
       .then(async (res) => {
         const resData = await res.json();
-        setTokenizing(false);
-        // console.log("TOKENIZE BATCH RESULT", data);
+        // setTokenizing(false);
+        console.log("TOKENIZE BATCH RESULT / resData:", resData);
         cb(resData);
       })
       .catch((error) => {
-        setTokenizing(false);
+        // setTokenizing(false);
         console.log(error);
         cb(error);
       });
@@ -151,7 +267,7 @@ export const TokenizerProvider = ({
     setAction("update");
     setTokenizing(true);
     fetch(
-      `${process.env.NEXT_PUBLIC_TOKENIZATION_API_URL}/tx/true/update-batch/${tokenId}`,
+      `${process.env.NEXT_PUBLIC_TOKENIZATION_API_URL}/tx/false/update-batch/${tokenId}`,
       {
         method: "PUT",
         headers: {
@@ -169,12 +285,12 @@ export const TokenizerProvider = ({
     )
       .then(async (res) => {
         const data = await res.json();
-        setTokenizing(false);
+        // setTokenizing(false);
         // console.log("TOKENIZE BATCH RESULT", data);
         cb(data);
       })
       .catch((error) => {
-        setTokenizing(false);
+        // setTokenizing(false);
         console.log(error);
         cb(error);
       });
@@ -202,12 +318,12 @@ export const TokenizerProvider = ({
     )
       .then(async (res) => {
         const data = await res.json();
-        setTokenizing(false);
+        // setTokenizing(false);
         console.log("deleted BATCH RESULT", data);
         cb(data);
       })
       .catch((error) => {
-        setTokenizing(false);
+        // setTokenizing(false);
         console.log(error);
         cb(error);
       });
@@ -258,6 +374,10 @@ export const TokenizerProvider = ({
     burnBatchToken,
     tokenizeBottle,
     action,
+    statusMonitor,
+    startStatusMonitor,
+    stopStatusMonitor,
+    statusTimer,
   };
 
   return (

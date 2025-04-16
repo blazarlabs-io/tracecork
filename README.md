@@ -194,13 +194,13 @@ The server which runs in the container is listening on port 8082 by default. In 
 
 ````bash
 ```bash
-docker run -it -p 8082:8082 --name wts mariusgeorgescu/wine-tokenization-service:amd64 /bin/bash
+docker run -it -p 8082:8082 -e PORT=8082 --name wts mariusgeorgescu/wine-tokenization-service:amd64 /bin/bash
 ````
 
 in this case the container is listening on port 8082. But as mentioned there is an internal env variable in the container for the default server port. In order to override this we need to run the container following command:
 
 ```bash
-docker run -it -p 8082:8082 -e PORT=8083 --name wts mariusgeorgescu/wine-tokenization-service:amd64 /bin/bash
+docker run -it -p 8083:8083 -e PORT=8083 --name wtsp mariusgeorgescu/wine-tokenization-service:amd64 /bin/bash
 ```
 
 In this way we ca run 2 diferent environments, one for staging and one for production.

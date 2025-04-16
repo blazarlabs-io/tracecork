@@ -37,7 +37,8 @@ export const TokenizeWineDialog = ({
   children,
 }: TokenizeWineDialogProps) => {
   const { t } = useTranslationHandler();
-  const { tokenizeBatch } = useTokenizer();
+  const { tokenizeBatch, startStatusMonitor, stopStatusMonitor } =
+    useTokenizer();
   const [open, setOpen] = useState<boolean>(false);
 
   const uploadFile = async (imgFile: File) => {
@@ -119,6 +120,8 @@ export const TokenizeWineDialog = ({
 
     const storageData = await storageRes.json();
 
+    // ! TODO: It seems image and description somehow get inverted on the server.
+    // ! So we try to invert it here to fix it.
     const newBatchData = {
       batch_data: {
         info: JSON.stringify(wine),
@@ -146,18 +149,46 @@ export const TokenizeWineDialog = ({
       console.log("tokenRefId:", data.tokenRefId);
       console.log("txId:", data.txId);
       console.log("\n+++++++++++++++++++\n\n");
-      try {
-        const res = await db.wine.update(uid, wine.id, {
-          tokenization: {
-            isTokenized: true,
-            tokenRefId: data.tokenRefId,
-            txId: data.txId,
-          },
-        });
-        console.log("TOKENIZE DONE && DB UPDATED", res);
-      } catch (error) {
-        console.log(error);
-      }
+
+      startStatusMonitor(
+        data.txId,
+        uid,
+        wine.id,
+        (res: any) => {
+          console.log("MAESTRO RES in callback", res);
+          db.wine
+            .update(uid, wine.id, {
+              tokenization: {
+                isTokenized: true,
+                tokenRefId: data.tokenRefId,
+                txId: data.txId,
+              },
+            })
+            .then(() => {
+              console.log("TOKENIZE DONE && DB UPDATED");
+              stopStatusMonitor();
+            })
+            .catch((error) => {
+              console.log("TOKENIZE DONE && DB UPDATED ERROR");
+              console.log(error);
+            });
+        },
+        (error: any) => {
+          console.log("MAESTRO ERROR", error);
+        },
+      );
+      // try {
+      //   const res = await db.wine.update(uid, wine.id, {
+      //     tokenization: {
+      //       isTokenized: true,
+      //       tokenRefId: data.tokenRefId,
+      //       txId: data.txId,
+      //     },
+      //   });
+      //   console.log("TOKENIZE DONE && DB UPDATED", res);
+      // } catch (error) {
+      //   console.log(error);
+      // }
     });
   };
 

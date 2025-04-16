@@ -227,3 +227,10 @@ export interface StorageSensors {
   light: number;
   vibration: number;
 }
+
+export type StatusMonitor = {
+  status: "idle" | "tokenizing" | "success" | "error";
+  message: string;
+};
+
+export type StatusTimer = NodeJS.Timeout | null;
