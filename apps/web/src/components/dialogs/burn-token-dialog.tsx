@@ -72,7 +72,7 @@ export const BurnTokenDialog = ({
             });
         },
         (error: any) => {
-          console.log("MAESTRO ERROR", error);
+          console.log("MAESTRO ERROR", error, data.txId);
         },
       );
     });
