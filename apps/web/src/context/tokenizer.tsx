@@ -175,6 +175,7 @@ export const TokenizerProvider = ({
 
     const timer = setInterval(() => {
       // * We fetch and query the blockchain for the status of the transaction
+      console.log("Fetching Maestro", txhash, uid, wineId);
       getMaestro(
         txhash,
         uid,
