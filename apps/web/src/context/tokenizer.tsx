@@ -152,7 +152,7 @@ export const TokenizerProvider = ({
         onComplete && onComplete(data);
       })
       .catch((error: any) => {
-        console.log("MAESTRO ERROR", error);
+        console.log("MAESTRO ERROR", error, txhash, uid, wineId);
         onError && onError(error);
       });
   };
