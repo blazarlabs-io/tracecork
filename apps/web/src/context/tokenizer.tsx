@@ -211,7 +211,7 @@ export const TokenizerProvider = ({
         message: "Transaction timed out",
       });
       stopStatusMonitor();
-    }, 600000);
+    }, 900000);
   };
 
   const stopStatusMonitor = () => {
