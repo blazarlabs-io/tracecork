@@ -217,7 +217,7 @@ export interface DynamicQrCode {
   lastUpdated: Timestamp;
 }
 
-export type TokenAction = "create" | "update" | "burn" | null;
+export type TokenAction = "create" | "update" | "burn" | "done" | null;
 
 export interface StorageSensors {
   date: Date;
@@ -228,9 +228,24 @@ export interface StorageSensors {
   vibration: number;
 }
 
+export type MStatus =
+  | "idle"
+  | "tokenizing"
+  | "burning"
+  | "updating"
+  | "success"
+  | "error";
+
 export type StatusMonitor = {
-  status: "idle" | "tokenizing" | "success" | "error";
+  status: MStatus;
   message: string;
+  txHash: string | null;
+  refId: string | null;
 };
 
 export type StatusTimer = NodeJS.Timeout | null;
+
+export type Batch = {
+  txId: string;
+  tokenRefId: string;
+};
