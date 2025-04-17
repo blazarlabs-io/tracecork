@@ -34,7 +34,6 @@ export interface TokenizerContextInterface {
   updateAction: (action: TokenAction) => void;
   statusMonitor: StatusMonitor;
   statusTimer: StatusTimer;
-  txHash: string | null;
   wineId: string | null;
 }
 
@@ -58,7 +57,6 @@ const contextInitialData: TokenizerContextInterface = {
     refId: null,
   },
   statusTimer: null,
-  txHash: null,
   wineId: null,
 };
 
@@ -98,9 +96,6 @@ export const TokenizerProvider = ({
   const [statusTimer, setStatusTimer] = useState<
     TokenizerContextInterface["statusTimer"]
   >(contextInitialData.statusTimer);
-  const [txHash, setTxHash] = useState<TokenizerContextInterface["txHash"]>(
-    contextInitialData.txHash,
-  );
   const [wineId, setWineId] = useState<TokenizerContextInterface["wineId"]>(
     contextInitialData.wineId,
   );
@@ -179,7 +174,6 @@ export const TokenizerProvider = ({
       )
         .then(async (res) => {
           const resData = await res.json();
-          setTxHash(() => resData.txId);
           setStatusMonitor(() => {
             return {
               status: "tokenizing",
@@ -240,7 +234,6 @@ export const TokenizerProvider = ({
     )
       .then(async (res) => {
         const data = await res.json();
-        setTxHash(() => data.txId);
         setStatusMonitor(() => {
           return {
             status: "updating",
@@ -298,7 +291,6 @@ export const TokenizerProvider = ({
         const data = await res.json();
         // setTokenizing(false);
         tk.log("deleted BATCH RESULT", data);
-        setTxHash(() => data.txId);
         setStatusMonitor((prev) => {
           return {
             status: "burning",
@@ -365,6 +357,7 @@ export const TokenizerProvider = ({
       statusMonitor.status === "burning" ||
       statusMonitor.status === "updating"
     ) {
+      const { txHash } = statusMonitor;
       const timer = setInterval(() => {
         fetch("/api/maestro/get-tx-details", {
           method: "POST",
@@ -427,7 +420,6 @@ export const TokenizerProvider = ({
     updateAction,
     statusMonitor,
     statusTimer,
-    txHash,
     wineId,
   };
 
