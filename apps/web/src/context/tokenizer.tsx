@@ -352,12 +352,12 @@ export const TokenizerProvider = ({
   };
 
   useEffect(() => {
+    const { txHash, status } = statusMonitor;
     if (
-      statusMonitor.status === "tokenizing" ||
-      statusMonitor.status === "burning" ||
-      statusMonitor.status === "updating"
+      status === "tokenizing" ||
+      status === "burning" ||
+      status === "updating"
     ) {
-      const { txHash } = statusMonitor;
       const timer = setInterval(() => {
         fetch("/api/maestro/get-tx-details", {
           method: "POST",
