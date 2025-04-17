@@ -18,12 +18,14 @@ import {
 // import { toast } from "@/hooks/use-toast";
 // import { db } from "@/lib/firebase/services/db";
 import { useTranslationHandler } from "@/hooks/use-translation-handler";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useTokenizer } from "~/src/context/tokenizer";
 import { Wine } from "~/src/types/db";
 import MarkdownPreviewer from "../markdown-previewer/MarkdownPreviewer";
 import { db } from "~/src/lib/firebase/services/db";
 import { mDataSample } from "~/src/data/mdata_sample";
+import { useUpdateTokenizedInDb } from "~/src/hooks/use-update-tokenized-in-db";
+import tk from "~/src/services/logger";
 
 export interface TokenizeWineDialogProps {
   uid: string;
@@ -37,9 +39,9 @@ export const TokenizeWineDialog = ({
   children,
 }: TokenizeWineDialogProps) => {
   const { t } = useTranslationHandler();
-  const { tokenizeBatch, startStatusMonitor, stopStatusMonitor } =
-    useTokenizer();
+  const { tokenizeBatch, statusMonitor } = useTokenizer();
   const [open, setOpen] = useState<boolean>(false);
+  // const mountRef = useRef<boolean>(false);
 
   const uploadFile = async (imgFile: File) => {
     if (!imgFile) {
@@ -58,8 +60,7 @@ export const TokenizeWineDialog = ({
       const signedUrl = await uploadRequest.json();
       return signedUrl;
     } catch (e) {
-      console.log(e);
-      alert("Trouble uploading file");
+      tk.log("Error uploading file", e);
       return null;
     }
   };
@@ -82,7 +83,7 @@ export const TokenizeWineDialog = ({
 
       return file;
     } catch (error) {
-      console.error("Error fetching or converting image:", error);
+      tk.error("Error fetching or converting image:", error);
       return null;
     }
   };
@@ -98,14 +99,14 @@ export const TokenizeWineDialog = ({
     // TODO: In order to make pinata work, use the code in the comment bellow <await uploadFile(imageFile as File)>
     const imgUploadRes = await uploadFile(imageFile as File); // "xxx/ipfs/0195b9b2-3fb3-74e0-ace6-53807d2c7014"; //
 
-    console.log("\n====================================");
+    tk.log("\n====================================");
     const splittedUrl = imgUploadRes?.split("/ipfs/");
     const imgIpfs = `ipfs://${splittedUrl?.[1]}`;
-    console.log("imageFile", imageFile);
-    console.log("imgUploadRes", imgUploadRes);
-    console.log("splittedUrl", splittedUrl);
-    console.log("imgIpfs", imgIpfs);
-    console.log("====================================\n");
+    tk.log("imageFile", imageFile);
+    tk.log("imgUploadRes", imgUploadRes);
+    tk.log("splittedUrl", splittedUrl);
+    tk.log("imgIpfs", imgIpfs);
+    tk.log("====================================\n");
 
     // TODO: Add collectionSize = 0 error dialog preventing the tokenization if collectionSize is not set properly.
 
@@ -120,8 +121,7 @@ export const TokenizeWineDialog = ({
 
     const storageData = await storageRes.json();
 
-    // ! TODO: It seems image and description somehow get inverted on the server.
-    // ! So we try to invert it here to fix it.
+    // * Create new batch object
     const newBatchData = {
       batch_data: {
         info: JSON.stringify(wine),
@@ -141,56 +141,41 @@ export const TokenizeWineDialog = ({
     };
 
     tokenizeBatch(newBatchData, async (data: any) => {
-      console.log("\n\n+++++++++++++++++++\n");
-      console.log("newBatchData:", newBatchData);
-      console.log("UID:", uid);
-      console.log("WINE:", wine);
-      console.log("DATA:", data);
-      console.log("tokenRefId:", data.tokenRefId);
-      console.log("txId:", data.txId);
-      console.log("\n+++++++++++++++++++\n\n");
-
-      startStatusMonitor(
-        data.txId,
-        uid,
-        wine.id,
-        (res: any) => {
-          console.log("MAESTRO RES in callback", res);
-          db.wine
-            .update(uid, wine.id, {
-              tokenization: {
-                isTokenized: true,
-                tokenRefId: data.tokenRefId,
-                txId: data.txId,
-              },
-            })
-            .then(() => {
-              console.log("TOKENIZE DONE && DB UPDATED");
-              stopStatusMonitor();
-            })
-            .catch((error) => {
-              console.log("TOKENIZE DONE && DB UPDATED ERROR");
-              console.log(error);
-            });
-        },
-        (error: any) => {
-          console.log("MAESTRO ERROR", error);
-        },
-      );
-      // try {
-      //   const res = await db.wine.update(uid, wine.id, {
-      //     tokenization: {
-      //       isTokenized: true,
-      //       tokenRefId: data.tokenRefId,
-      //       txId: data.txId,
-      //     },
-      //   });
-      //   console.log("TOKENIZE DONE && DB UPDATED", res);
-      // } catch (error) {
-      //   console.log(error);
-      // }
+      tk.log("\n\n+++++++++++++++++++\n");
+      tk.log("newBatchData:", newBatchData);
+      tk.log("UID:", uid);
+      tk.log("WINE:", wine);
+      tk.log("DATA:", data);
+      tk.log("tokenRefId:", data.tokenRefId);
+      tk.log("txId:", data.txId);
+      tk.log("\n+++++++++++++++++++\n\n");
     });
   };
+
+  // useEffect(() => {
+  //   if (!mountRef.current && statusMonitor.status === "success") {
+  //     // * We update the database with the latest TX ID
+  //     console.log("UPDATING DB WITH TOKENIZATION DATA", statusMonitor);
+  //     db.wine
+  //       .update(uid, wine.id, {
+  //         tokenization: {
+  //           isTokenized: true,
+  //           tokenRefId: statusMonitor.refId,
+  //           txId: statusMonitor.txHash,
+  //         },
+  //       })
+  //       .then(() => {
+  //         console.log("TOKENIZE DONE && DB UPDATED");
+  //       })
+  //       .catch((error) => {
+  //         console.log("TOKENIZE DONE && DB UPDATED ERROR");
+  //         console.log(error);
+  //       });
+  //     mountRef.current = true;
+  //   } else {
+  //     mountRef.current = false;
+  //   }
+  // }, [statusMonitor]);
 
   return (
     <Dialog open={open} onOpenChange={setOpen}>

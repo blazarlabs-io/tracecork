@@ -8,20 +8,24 @@ import { TokenizedWineBurnDialog } from "../dialogs/tokenized-wine-burn-dialog";
 import { TokenizedWineUpdateDialog } from "../dialogs/tokenized-wine-update-dialog";
 
 export const PrivateLayout = ({ children }: { children: React.ReactNode }) => {
-  const { tokenizing, action } = useTokenizer();
+  const { tokenizing, action, previousAction, statusMonitor } = useTokenizer();
   return (
     <>
       {tokenizing ? (
         <div className="fixed z-50 flex items-center justify-center left-2 bottom-2">
-          <TokenizingLoader action={action} />
+          <TokenizingLoader
+            action={action}
+            title="Please wait..."
+            message={statusMonitor.message}
+          />
         </div>
       ) : (
         <>
-          {action === "create" ? (
+          {previousAction === "create" ? (
             <TokenizedWineDialog />
-          ) : action === "update" ? (
+          ) : previousAction === "update" ? (
             <TokenizedWineUpdateDialog />
-          ) : action === "burn" ? (
+          ) : previousAction === "burn" ? (
             <TokenizedWineBurnDialog />
           ) : (
             <></>

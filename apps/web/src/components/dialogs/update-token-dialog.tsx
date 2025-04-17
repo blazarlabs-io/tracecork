@@ -10,7 +10,7 @@ import {
   DialogTrigger,
 } from "@repo/ui/components/ui/dialog";
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useTokenizer } from "~/src/context/tokenizer";
 import { mDataSample } from "~/src/data/mdata_sample";
 import { ipfs } from "~/src/lib/pinata/services";
@@ -37,11 +37,10 @@ export const UpdateTokenDialog = ({
   wine,
   children,
 }: UpdateTokenDialogProps) => {
-  const { user } = useAuth();
-  const { updateBatchToken, startStatusMonitor, stopStatusMonitor } =
-    useTokenizer();
+  const { updateBatchToken, statusMonitor } = useTokenizer();
 
   const [open, setOpen] = useState<boolean>(false);
+  const mountRef = useRef<boolean>(false);
 
   const handleUpdate = async () => {
     setOpen(false);
@@ -73,40 +72,36 @@ export const UpdateTokenDialog = ({
       // * Update token on blockchain using TWS
       updateBatchToken(batch.tokenRefId, updatedBatch, (data: any) => {
         console.log("UPDATE DONE", data);
-
-        // * We start the tokenization status monitor
-        startStatusMonitor(
-          data.txId,
-          user?.uid as string,
-          wine.id,
-          (res: any) => {
-            console.log("MAESTRO RES in callback", res);
-            // * We update the database with the latest TX ID
-            db.wine
-              .update(user?.uid as string, wine.id, {
-                tokenization: {
-                  ...wine.tokenization,
-                  txId: data.txId,
-                },
-              })
-              .then(() => {
-                console.log("TOKENIZE DONE && DB UPDATED");
-                stopStatusMonitor();
-              })
-              .catch((error) => {
-                console.log("TOKENIZE DONE && DB UPDATED ERROR");
-                console.log(error);
-              });
-          },
-          (error: any) => {
-            console.log("MAESTRO ERROR", error);
-          },
-        );
       });
     } catch (error) {
       console.log(error);
     }
   };
+
+  // useEffect(() => {
+  //   if (!mountRef.current && statusMonitor.status === "success") {
+  //     // * We update the database with the latest TX ID
+  //     console.log("UPDATING DB WITH TOKENIZATION DATA", statusMonitor);
+  //     db.wine
+  //       .update(user?.uid as string, wine.id, {
+  //         tokenization: {
+  //           isTokenized: true,
+  //           tokenRefId: statusMonitor.refId,
+  //           txId: statusMonitor.txHash,
+  //         },
+  //       })
+  //       .then(() => {
+  //         console.log("TOKENIZE DONE && DB UPDATED");
+  //       })
+  //       .catch((error) => {
+  //         console.log("TOKENIZE DONE && DB UPDATED ERROR");
+  //         console.log(error);
+  //       });
+  //     mountRef.current = true;
+  //   } else {
+  //     mountRef.current = false;
+  //   }
+  // }, [statusMonitor]);
 
   return (
     <Dialog open={open} onOpenChange={setOpen}>

@@ -27,6 +27,9 @@ import { useRouter } from "next/navigation";
 import { useTranslationHandler } from "@/hooks/use-translation-handler";
 import { useAuth } from "@/context/auth";
 import { useEffect } from "react";
+import { useUpdateTokenizedInDb } from "~/src/hooks/use-update-tokenized-in-db";
+import { useTokenizer } from "~/src/context/tokenizer";
+import { TokenAction } from "~/src/types/db";
 
 interface DataTableRowActionsProps<TData> {
   row: any;
@@ -36,6 +39,20 @@ export function DataTableRowActionsDesktop<TData>({
   row,
 }: DataTableRowActionsProps<TData>) {
   const { user } = useAuth();
+  const { statusMonitor, action, previousAction, updateAction } =
+    useTokenizer();
+
+  const handleUpdateTokenizedInDb = (action: TokenAction) => {
+    updateAction(action);
+  };
+
+  // * Update DB with tokenization data reactive to statusMonitor changes
+  useUpdateTokenizedInDb(
+    statusMonitor,
+    previousAction === "burn" ? false : true,
+    action,
+    handleUpdateTokenizedInDb,
+  );
 
   return (
     <div className="flex items-center justify-end gap-1">
