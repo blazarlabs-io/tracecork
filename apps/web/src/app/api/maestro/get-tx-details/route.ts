@@ -8,7 +8,7 @@ export async function POST(request: Request) {
       success: false,
     });
   }
-  const res = await maestroClient.transactions.txInfo(data.txhash);
+  const res = await maestroClient.transactions.txInfo(data.txHash);
 
   console.log("RES", res);
 

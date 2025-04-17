@@ -5,11 +5,17 @@ helix.register();
 
 export type TokenizingLoaderProps = {
   action: TokenAction;
+  title: string;
+  message: string;
 };
 
-export const TokenizingLoader = ({ action }: TokenizingLoaderProps) => {
+export const TokenizingLoader = ({
+  action,
+  title,
+  message,
+}: TokenizingLoaderProps) => {
   return (
-    <div className="bg-background animate-bounce shadow-md flex items-center justify-center gap-4 rounded-md">
+    <div className="bg-background animate-bounce shadow-md flex items-center justify-start gap-4 rounded-md min-w-[320px]">
       <div
         style={{
           backgroundColor:
@@ -26,16 +32,8 @@ export const TokenizingLoader = ({ action }: TokenizingLoaderProps) => {
         <l-helix size="48" speed="2.0" color="white"></l-helix>
       </div>
       <div className="flex flex-col items-start justify-center gap-1 max-w-56 pr-6 py-4">
-        <p className="text-sm font-medium">Please wait</p>
-        <p className="text-xs">
-          We are{" "}
-          {action === "create"
-            ? "tokenizing"
-            : action === "burn"
-              ? "burning"
-              : "updating"}{" "}
-          your wine data and will let you know when it is done.
-        </p>
+        <p className="text-sm font-medium">{title}</p>
+        <p className="text-xs">{message}</p>
       </div>
     </div>
   );
