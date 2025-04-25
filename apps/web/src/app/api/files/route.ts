@@ -3,7 +3,6 @@ import { pinata } from "@/lib/pinata/client";
 
 export const dynamic = "force-dynamic";
 export const fetchCache = "force-no-store";
-export const bodyParser = false;
 
 export async function POST(request: NextRequest) {
   const data = await request.formData();
