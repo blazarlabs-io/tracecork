@@ -1,8 +1,9 @@
 "use client";
 
-import { auth } from "../lib/firebase/client";
+import { auth } from "@/lib/firebase/client";
 import { User, onAuthStateChanged } from "firebase/auth";
 import { useRouter, usePathname } from "next/navigation";
+import { tk } from "@/services/logger";
 
 // LIBS
 import { createContext, useContext, useEffect, useState } from "react";
@@ -36,7 +37,7 @@ export const AuthProvider = ({
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
-      console.log(user);
+      tk.log(user);
       if (user) {
         setUser(user);
         if (!pathname.startsWith("/dashboard")) router.push("/dashboard/home");

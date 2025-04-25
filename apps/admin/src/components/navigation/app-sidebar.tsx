@@ -31,7 +31,6 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
           <NavMain
             items={sidebarItems}
             onClick={(title) => {
-              console.log(title);
               updateSidebarItems(
                 sidebarItems.map((item) => {
                   return {

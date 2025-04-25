@@ -1,7 +1,7 @@
 "use client";
 
 import { Separator } from "@repo/ui/components/ui/separator";
-import { Header } from "../sections/header";
+import { Header } from "@/components/sections/header";
 import {
   Select,
   SelectContent,
@@ -18,6 +18,7 @@ import {
   AvatarImage,
 } from "@repo/ui/components/ui/avatar";
 import { useEffect } from "react";
+import { tk } from "@/services/logger";
 
 type DashboardWineryPageProps = {
   winery: any;
@@ -34,7 +35,7 @@ export const DashboardWineryPage = ({
   // * HANDLERS
   const handleUpdatePlan = async (plan: string) => {
     const res = await db.winery.update(winery.id, { billing: { level: plan } });
-    console.log(res);
+    tk.log(res);
     if (res.status === 200) {
       toast({
         title: "Plan updated successfully",
@@ -48,10 +49,6 @@ export const DashboardWineryPage = ({
       });
     }
   };
-
-  useEffect(() => {
-    console.log(winery, systemVariables);
-  }, [winery]);
 
   return (
     <>

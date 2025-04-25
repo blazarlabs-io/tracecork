@@ -29,7 +29,7 @@
     "lucide-react": "^0.469.0",
     "next": "^14.2.3",
     "next-intl": "^3.26.3",
-    "pinata": "^2.1.0",
+    "pinata": "^0.1.10",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-dropzone": "^14.3.5",

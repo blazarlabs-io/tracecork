@@ -50,15 +50,21 @@ export const TokenizeWineDialog = ({
     }
 
     const data = new FormData();
-    data.set("file", imgFile);
+    data.append(
+      "file",
+      imgFile,
+      `${uid}-${wine.generalInfo.collectionName}.png`,
+    );
 
     try {
       const uploadRequest = await fetch("/api/files", {
         method: "POST",
         body: data,
       });
-      const signedUrl = await uploadRequest.json();
-      return signedUrl;
+      const res = await uploadRequest.json();
+      // const signedUrl = res.url;
+      console.log("\n\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXPINATA", res);
+      return res;
     } catch (e) {
       tk.log("Error uploading file", e);
       return null;
@@ -97,14 +103,14 @@ export const TokenizeWineDialog = ({
     );
 
     // TODO: In order to make pinata work, use the code in the comment bellow <await uploadFile(imageFile as File)>
-    const imgUploadRes = await uploadFile(imageFile as File); // "xxx/ipfs/0195b9b2-3fb3-74e0-ace6-53807d2c7014"; //
+    const res = await uploadFile(imageFile as File); // "xxx/ipfs/0195b9b2-3fb3-74e0-ace6-53807d2c7014"; //
 
     tk.log("\n====================================");
-    const splittedUrl = imgUploadRes?.split("/ipfs/");
-    const imgIpfs = `ipfs://${splittedUrl?.[1]}`;
+    // const splittedUrl = imgUploadRes?.split("/ipfs/");
+    const imgIpfs = `ipfs://${res.IpfsHash}`;
     tk.log("imageFile", imageFile);
-    tk.log("imgUploadRes", imgUploadRes);
-    tk.log("splittedUrl", splittedUrl);
+    // tk.log("imgUploadRes", imgUploadRes);
+    // tk.log("splittedUrl", splittedUrl);
     tk.log("imgIpfs", imgIpfs);
     tk.log("====================================\n");
 
@@ -130,7 +136,7 @@ export const TokenizeWineDialog = ({
       },
       batch_meta: {
         description:
-          "This token binds a unique wine collection from tracecorck.com on the cardano blockchain.",
+          "This token binds a unique wine collection from tracecork.com on the cardano blockchain.",
         image: imgIpfs, //`ipfs://${imgIpfs}`,
         name: wine?.generalInfo.collectionName,
       },

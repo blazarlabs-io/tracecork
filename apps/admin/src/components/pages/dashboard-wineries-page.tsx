@@ -60,7 +60,6 @@ export const DashboardWineriesPage = () => {
                     <button
                       className="text-primary font-medium underline"
                       onClick={() => {
-                        console.log("ID", winery.id);
                         router.push(`/dashboard/winery/${winery.id}`);
                       }}
                     >
