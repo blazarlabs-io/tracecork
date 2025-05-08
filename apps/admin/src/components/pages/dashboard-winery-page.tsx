@@ -1,7 +1,12 @@
 "use client";
 
-import { Separator } from "@repo/ui/components/ui/separator";
 import { Header } from "@/components/sections/header";
+import db from "@/lib/firebase/services/db";
+import {
+  Avatar,
+  AvatarFallback,
+  AvatarImage,
+} from "@repo/ui/components/ui/avatar";
 import {
   Select,
   SelectContent,
@@ -10,13 +15,9 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@repo/ui/components/ui/select";
-import db from "@/lib/firebase/services/db";
+import { Separator } from "@repo/ui/components/ui/separator";
 import { useToast } from "@repo/ui/hooks/use-toast";
-import {
-  Avatar,
-  AvatarFallback,
-  AvatarImage,
-} from "@repo/ui/components/ui/avatar";
+import { useGetSystemVariablesFromDB } from "~/src/hooks/use-get-system-variables-from-db";
 
 type DashboardWineryPageProps = {
   winery: any;
@@ -29,11 +30,11 @@ export const DashboardWineryPage = ({
 }: DashboardWineryPageProps) => {
   // * HOOKS
   const { toast } = useToast();
+  const { pricing } = useGetSystemVariablesFromDB();
 
   // * HANDLERS
   const handleUpdatePlan = async (plan: string) => {
     const res = await db.winery.update(winery.id, { billing: { level: plan } });
-    console.log(res);
     if (res.status === 200) {
       toast({
         title: "Plan updated successfully",
@@ -47,8 +48,6 @@ export const DashboardWineryPage = ({
       });
     }
   };
-
-  console.log(winery, systemVariables);
 
   return (
     <>
@@ -73,10 +72,10 @@ export const DashboardWineryPage = ({
                 </SelectTrigger>
                 <SelectContent>
                   <SelectGroup>
-                    {systemVariables &&
-                      systemVariables !== undefined &&
-                      systemVariables?.pricing?.map((plan: any) => (
-                        <SelectItem key={plan._key} value={plan.name}>
+                    {pricing &&
+                      pricing !== undefined &&
+                      pricing.map((plan: any) => (
+                        <SelectItem key={plan.name} value={plan.name}>
                           {plan.name}
                         </SelectItem>
                       ))}

@@ -11,5 +11,6 @@ export const client = createClient({
 
 export const getSystemVariables = async () => {
   const data = await client.fetch('*[_type == "systemVariables"]');
+  // console.log("CMS CLIENT RES:", data);
   return data;
 };
