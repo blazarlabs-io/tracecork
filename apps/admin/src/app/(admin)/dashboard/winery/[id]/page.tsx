@@ -9,6 +9,8 @@ export default async function DashboardWinery(props: { params: Params }) {
   const id = params.id;
   const winery = await db.winery.getOne(id);
   const systemVariables = await getSystemVariables();
+
+  console.log("SYSTEM VARIABLES", systemVariables[0]);
   return (
     <DashboardWineryPage
       winery={JSON.parse(JSON.stringify(winery.data))}
