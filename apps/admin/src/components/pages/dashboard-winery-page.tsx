@@ -1,7 +1,7 @@
 "use client";
 
 import { Separator } from "@repo/ui/components/ui/separator";
-import { Header } from "../sections/header";
+import { Header } from "@/components/sections/header";
 import {
   Select,
   SelectContent,
@@ -17,7 +17,6 @@ import {
   AvatarFallback,
   AvatarImage,
 } from "@repo/ui/components/ui/avatar";
-import { useEffect } from "react";
 
 type DashboardWineryPageProps = {
   winery: any;
@@ -48,10 +47,6 @@ export const DashboardWineryPage = ({
       });
     }
   };
-
-  useEffect(() => {
-    console.log(winery, systemVariables);
-  }, [winery]);
 
   return (
     <>

@@ -43,81 +43,83 @@ export const useStorageSensorData = (wine: Wine, wineId: string) => {
       };
 
       // for each object in the sensor data array, add new key with minValue and maxValue
-      _sensorData.data.forEach((object: any) => {
-        /* 
-        calculate and store the min (make sure min is not 0 if there are other values) and max values for each of the following elements in the object: 
-            temperature, light, vibration, humidity. 
-        At the end we get an object like:
-        {
-            data: _sensorData,
-            minValue: {
-                temperature: 0,
-                light: 0,
-                vibration: 0,
-                humidity: 0
-            },
-            maxValue: {
-                temperature: 0,
-                light: 0,
-                vibration: 0,
-                humidity: 0
-            }
-        }
-        */
+      if (_sensorData && _sensorData.data) {
+        _sensorData.data.forEach((object: any) => {
+          /* 
+          calculate and store the min (make sure min is not 0 if there are other values) and max values for each of the following elements in the object: 
+              temperature, light, vibration, humidity. 
+          At the end we get an object like:
+          {
+              data: _sensorData,
+              minValue: {
+                  temperature: 0,
+                  light: 0,
+                  vibration: 0,
+                  humidity: 0
+              },
+              maxValue: {
+                  temperature: 0,
+                  light: 0,
+                  vibration: 0,
+                  humidity: 0
+              }
+          }
+          */
 
-        // Make sure min value is not 0 if there are other min values
-        if (object.temperature > 0) {
-          console.log(
-            "object.temperature",
-            _sensorData.minValue.temperature,
+          // Make sure min value is not 0 if there are other min values
+          if (object.temperature > 0) {
+            console.log(
+              "object.temperature",
+              _sensorData.minValue.temperature,
+              object.temperature,
+            );
+            _sensorData.minValue.temperature = Math.min(
+              _sensorData.minValue.temperature,
+              object.temperature,
+            );
+          }
+
+          if (object.light > 0) {
+            _sensorData.minValue.light = Math.min(
+              _sensorData.minValue.light,
+              object.light,
+            );
+          }
+
+          if (object.vibration > 0) {
+            _sensorData.minValue.vibration = Math.min(
+              _sensorData.minValue.vibration,
+              object.vibration,
+            );
+          }
+
+          if (object.humidity > 0) {
+            _sensorData.minValue.humidity = Math.min(
+              _sensorData.minValue.humidity,
+              object.humidity,
+            );
+          }
+
+          _sensorData.maxValue.temperature = Math.max(
+            _sensorData.maxValue.temperature,
             object.temperature,
           );
-          _sensorData.minValue.temperature = Math.min(
-            _sensorData.minValue.temperature,
-            object.temperature,
-          );
-        }
-
-        if (object.light > 0) {
-          _sensorData.minValue.light = Math.min(
-            _sensorData.minValue.light,
+          _sensorData.maxValue.light = Math.max(
+            _sensorData.maxValue.light,
             object.light,
           );
-        }
-
-        if (object.vibration > 0) {
-          _sensorData.minValue.vibration = Math.min(
-            _sensorData.minValue.vibration,
+          _sensorData.maxValue.vibration = Math.max(
+            _sensorData.maxValue.vibration,
             object.vibration,
           );
-        }
-
-        if (object.humidity > 0) {
-          _sensorData.minValue.humidity = Math.min(
-            _sensorData.minValue.humidity,
+          _sensorData.maxValue.humidity = Math.max(
+            _sensorData.maxValue.humidity,
             object.humidity,
           );
-        }
 
-        _sensorData.maxValue.temperature = Math.max(
-          _sensorData.maxValue.temperature,
-          object.temperature,
-        );
-        _sensorData.maxValue.light = Math.max(
-          _sensorData.maxValue.light,
-          object.light,
-        );
-        _sensorData.maxValue.vibration = Math.max(
-          _sensorData.maxValue.vibration,
-          object.vibration,
-        );
-        _sensorData.maxValue.humidity = Math.max(
-          _sensorData.maxValue.humidity,
-          object.humidity,
-        );
-
-        setSensorData(() => _sensorData);
-      });
+          setSensorData(() => _sensorData);
+        });
+      }
     }
   }, [wine, batchDetails]);
 
