@@ -1,7 +1,12 @@
 "use client";
 
-import { Separator } from "@repo/ui/components/ui/separator";
 import { Header } from "@/components/sections/header";
+import db from "@/lib/firebase/services/db";
+import {
+  Avatar,
+  AvatarFallback,
+  AvatarImage,
+} from "@repo/ui/components/ui/avatar";
 import {
   Select,
   SelectContent,
@@ -10,14 +15,8 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@repo/ui/components/ui/select";
-import db from "@/lib/firebase/services/db";
+import { Separator } from "@repo/ui/components/ui/separator";
 import { useToast } from "@repo/ui/hooks/use-toast";
-import {
-  Avatar,
-  AvatarFallback,
-  AvatarImage,
-} from "@repo/ui/components/ui/avatar";
-import { useEffect } from "react";
 import { useGetSystemVariablesFromDB } from "~/src/hooks/use-get-system-variables-from-db";
 
 type DashboardWineryPageProps = {
@@ -36,7 +35,6 @@ export const DashboardWineryPage = ({
   // * HANDLERS
   const handleUpdatePlan = async (plan: string) => {
     const res = await db.winery.update(winery.id, { billing: { level: plan } });
-    console.log(res);
     if (res.status === 200) {
       toast({
         title: "Plan updated successfully",
