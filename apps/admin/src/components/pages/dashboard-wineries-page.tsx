@@ -36,7 +36,7 @@ export const DashboardWineriesPage = () => {
           </TableRow>
         </TableHeader>
         <TableBody>
-          {wineries && wineries.length > 0 && (
+          {wineries && wineries !== undefined && wineries.length > 0 && (
             <>
               {wineries.map((winery) => (
                 <TableRow key={winery.id}>
