@@ -18,6 +18,7 @@ import {
   AvatarImage,
 } from "@repo/ui/components/ui/avatar";
 import { useEffect } from "react";
+import { useGetSystemVariablesFromDB } from "~/src/hooks/use-get-system-variables-from-db";
 
 type DashboardWineryPageProps = {
   winery: any;
@@ -30,6 +31,7 @@ export const DashboardWineryPage = ({
 }: DashboardWineryPageProps) => {
   // * HOOKS
   const { toast } = useToast();
+  const { pricing } = useGetSystemVariablesFromDB();
 
   // * HANDLERS
   const handleUpdatePlan = async (plan: string) => {
@@ -48,10 +50,6 @@ export const DashboardWineryPage = ({
       });
     }
   };
-
-  useEffect(() => {
-    console.log(systemVariables);
-  }, [systemVariables]);
 
   return (
     <>
@@ -76,10 +74,10 @@ export const DashboardWineryPage = ({
                 </SelectTrigger>
                 <SelectContent>
                   <SelectGroup>
-                    {systemVariables &&
-                      systemVariables !== undefined &&
-                      systemVariables?.pricing?.map((plan: any) => (
-                        <SelectItem key={plan._key} value={plan.name}>
+                    {pricing &&
+                      pricing !== undefined &&
+                      pricing.map((plan: any) => (
+                        <SelectItem key={plan.name} value={plan.name}>
                           {plan.name}
                         </SelectItem>
                       ))}
