@@ -17,8 +17,6 @@ import {
   AvatarFallback,
   AvatarImage,
 } from "@repo/ui/components/ui/avatar";
-import { useEffect } from "react";
-import { tk } from "@/services/logger";
 
 type DashboardWineryPageProps = {
   winery: any;
@@ -35,7 +33,7 @@ export const DashboardWineryPage = ({
   // * HANDLERS
   const handleUpdatePlan = async (plan: string) => {
     const res = await db.winery.update(winery.id, { billing: { level: plan } });
-    tk.log(res);
+    console.log(res);
     if (res.status === 200) {
       toast({
         title: "Plan updated successfully",
