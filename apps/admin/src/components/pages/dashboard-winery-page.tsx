@@ -75,7 +75,7 @@ export const DashboardWineryPage = ({
                   <SelectGroup>
                     {systemVariables &&
                       systemVariables !== undefined &&
-                      systemVariables?.pricing.map((plan: any) => (
+                      systemVariables?.pricing?.map((plan: any) => (
                         <SelectItem key={plan._key} value={plan.name}>
                           {plan.name}
                         </SelectItem>
