@@ -36,38 +36,40 @@ export const DashboardWineriesPage = () => {
           </TableRow>
         </TableHeader>
         <TableBody>
-          {wineries && wineries.length > 0 && (
+          {wineries && wineries !== undefined && wineries.length > 0 && (
             <>
-              {wineries.map((winery) => (
-                <TableRow key={winery.id}>
-                  <TableCell className="font-medium">
-                    <img
-                      src={winery.info.avatar}
-                      className="h-12 w-12 rounded-full"
-                      alt=""
-                    />
-                  </TableCell>
-                  <TableCell className="font-medium">
-                    {winery.info.name}
-                  </TableCell>
-                  <TableCell>{winery.id}</TableCell>
-                  <TableCell>{winery.billing.level}</TableCell>
-                  <TableCell>{winery.info.representative.name}</TableCell>
-                  <TableCell className="">
-                    {winery.info.representative.email}
-                  </TableCell>
-                  <TableCell className="text-right">
-                    <button
-                      className="text-primary font-medium underline"
-                      onClick={() => {
-                        router.push(`/dashboard/winery/${winery.id}`);
-                      }}
-                    >
-                      Edit
-                    </button>
-                  </TableCell>
-                </TableRow>
-              ))}
+              {wineries.map((winery) => {
+                return (
+                  <TableRow key={winery.id}>
+                    <TableCell className="font-medium">
+                      <img
+                        src={winery.info.avatar}
+                        className="h-12 w-12 rounded-full"
+                        alt=""
+                      />
+                    </TableCell>
+                    <TableCell className="font-medium">
+                      {winery.info.name}
+                    </TableCell>
+                    <TableCell>{winery.id}</TableCell>
+                    <TableCell>{winery.billing.level}</TableCell>
+                    <TableCell>{winery.info.representative.name}</TableCell>
+                    <TableCell className="">
+                      {winery.info.representative.email}
+                    </TableCell>
+                    <TableCell className="text-right">
+                      <button
+                        className="text-primary font-medium underline"
+                        onClick={() => {
+                          router.push(`/dashboard/winery/${winery.id}`);
+                        }}
+                      >
+                        Edit
+                      </button>
+                    </TableCell>
+                  </TableRow>
+                );
+              })}
             </>
           )}
         </TableBody>

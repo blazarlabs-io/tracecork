@@ -22,20 +22,22 @@ export const NavMain = ({ items, onClick }: NavMainProps) => {
   const router = useRouter();
   return (
     <SidebarMenu>
-      {items.map((item) => (
-        <SidebarMenuItem key={item.title}>
-          <SidebarMenuButton
-            asChild
-            isActive={item.isActive}
-            onClick={() => onClick(item.title.toLowerCase())}
-          >
-            <button onClick={() => router.push(item.url)}>
-              <item.icon />
-              <span>{item.title}</span>
-            </button>
-          </SidebarMenuButton>
-        </SidebarMenuItem>
-      ))}
+      {items &&
+        items !== undefined &&
+        items?.map((item) => (
+          <SidebarMenuItem key={item.title}>
+            <SidebarMenuButton
+              asChild
+              isActive={item.isActive}
+              onClick={() => onClick(item.title.toLowerCase())}
+            >
+              <button onClick={() => router.push(item.url)}>
+                <item.icon />
+                <span>{item.title}</span>
+              </button>
+            </SidebarMenuButton>
+          </SidebarMenuItem>
+        ))}
     </SidebarMenu>
   );
 };

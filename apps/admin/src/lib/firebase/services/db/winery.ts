@@ -14,7 +14,7 @@ export const winery: any = {
       const wineries = await getDocs(wineriesRef);
       return {
         status: 200,
-        data: wineries.docs.map((doc) => doc.data()),
+        data: wineries?.docs?.map((doc) => doc.data()),
       };
     } catch (error) {
       return {

@@ -32,7 +32,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
             items={sidebarItems}
             onClick={(title) => {
               updateSidebarItems(
-                sidebarItems.map((item) => {
+                sidebarItems?.map((item) => {
                   return {
                     ...item,
                     isActive: item.title.toLowerCase() === title,

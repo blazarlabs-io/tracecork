@@ -48,6 +48,8 @@ export const DashboardWineryPage = ({
     }
   };
 
+  console.log(winery, systemVariables);
+
   return (
     <>
       {winery && winery !== undefined && (
@@ -71,11 +73,13 @@ export const DashboardWineryPage = ({
                 </SelectTrigger>
                 <SelectContent>
                   <SelectGroup>
-                    {systemVariables?.pricing.map((plan: any) => (
-                      <SelectItem key={plan._key} value={plan.name}>
-                        {plan.name}
-                      </SelectItem>
-                    ))}
+                    {systemVariables &&
+                      systemVariables !== undefined &&
+                      systemVariables?.pricing?.map((plan: any) => (
+                        <SelectItem key={plan._key} value={plan.name}>
+                          {plan.name}
+                        </SelectItem>
+                      ))}
                   </SelectGroup>
                 </SelectContent>
               </Select>
