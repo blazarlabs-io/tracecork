@@ -146,6 +146,8 @@ export const TokenizeWineDialog = ({
       ],
     };
 
+    tk.log("newBatchData:", newBatchData);
+
     tokenizeBatch(newBatchData, async (data: any) => {
       tk.log("\n\n+++++++++++++++++++\n");
       tk.log("newBatchData:", newBatchData);
