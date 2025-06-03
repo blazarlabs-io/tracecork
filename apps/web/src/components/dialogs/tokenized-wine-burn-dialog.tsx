@@ -22,8 +22,9 @@ import { useTranslationHandler } from "@/hooks/use-translation-handler";
 import MarkdownPreviewer from "../markdown-previewer/MarkdownPreviewer";
 import { useLottie } from "lottie-react";
 import anim from "@/data/fire.json";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useTokenizer } from "~/src/context/tokenizer";
+import { useAuth } from "~/src/context/auth";
 
 export interface TokenizedWineBurnDialogProps {
   children?: React.ReactNode;
@@ -48,6 +49,34 @@ export const TokenizedWineBurnDialog = ({
 }: TokenizedWineBurnDialogProps) => {
   const { batch } = useTokenizer();
   const [isOpen, setIsOpen] = useState<boolean>(true);
+  const mountRef = useRef<boolean>(false);
+  const router = useRouter();
+  const { user } = useAuth();
+  const { wineId, updateAction } = useTokenizer();
+
+  const handleClose = () => {
+    setIsOpen(false);
+    updateAction(null);
+  };
+
+  useEffect(() => {
+    if (!mountRef.current && user && wineId) {
+      mountRef.current = true;
+      db.wine
+        .update(user.uid as string, wineId, {
+          tokenization: {
+            isTokenized: false,
+          },
+        })
+        .then(() => {
+          // console.log("Tokenization done and data updated in DB");
+          // updateAction(null);
+        })
+        .catch((error) => {
+          console.error("Tokenization error, could not update DB", error);
+        });
+    }
+  }, [user, wineId]);
   return (
     <>
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
@@ -71,7 +100,7 @@ export const TokenizedWineBurnDialog = ({
               variant="default"
               size="lg"
               className="min-w-[64px] mt-4"
-              onClick={() => setIsOpen(false)}
+              onClick={handleClose}
             >
               Ok
               {/* {t(

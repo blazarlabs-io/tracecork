@@ -1,6 +1,7 @@
 import { useRef, useEffect, useState } from "react";
 import { useTokenizer } from "@/context/tokenizer";
 import { StorageSensors, Wine } from "@/types/db";
+("../services/logger");
 export const useStorageSensorData = (wine: Wine, wineId: string) => {
   const { getBatch, batchDetails } = useTokenizer();
   const [sensorData, setSensorData] = useState<any>(null);
@@ -68,11 +69,11 @@ export const useStorageSensorData = (wine: Wine, wineId: string) => {
 
           // Make sure min value is not 0 if there are other min values
           if (object.temperature > 0) {
-            console.log(
-              "object.temperature",
-              _sensorData.minValue.temperature,
-              object.temperature,
-            );
+            // console.log(
+            //   "object.temperature",
+            //   _sensorData.minValue.temperature,
+            //   object.temperature,
+            // );
             _sensorData.minValue.temperature = Math.min(
               _sensorData.minValue.temperature,
               object.temperature,

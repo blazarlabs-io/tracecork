@@ -1,6 +1,7 @@
 import { db } from "@/lib/firebase/services/db";
 import { DbResponse, Wine } from "@/types/db";
 import { useEffect, useState } from "react";
+("../services/logger");
 
 export const useGetWine = (wineId: string) => {
   const [wine, setWine] = useState<Wine | null>(null);

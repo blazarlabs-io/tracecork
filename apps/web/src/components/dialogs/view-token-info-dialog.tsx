@@ -23,6 +23,10 @@ import {
   TooltipTrigger,
 } from "@repo/ui/components/ui/tooltip";
 import { useTokenizer } from "~/src/context/tokenizer";
+// import { useGetUserAssets } from "~/src/hooks/use-get-user-assets";
+import { useWinery } from "~/src/context/winery";
+
+import { Wine } from "~/src/types/db";
 
 SyntaxHighlighter.registerLanguage("jsx", jsx);
 
@@ -40,13 +44,17 @@ export const ViewTokenInfoDialog = ({
   const [open, setOpen] = useState<boolean>(false);
   const [thumbnail, setThumbnail] = useState<string | null>(null);
   const [quantity, setQuantity] = useState<number>(1);
-
+  const [walletAssets, setWalletAssets] = useState<any>([]);
   const { tokenizeBottle } = useTokenizer();
+
+  const { wines } = useWinery();
+
+  // const { assets } = useGetUserAssets(walletAssets, wines as Wine[]);
 
   const handleSubmitTokenize = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setOpen(false);
-    console.log("BATCH", batchDetails);
+    // console.log("BATCH", batchDetails);
     // * tokenize wine bottle(s) if quantity is > 0
     if (quantity > 0) {
       const newBottle = {
@@ -55,18 +63,35 @@ export const ViewTokenInfoDialog = ({
         bottle_meta: batchDetails.batch_meta,
       };
 
-      tokenizeBottle(newBottle, (data: any) => {
-        console.log("TOKENIZE BOTTLE RESULT", data);
-      });
+      tokenizeBottle(
+        batchDetails.batch_data.info.id,
+        newBottle,
+        (data: any) => {
+          // console.log("TOKENIZE BOTTLE RESULT", data);
+        },
+      );
     }
   };
 
-  // useEffect(() => {
-  //   if (batchDetails) {
-  //     const splitted = batchDetails.batch_meta.description.split("ipfs://");
-  //     setThumbnail(`https://ipfs.io/ipfs/${splitted[1]}`);
-  //   }
-  // }, [batchDetails]);
+  useEffect(() => {
+    if (batch.tokenRefId) {
+      fetch("/api/maestro/get-assets-in-collection", {
+        method: "POST",
+        body: JSON.stringify({
+          refId: batch.tokenRefId,
+        }),
+      }).then(async (res) => {
+        const _data = (await res.json()) as any;
+        // console.log("RES", _data);
+        setWalletAssets(() => _data.data.data);
+      });
+    }
+
+    if (batchDetails) {
+      const splitted = batchDetails.batch_meta.image.split("ipfs://");
+      setThumbnail(`https://ipfs.io/ipfs/${splitted[1]}`);
+    }
+  }, [batchDetails, batch]);
   return (
     <Dialog open={open} onOpenChange={setOpen}>
       <TooltipProvider>
@@ -97,7 +122,7 @@ export const ViewTokenInfoDialog = ({
               <div className="py-4 flex flex-col items-end justify-center">
                 <Link
                   target="_blank"
-                  href={`${process.env.NEXT_PUBLIC_CARDANO_EXPLORER_URL}/${batch.tokenRefId}`}
+                  href={`${process.env.NEXT_PUBLIC_CARDANO_EXPLORER_URL}${batch.tokenRefId}`}
                   className="underline text-sm"
                 >
                   View on explorer

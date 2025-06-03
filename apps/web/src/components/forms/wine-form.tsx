@@ -132,7 +132,7 @@ export const WineForm = ({ wine }: WineFormProps) => {
           }
         })
         .catch((error: DbResponse) => {
-          console.log(error);
+          console.log(error as any);
           setSaving(false);
         });
     },
@@ -150,7 +150,7 @@ export const WineForm = ({ wine }: WineFormProps) => {
   // * Upload image to storage and url to DB + update form with url data
   const handleImageUpload = (image: File) => {
     if (!user?.uid) return;
-    console.log("image", image);
+    // console.log("image", image);
     setImageUploading(true);
     storage.winery
       .upload(
@@ -249,11 +249,11 @@ export const WineForm = ({ wine }: WineFormProps) => {
     [],
   );
 
-  useEffect(() => {
-    if (winery) {
-      console.log(winery.settings?.autosave);
-    }
-  }, [winery]);
+  // useEffect(() => {
+  //   if (winery) {
+  //     console.log(winery?.settings as any);
+  //   }
+  // }, [winery]);
 
   return (
     <>

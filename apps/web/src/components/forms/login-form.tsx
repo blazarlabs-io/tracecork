@@ -126,7 +126,7 @@ export const LoginForm = () => {
 
   useEffect(() => {
     if (isGoogleLoginSuccess) {
-      console.log("isGoogleLoginSuccess REDIRECTING");
+      // console.log("isGoogleLoginSuccess REDIRECTING");
       // router.push("/dashboard/home");
       if (typeof window !== "undefined") {
         window.location.href = "/dashboard/home";

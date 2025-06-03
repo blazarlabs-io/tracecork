@@ -21,7 +21,6 @@ import {
 } from "@repo/ui/components/ui/tooltip";
 import { useAuth } from "~/src/context/auth";
 import { useUpdateTokenizedInDb } from "~/src/hooks/use-update-tokenized-in-db";
-import tk from "~/src/services/logger";
 
 export type BurnTokenDialogProps = {
   batchId: string;
@@ -44,9 +43,9 @@ export const BurnTokenDialog = ({
 
   const handleBurn = async () => {
     setOpen(false);
-    tk.log("BATCH ID", batchId);
+    // console.log("BATCH ID", batchId);
     burnBatchToken(batchId, wine.id, async (data: any) => {
-      tk.log("BUUUURRRNNNNNNNNN", data);
+      // console.log("BUUUURRRNNNNNNNNN", data);
     });
   };
 

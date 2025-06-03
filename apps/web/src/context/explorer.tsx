@@ -5,6 +5,7 @@ import { DbResponse, Wine } from "@/types/db";
 
 // LIBS
 import { createContext, useContext, useEffect, useState } from "react";
+("../services/logger");
 
 export interface ExplorerContextInterface {
   wines: Wine[] | null;
@@ -42,7 +43,7 @@ export const ExplorerProvider = ({
         setWines(filteredWines);
       })
       .catch((error: DbResponse) => {
-        console.log(error);
+        console.log(error as any);
       });
   }, []);
 
