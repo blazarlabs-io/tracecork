@@ -25,7 +25,6 @@ import MarkdownPreviewer from "../markdown-previewer/MarkdownPreviewer";
 import { db } from "~/src/lib/firebase/services/db";
 import { mDataSample } from "~/src/data/mdata_sample";
 import { useUpdateTokenizedInDb } from "~/src/hooks/use-update-tokenized-in-db";
-import tk from "~/src/services/logger";
 
 export interface TokenizeWineDialogProps {
   uid: string;
@@ -43,6 +42,21 @@ export const TokenizeWineDialog = ({
   const [open, setOpen] = useState<boolean>(false);
   // const mountRef = useRef<boolean>(false);
 
+  function getImageBase64(file: File): Promise<string> {
+    return new Promise((resolve, reject) => {
+      const reader = new FileReader();
+
+      reader.onload = () => {
+        const base64 = reader.result as string;
+        resolve(base64);
+      };
+
+      reader.onerror = () => reject(reader.error);
+
+      reader.readAsDataURL(file); // Reads the file as a base64-encoded string
+    });
+  }
+
   const uploadFile = async (imgFile: File) => {
     if (!imgFile) {
       alert("No file selected");
@@ -56,6 +70,10 @@ export const TokenizeWineDialog = ({
       `${uid}-${wine.generalInfo.collectionName}.png`,
     );
 
+    const base64Data = await getImageBase64(imgFile);
+
+    data.append("base64Data", base64Data);
+
     try {
       const uploadRequest = await fetch("/api/files", {
         method: "POST",
@@ -63,10 +81,9 @@ export const TokenizeWineDialog = ({
       });
       const res = await uploadRequest.json();
       // const signedUrl = res.url;
-      console.log("\n\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXPINATA", res);
       return res;
     } catch (e) {
-      tk.log("Error uploading file", e);
+      console.log("Error uploading file", e);
       return null;
     }
   };
@@ -89,7 +106,7 @@ export const TokenizeWineDialog = ({
 
       return file;
     } catch (error) {
-      tk.error("Error fetching or converting image:", error);
+      console.error("Error fetching or converting image:", error);
       return null;
     }
   };
@@ -97,22 +114,23 @@ export const TokenizeWineDialog = ({
   const handleTokenize = async () => {
     setOpen(false);
 
-    const imageFile = await getImageFileFromUrl(
-      wine.generalInfo.image,
-      `${wine.generalInfo.collectionName.replace(" ", "-").toLocaleLowerCase()}-cover.jpg`,
-    );
+    // const imageFile = await getImageFileFromUrl(
+    //   wine.generalInfo.image,
+    //   `${wine.generalInfo.collectionName.replace(" ", "-").toLocaleLowerCase()}-cover.jpg`,
+    // );
 
-    // TODO: In order to make pinata work, use the code in the comment bellow <await uploadFile(imageFile as File)>
-    const res = await uploadFile(imageFile as File); // "xxx/ipfs/0195b9b2-3fb3-74e0-ace6-53807d2c7014"; //
+    // * Upload image
+    // const res = await uploadFile(imageFile as File); // "xxx/ipfs/0195b9b2-3fb3-74e0-ace6-53807d2c7014"; //
+    // console.log(res);
 
-    tk.log("\n====================================");
+    // console.log("\n====================================");
     // const splittedUrl = imgUploadRes?.split("/ipfs/");
-    const imgIpfs = `ipfs://${res.IpfsHash}`;
-    tk.log("imageFile", imageFile);
-    // tk.log("imgUploadRes", imgUploadRes);
-    // tk.log("splittedUrl", splittedUrl);
-    tk.log("imgIpfs", imgIpfs);
-    tk.log("====================================\n");
+    // const imgIpfs = `ipfs://${res.uploadData}`;
+    // console.log("imageFile", imageFile);
+    // console.log("imgUploadRes", imgUploadRes);
+    // console.log("splittedUrl", splittedUrl);
+    // console.log("imgIpfs", imgIpfs);
+    // console.log("====================================\n");
 
     // TODO: Add collectionSize = 0 error dialog preventing the tokenization if collectionSize is not set properly.
 
@@ -137,7 +155,8 @@ export const TokenizeWineDialog = ({
       batch_meta: {
         description:
           "This token binds a unique wine collection from tracecork.com on the cardano blockchain.",
-        image: imgIpfs, //`ipfs://${imgIpfs}`,
+        image:
+          "ipfs://bafybeigl3fcyqwzutlv54yurvjm5ikevh4hrmjqsjs5jbtqnabwzevcmby", //imgIpfs,
         name: wine?.generalInfo.collectionName,
       },
       batch_quantity: [
@@ -146,42 +165,19 @@ export const TokenizeWineDialog = ({
       ],
     };
 
+    // console.log("newBatchData:", newBatchData);
+
     tokenizeBatch(newBatchData, async (data: any) => {
-      tk.log("\n\n+++++++++++++++++++\n");
-      tk.log("newBatchData:", newBatchData);
-      tk.log("UID:", uid);
-      tk.log("WINE:", wine);
-      tk.log("DATA:", data);
-      tk.log("tokenRefId:", data.tokenRefId);
-      tk.log("txId:", data.txId);
-      tk.log("\n+++++++++++++++++++\n\n");
+      // console.log("\n\n+++++++++++++++++++\n");
+      // console.log("newBatchData:", newBatchData);
+      // console.log("UID:", uid);
+      // console.log("WINE:", wine);
+      // console.log("DATA:", data);
+      // console.log("tokenRefId:", data.tokenRefId);
+      // console.log("txId:", data.txId);
+      // console.log("\n+++++++++++++++++++\n\n");
     });
   };
-
-  // useEffect(() => {
-  //   if (!mountRef.current && statusMonitor.status === "success") {
-  //     // * We update the database with the latest TX ID
-  //     console.log("UPDATING DB WITH TOKENIZATION DATA", statusMonitor);
-  //     db.wine
-  //       .update(uid, wine.id, {
-  //         tokenization: {
-  //           isTokenized: true,
-  //           tokenRefId: statusMonitor.refId,
-  //           txId: statusMonitor.txHash,
-  //         },
-  //       })
-  //       .then(() => {
-  //         console.log("TOKENIZE DONE && DB UPDATED");
-  //       })
-  //       .catch((error) => {
-  //         console.log("TOKENIZE DONE && DB UPDATED ERROR");
-  //         console.log(error);
-  //       });
-  //     mountRef.current = true;
-  //   } else {
-  //     mountRef.current = false;
-  //   }
-  // }, [statusMonitor]);
 
   return (
     <Dialog open={open} onOpenChange={setOpen}>

@@ -13,3 +13,11 @@ const maestroClient = new MaestroClient(
 );
 
 export default maestroClient;
+
+// import { MaestroProvider } from "@meshsdk/core";
+
+// export const maestroProvider = new MaestroProvider({
+//   network: 'Preprod', // Mainnet / Preprod / Preview
+//   apiKey: '<Your-API-Key>', // Get key at https://docs.gomaestro.org/
+//   turboSubmit: false // Read about paid turbo transaction submission feature at https://docs.gomaestro.org
+// });

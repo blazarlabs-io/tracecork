@@ -38,7 +38,7 @@ export async function POST(request: Request) {
       actionCodeSettings,
     );
   } catch (error) {
-    console.log(error);
+    console.log(error as any);
   }
 
   const params = url.split("?")[1];
@@ -61,7 +61,7 @@ export async function POST(request: Request) {
   try {
     await sgMail.send(msg);
   } catch (error) {
-    console.log(error);
+    console.log(error as any);
   }
 
   return Response.json({

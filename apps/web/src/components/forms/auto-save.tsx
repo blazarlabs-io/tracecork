@@ -46,7 +46,7 @@ export const AutoSave = () => {
         // console.log(res);
       })
       .catch((error: DbResponse) => {
-        console.log(error);
+        console.log(error as any);
       });
 
     // * TOAST

@@ -71,7 +71,7 @@ export const StorageDataChart = ({ data }: StorageDataChartProps) => {
 
   useEffect(() => {
     if (data) {
-      console.log(data);
+      // console.log(data);
       setLocalChartData(renameCreatedAtKey(data.data.splice(0, 200)));
     }
   }, [data]);

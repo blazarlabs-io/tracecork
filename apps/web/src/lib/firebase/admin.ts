@@ -69,9 +69,9 @@ export async function initAdmin() {
 
 await initAdmin();
 
-console.log("\n\n===============================");
-console.log("FIREBASE ADMIN INIT");
-console.log("===============================\n\n");
+// console.log("\n\n===============================");
+// console.log("FIREBASE ADMIN INIT");
+// console.log("===============================\n\n");
 
 export const adminAuth = admin.auth();
 export const adminFirestore = admin.firestore();

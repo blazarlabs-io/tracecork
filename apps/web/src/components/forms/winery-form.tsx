@@ -124,7 +124,7 @@ export const WineryForm = () => {
         }
       })
       .catch((error: DbResponse) => {
-        console.log(error);
+        console.log(error as any);
         setSaving(false);
       });
   };
@@ -168,7 +168,6 @@ export const WineryForm = () => {
   useEffect(() => {
     if (!mountRef.current && winery) {
       mountRef.current = true;
-      console.log("AVATAR", winery.info?.avatar);
       setAvatarUrl(winery.info?.avatar || "");
       form.setValue("avatar", winery.info?.avatar || "");
       form.setValue("name", winery.info?.name || "");
