@@ -156,10 +156,10 @@ export const TokenizerProvider = ({
       setAction("create");
       setPreviousAction("create");
 
-      // console.log("\n\nXXXXXXXXXXXXXXXXXX");
-      // console.log("WINE ID", mdata);
-      // console.log("TOKENIZE BATCH DATA", data);
-      // console.log("XXXXXXXXXXXXXXXXXX\n\n");
+      console.log("\n\nXXXXXXXXXXXXXXXXXX");
+      console.log("WINE INFO", wineInfo);
+      console.log("TOKENIZE BATCH DATA", data);
+      console.log("XXXXXXXXXXXXXXXXXX\n\n");
 
       fetch(
         `${process.env.NEXT_PUBLIC_TOKENIZATION_API_URL}/tx/false/mint-batch`,
