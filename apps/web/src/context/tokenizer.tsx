@@ -159,6 +159,10 @@ export const TokenizerProvider = ({
       console.log("\n\nXXXXXXXXXXXXXXXXXX");
       console.log("WINE INFO", wineInfo);
       console.log("TOKENIZE BATCH DATA", data);
+      console.log(
+        "TOKENIZATION URL",
+        `${process.env.NEXT_PUBLIC_TOKENIZATION_API_URL}/tx/false/mint-batch`,
+      );
       console.log("XXXXXXXXXXXXXXXXXX\n\n");
 
       fetch(
