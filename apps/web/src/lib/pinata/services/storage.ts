@@ -11,17 +11,17 @@ export const storage: any = {
       // TODO: In order to make pinata work, use the code in the comment bellow <await uploadFile(imageFile as File)>
       const imgUploadRes = await uploadFile(imageFile as File); // "xxx/ipfs/0195b9b2-3fb3-74e0-ace6-53807d2c7014"; //
 
-      console.log("\n====================================\n");
+      // console.log("\n====================================\n");
       const splittedUrl = imgUploadRes?.split("/ipfs/");
       const imgIpfs = `ipfs://${splittedUrl?.[1]}`;
-      console.log("imageFile", imageFile);
-      console.log("imgUploadRes", imgUploadRes);
-      console.log("splittedUrl", splittedUrl);
-      console.log("imgIpfs", imgIpfs);
-      console.log("\n====================================\n");
+      // console.log("imageFile", imageFile);
+      // console.log("imgUploadRes", imgUploadRes);
+      // console.log("splittedUrl", splittedUrl);
+      // console.log("imgIpfs", imgIpfs);
+      // console.log("\n====================================\n");
       return imgIpfs;
     } catch (error) {
-      console.log(error);
+      console.log(error as any);
       return null;
     }
   },

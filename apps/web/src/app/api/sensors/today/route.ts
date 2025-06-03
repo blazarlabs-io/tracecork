@@ -1,6 +1,6 @@
 export async function GET(request: Request) {
   const storageRes = await fetch(
-    `${process.env.NEXT_PUBLIC_STORAGE_SENSORS_ENDPOINT as string}/today` as string,
+    `${process.env.NEXT_PUBLIC_STORAGE_SENSORS_ENDPOINT as string}` as string,
     {
       method: "GET",
       headers: {

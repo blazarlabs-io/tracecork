@@ -103,7 +103,7 @@ export const WineryRepresentativeField = ({
                 <PhoneInput
                   value={(field.value as string) || ""}
                   onChange={field.onChange}
-                  onErrorCapture={(error) => console.log(error)}
+                  onErrorCapture={(error) => console.log(error as any)}
                   className="w-full shadow-none"
                   placeholder={t(
                     "wineryDetails.wineryRepresentative.phone.placeholder",

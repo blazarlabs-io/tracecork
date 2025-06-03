@@ -9,7 +9,9 @@ import {
   useState,
 } from "react";
 import { Batch, StatusMonitor, StatusTimer, TokenAction } from "../types/db";
-import tk from "../services/logger";
+("../services/logger");
+import { db } from "../lib/firebase/services/db";
+import { useAuth } from "./auth";
 
 export interface TokenizerContextInterface {
   tokenizing: boolean;
@@ -28,7 +30,7 @@ export interface TokenizerContextInterface {
     wineId: string,
     cb: (data: any) => void,
   ) => void;
-  tokenizeBottle: (data: any, cb: (data: any) => void) => void;
+  tokenizeBottle: (id: string, data: any, cb: (data: any) => void) => void;
   action: TokenAction;
   previousAction: TokenAction;
   updateAction: (action: TokenAction) => void;
@@ -52,6 +54,7 @@ const contextInitialData: TokenizerContextInterface = {
   updateAction: () => {},
   statusMonitor: {
     status: "idle",
+    tokenType: null,
     message: "Not started",
     txHash: null,
     refId: null,
@@ -100,6 +103,8 @@ export const TokenizerProvider = ({
     contextInitialData.wineId,
   );
 
+  const { user } = useAuth();
+
   const updateTokenizing = (state: boolean) => {
     setTokenizing(state);
   };
@@ -108,7 +113,7 @@ export const TokenizerProvider = ({
 
   const getBatch = (batchId: string) => {
     // setAction("get");
-    tk.log(
+    console.log(
       "TOKENIZATION URL",
       `${process.env.NEXT_PUBLIC_TOKENIZATION_API_URL}/wine/${batchId}`,
     );
@@ -128,11 +133,11 @@ export const TokenizerProvider = ({
     })
       .then(async (res) => {
         const data = await res.json();
-        tk.log("GET BATCH RESULTS:", data);
+        // console.log("GET BATCH RESULTS:", data);
         setBatchDetails(data);
       })
       .catch((error) => {
-        tk.error("Error getting batch", error);
+        console.error("Error getting batch", error);
         setBatchDetails(null);
       });
   };
@@ -144,16 +149,17 @@ export const TokenizerProvider = ({
 
   const tokenizeBatch = useCallback(
     (data: any, cb: (cbData: any) => void) => {
+      const wineInfo = JSON.parse(data.batch_data.info);
       const mdata = JSON.parse(data.batch_data.info).id;
       setWineId(() => mdata);
       setTokenizing(true);
       setAction("create");
       setPreviousAction("create");
 
-      tk.log("\n\nXXXXXXXXXXXXXXXXXX");
-      tk.log("WINE ID", mdata);
-      tk.log("TOKENIZE BATCH DATA", data);
-      tk.log("XXXXXXXXXXXXXXXXXX\n\n");
+      // console.log("\n\nXXXXXXXXXXXXXXXXXX");
+      // console.log("WINE ID", mdata);
+      // console.log("TOKENIZE BATCH DATA", data);
+      // console.log("XXXXXXXXXXXXXXXXXX\n\n");
 
       fetch(
         `${process.env.NEXT_PUBLIC_TOKENIZATION_API_URL}/tx/false/mint-batch`,
@@ -174,24 +180,36 @@ export const TokenizerProvider = ({
       )
         .then(async (res) => {
           const resData = await res.json();
+          // * Update status monitor
           setStatusMonitor(() => {
             return {
               status: "tokenizing",
+              tokenType: "batch",
               message:
                 "Tokenizing batch data. We will notify you when it's done.",
               txHash: resData.txId,
               refId: resData.tokenRefId,
             };
           });
+          // * Update DB
+          await db.wine.update(user?.uid as string, wineInfo.id, {
+            tokenization: {
+              tokenized: true,
+              tokenRefId: resData.tokenRefId,
+              txId: resData.txId,
+              status: "tokenizing",
+            },
+          });
           setBatch(resData);
-          tk.log("TOKENIZE BATCH RESULT / resData:", resData);
+          // console.log("TOKENIZE BATCH RESULT / resData:", resData);
           cb(resData);
         })
         .catch((error) => {
-          tk.error("Error tokenizing batch", error);
+          console.error("Error tokenizing batch", error);
           setStatusMonitor((prev) => {
             return {
               status: "error",
+              tokenType: "batch",
               message: "Error tokenizing batch",
               txHash: prev.txHash,
               refId: prev.refId,
@@ -212,9 +230,10 @@ export const TokenizerProvider = ({
     setPreviousAction("update");
     setTokenizing(true);
 
+    const wineData = JSON.parse(batch.batch_data.info);
     const mdata = JSON.parse(batch.batch_data.info).id;
     setWineId(() => mdata);
-
+    // console.log("TOKEN ID", tokenId);
     fetch(
       `${process.env.NEXT_PUBLIC_TOKENIZATION_API_URL}/tx/false/update-batch/${tokenId}`,
       {
@@ -237,20 +256,33 @@ export const TokenizerProvider = ({
         setStatusMonitor(() => {
           return {
             status: "updating",
+            tokenType: "batch",
             message:
               "Your batch data is being updated. We will notify you when it is complete.",
             txHash: data.txId,
             refId: tokenId, //data.tokenRefId,
           };
         });
+
+        // * Update DB
+        await db.wine.update(user?.uid as string, wineData.id, {
+          tokenization: {
+            tokenized: true,
+            txHash: data.txId,
+            refId: tokenId,
+            status: "updating",
+          },
+        });
+
         setBatch(data);
         cb(data);
       })
       .catch((error) => {
-        tk.log("Error updating batch", error);
+        console.log("Error updating batch", error);
         setStatusMonitor((prev) => {
           return {
             status: "error",
+            tokenType: "batch",
             message: "Error updating batch",
             txHash: prev.txHash,
             refId: prev.refId,
@@ -265,7 +297,7 @@ export const TokenizerProvider = ({
     wineId: string,
     cb: (data: any) => void,
   ) => {
-    tk.log(tokenId);
+    // console.log(tokenId);
     setAction("burn");
     setPreviousAction("burn");
     setTokenizing(true);
@@ -290,25 +322,39 @@ export const TokenizerProvider = ({
       .then(async (res) => {
         const data = await res.json();
         // setTokenizing(false);
-        tk.log("deleted BATCH RESULT", data);
+
+        const wineData = await db.wine.getSingle(wineId);
+
+        // * Update status monitor
         setStatusMonitor((prev) => {
           return {
             status: "burning",
+            tokenType: "batch",
             message:
               "Your batch data is being burned. We will notify you when it is complete.",
-            txHash: prev.txHash,
-            refId: prev.refId,
+            txHash: wineData?.data.tokenization.txId,
+            refId: wineData?.data.tokenization.tokenRefId,
           };
+        });
+        // * Update DB
+        await db.wine.update(user?.uid as string, wineId, {
+          tokenization: {
+            tokenized: true,
+            txHash: wineData?.data.tokenization.txId,
+            refId: wineData?.data.tokenization.tokenRefId,
+            status: "burning",
+          },
         });
         setBatch(data);
         cb(data);
       })
       .catch((error) => {
         // setTokenizing(false);
-        tk.error("Error burning batch", error);
+        console.error("Error burning batch", error);
         setStatusMonitor((prev) => {
           return {
             status: "error",
+            tokenType: "batch",
             message: "Error burning batch",
             txHash: prev.txHash,
             refId: prev.refId,
@@ -320,10 +366,10 @@ export const TokenizerProvider = ({
 
   // * ///////////////// BOTTLES ///////////////////
 
-  const tokenizeBottle = (data: any, cb: (data: any) => void) => {
+  const tokenizeBottle = (id: string, data: any, cb: (data: any) => void) => {
     setTokenizing(true);
     fetch(
-      `${process.env.NEXT_PUBLIC_TOKENIZATION_API_URL}/tx/true/mint-bottle`,
+      `${process.env.NEXT_PUBLIC_TOKENIZATION_API_URL}/tx/false/mint-bottle`,
       {
         method: "POST",
         headers: {
@@ -341,12 +387,40 @@ export const TokenizerProvider = ({
     )
       .then(async (res) => {
         const data = await res.json();
-        setTokenizing(false);
+        // setTokenizing(false);
+        setStatusMonitor((prev) => {
+          return {
+            status: "tokenizing",
+            tokenType: "bottle",
+            message:
+              "Your bottle is being tokenized. We will notify you when it is complete.",
+            txHash: data.txId,
+            refId: data.tokenRefId,
+          };
+        });
+        // * Update DB
+        await db.wine.update(user?.uid as string, id, {
+          tokenization: {
+            tokenized: true,
+            txHash: data.txId,
+            refId: data.tokenRefId,
+            status: "tokenizing",
+          },
+        });
         cb(data);
       })
       .catch((error) => {
         setTokenizing(false);
-        tk.error("Error tokenizing batch", error);
+        console.error("Error tokenizing batch", error);
+        setStatusMonitor((prev) => {
+          return {
+            status: "error",
+            tokenType: "bottle",
+            message: "Error tokenizing batch",
+            txHash: prev.txHash,
+            refId: prev.refId,
+          };
+        });
         cb(error);
       });
   };
@@ -359,6 +433,8 @@ export const TokenizerProvider = ({
       status === "updating"
     ) {
       const timer = setInterval(() => {
+        console.log("MAESTRO TIMER", txHash);
+
         fetch("/api/maestro/get-tx-details", {
           method: "POST",
           headers: {
@@ -369,12 +445,13 @@ export const TokenizerProvider = ({
         })
           .then(async (res: any) => {
             const data = await res.json();
-            tk.log("MAESTRO RES", data);
+            // console.log("MAESTRO RES", data);
             clearInterval(timer);
             setTokenizing(false);
             setStatusMonitor((prev) => {
               return {
                 status: "success",
+                tokenType: prev.tokenType,
                 message: "Transaction completed",
                 txHash: prev.txHash,
                 refId: prev.refId,
@@ -383,7 +460,7 @@ export const TokenizerProvider = ({
             setAction("done");
           })
           .catch((error: any) => {
-            tk.error("MAESTRO ERROR", error, txHash);
+            // console.error("MAESTRO ERROR", error, txHash);
           });
       }, 5000);
 
@@ -392,6 +469,7 @@ export const TokenizerProvider = ({
         setTokenizing(false);
         setStatusMonitor({
           status: "error",
+          tokenType: null,
           message: "Transaction timed out",
           txHash,
           refId: null,

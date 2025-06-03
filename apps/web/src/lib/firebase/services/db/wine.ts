@@ -44,7 +44,7 @@ export const wine = {
       const wines = querySnapshot.docs.map((doc) => ({ ...doc.data() }));
       return { data: wines[0], error: null, code: 200 };
     } catch (error) {
-      console.log(error);
+      console.log(error as any);
       return { data: null, error, code: 500 };
     }
   },

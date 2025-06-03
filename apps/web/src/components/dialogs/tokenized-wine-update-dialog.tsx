@@ -46,8 +46,13 @@ export const Anim = () => {
 export const TokenizedWineUpdateDialog = ({
   children,
 }: TokenizedWineUpdateDialogProps) => {
-  const { batch } = useTokenizer();
+  const { batch, updateAction } = useTokenizer();
   const [isOpen, setIsOpen] = useState<boolean>(true);
+
+  const handleClose = () => {
+    setIsOpen(false);
+    updateAction(null);
+  };
   return (
     <>
       <Dialog open={isOpen} onOpenChange={() => {}}>
@@ -74,7 +79,7 @@ export const TokenizedWineUpdateDialog = ({
               variant="default"
               size="lg"
               className="min-w-[64px] mt-4"
-              onClick={() => setIsOpen(false)}
+              onClick={handleClose}
             >
               Ok
               {/* {t(

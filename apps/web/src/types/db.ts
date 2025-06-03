@@ -86,6 +86,8 @@ export interface Tokenization {
   tokenRefId: string;
   isTokenized: boolean;
   txId: string;
+  status: MStatus;
+  bottles?: string[];
 }
 
 export interface Wine {
@@ -238,6 +240,7 @@ export type MStatus =
 
 export type StatusMonitor = {
   status: MStatus;
+  tokenType: "batch" | "bottle" | null;
   message: string;
   txHash: string | null;
   refId: string | null;

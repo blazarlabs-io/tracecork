@@ -47,10 +47,10 @@ export const UpdateTokenDialog = ({
 
     try {
       // * Upload image to pinata IPFS
-      const imgIpfs = await ipfs.storage.uploadFile(
-        wine.generalInfo.image,
-        wine,
-      );
+      // const imgIpfs = await ipfs.storage.uploadFile(
+      //   wine.generalInfo.image,
+      //   wine,
+      // );
       // * Update token data
       const updatedBatch = {
         batch_data: {
@@ -60,8 +60,9 @@ export const UpdateTokenDialog = ({
         },
         batch_meta: {
           description:
-            "This token binds a unique wine collection from tracecorck.com on the cardano blockchain.",
-          image: imgIpfs,
+            "This token binds a unique wine collection from tracecork.com on the cardano blockchain.",
+          image:
+            "ipfs://bafybeigl3fcyqwzutlv54yurvjm5ikevh4hrmjqsjs5jbtqnabwzevcmby", //imgIpfs,
           name: wine?.generalInfo.collectionName,
         },
         batch_quantity: [
@@ -70,11 +71,11 @@ export const UpdateTokenDialog = ({
         ],
       };
       // * Update token on blockchain using TWS
-      updateBatchToken(batch.tokenRefId, updatedBatch, (data: any) => {
-        console.log("UPDATE DONE", data);
+      updateBatchToken(batch.tokenRefId, updatedBatch, async (data: any) => {
+        // console.log("UPDATE DONE", JSON.stringify(data));
       });
     } catch (error) {
-      console.log(error);
+      console.log(error as any);
     }
   };
 

@@ -36,7 +36,7 @@ export const useGoogleSignIn = () => {
         displayName,
         metadata: { creationTime },
       } = user;
-      console.log(email, displayName, creationTime);
+      // console.log(email, displayName, creationTime);
       // If user has been logged successfully using Google for the first time then send a welcome email
       if (!user || !email || !displayName || !creationTime) return;
       setIsGoogleLoginSuccess(true);
