@@ -237,7 +237,15 @@ export const TokenizerProvider = ({
     const wineData = JSON.parse(batch.batch_data.info);
     const mdata = JSON.parse(batch.batch_data.info).id;
     setWineId(() => mdata);
-    // console.log("TOKEN ID", tokenId);
+    console.log("\n\nXXXXXXXXXXXXXXXXXX");
+    console.log("TOKEN ID", tokenId);
+    console.log("WINE DATA", wineData);
+    console.log("UPDATE BATCH DATA", batch);
+    console.log(
+      "TOKENIZATION URL",
+      `${process.env.NEXT_PUBLIC_TOKENIZATION_API_URL}/tx/false/update-batch/${tokenId}`,
+    );
+    console.log("XXXXXXXXXXXXXXXXXX\n\n");
     fetch(
       `${process.env.NEXT_PUBLIC_TOKENIZATION_API_URL}/tx/false/update-batch/${tokenId}`,
       {
