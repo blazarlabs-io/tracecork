@@ -37,7 +37,7 @@ export const UpdateTokenDialog = ({
   wine,
   children,
 }: UpdateTokenDialogProps) => {
-  const { updateBatchToken, statusMonitor } = useTokenizer();
+  const { updateBatchToken } = useTokenizer();
 
   const [open, setOpen] = useState<boolean>(false);
   const mountRef = useRef<boolean>(false);
@@ -66,8 +66,8 @@ export const UpdateTokenDialog = ({
           name: wine?.generalInfo.collectionName,
         },
         batch_quantity: [
-          parseInt(wine?.generalInfo.collectionSize as string),
-          parseInt(wine?.generalInfo.collectionSize as string),
+          batchDetails.batch_quantity[0],
+          batchDetails.batch_quantity[1],
         ],
       };
       // * Update token on blockchain using TWS
