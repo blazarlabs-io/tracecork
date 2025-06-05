@@ -241,6 +241,7 @@ export const TokenizerProvider = ({
     console.log("TOKEN ID", tokenId);
     console.log("WINE DATA", wineData);
     console.log("UPDATE BATCH DATA", batch);
+
     console.log(
       "TOKENIZATION URL",
       `${process.env.NEXT_PUBLIC_TOKENIZATION_API_URL}/tx/false/update-batch/${tokenId}`,
